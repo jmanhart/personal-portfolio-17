@@ -1,0 +1,28 @@
+.footer-container{
+    padding: 2em 0em;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sign-off{
+    font-size: 0.85em;
+    letter-spacing: 0.07em;
+    font-family: sans-serif;
+    margin:0.25em 0.95em;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+.footer-email{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-icon{
+    margin: 0.5em;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}

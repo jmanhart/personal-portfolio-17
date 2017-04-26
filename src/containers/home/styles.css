@@ -1,0 +1,59 @@
+
+
+.full{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero{
+    background-color: green;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*.hero-container{
+    background-color: rgba(0,0,0,0.0);
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    background-color: rgba(0,0,0,0.1);
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card-container{
+    background-color: rgba(0, 0, 0, 0.05);
+    height:100%;
+    width: 33%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-card-content{
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 8em;
+    width: 100%;
+}
+
+.card-label{
+    font-family: sans-serif;
+    font-size: 0.75em;
+    text-align: center;
+    margin: .75em 0em;
+}*/
