@@ -5,27 +5,30 @@ import ReactDOM from 'react-dom'
 import { Link } from 'react-router'
 
 import MenuIcon from '../menuIcon'
-import './style.css'
+import './style.scss'
 
-import '../../main.scss'
+
 
 export default class MenuNav extends Component{
   render(){
     return(
-			<div className="nav">
-        <div className="nav-container">
+			<div className="menu-nav-container">
+        <div className="menu-nav-content">
           <div className="left" style={{backgroundColor: 'rgba(255, 255, 255, 1)'}}></div>
           <div className="right" style={{backgroundColor: 'rgba(255, 255, 255, 1)'}}></div>
           <div className="top" style={{backgroundColor: 'rgba(255, 255, 255, 1)'}}></div>
+          <div className="bottom" style={{backgroundColor: 'rgba(255, 255, 255, 1)'}}></div>
           <MenuIcon toggleNav={this.props.closeNav} />
-          <nav>
-            <ul>
-              <li><Link to="/about">about</Link></li>
-              <li><Link to="/work">work</Link></li>
-              <li><Link to="/sketches">sketches</Link></li>
-              <li><Link to="/writing">writing</Link></li>
-            </ul>
-          </nav>
+
+          <div className="mobile-nav" onClick={this.props.closeNav}>
+            <nav>
+              <ul>
+                <li><span className="mobile-nav-label"><Link to="/about">about</Link></span></li>
+                <li><span className="mobile-nav-label"><Link to="/blog">blog</Link></span></li>
+              </ul>
+            </nav>
+          </div>
+
         </div>
 			</div>
 		)

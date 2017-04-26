@@ -56,9 +56,7 @@
     background: rgba(0,0,0,0.25);
 }
 
-.test{
-	background-color: green;
-}
+
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -139,27 +137,44 @@ button{
 }
 
 
-ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
+// ul{
+// 	list-style-type: none;
+// 	margin: 0;
+// 	padding: 0;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// }
 
-li{
-	list-style: none;
-	font-size: 250%;
-	line-height: 250%;
-	color: #354860;
-	font-family: 'Work Sans', sans-serif;
-	margin: 15px;
-	padding: 0;
-	&:hover{
-		color:white;
-		text-decoration: underline;
+
+
+
+.secondary-nav{
+	display: flex;
+	justify-content: center;
+	margin: 1.25em 0em;
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		.secondary-nav-label{
+			list-style: none;
+			font-size: 0.75em;
+			line-height: 250%;
+			color: #354860;
+			font-family: 'Work Sans', sans-serif;
+			margin: 15px;
+			padding: 0;
+			&:hover{
+				color:white;
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
@@ -176,7 +191,7 @@ li{
 
 
 .nav--open{
-	.nav{
+	.menu-nav-container{
 		opacity: 1;
 		visibility: visible;
 		background-color: rgba(0,0,0,0.3);
@@ -184,24 +199,24 @@ li{
 	}
 }
 
-.nav{
-	position: fixed;
-	opacity: 0;
-	visibility: hidden;
-	width: 100%;
-	height: 100%;
-	z-index: 100;
-	display: flex;
-	align-items: flex-start;
-	transition: all 200ms ease-in-out;
-	.nav-container{
-		background-color: rgba(222, 226, 227, 0.90);
-		height: 100%;
-		width: 100%;
-		padding: 5% 5% 3% 5%;
-		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-	}
-}
+// .nav{
+// 	position: fixed;
+// 	opacity: 0;
+// 	visibility: hidden;
+// 	width: 100%;
+// 	height: 100%;
+// 	z-index: 100;
+// 	display: flex;
+// 	align-items: flex-start;
+// 	transition: all 200ms ease-in-out;
+// 	.nav-container{
+// 		background-color: rgba(222, 226, 227, 0.90);
+// 		height: 100%;
+// 		width: 100%;
+// 		padding: 5% 5% 3% 5%;
+// 		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+// 	}
+// }
 
 .img-container{
 	height: 100%;

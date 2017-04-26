@@ -14,7 +14,11 @@ import Blog from './containers/blog';
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="/about" mapMenuTitle="About" component={About} />
+    <Route path="/about" mapMenuTitle="About" component={About}>
+      <Route path="/about/itemOne" mapMenuTitle="Garmin" component={Garmin} />
+      <Route path="/about/itemTwo" mapMenuTitle="Garmin" component={Mosey} />
+      <Route path="/about/itemThree" mapMenuTitle="Garmin" component={Marlin} />
+    </Route>
     <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
     <Route path="/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
