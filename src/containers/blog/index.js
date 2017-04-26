@@ -12,7 +12,7 @@ import './../../main.scss';
 export default class Blog extends Component{
     render(){
         return(
-            <div>
+            <div className="details-hero-container">
                 <h1>Blog</h1>
             </div>
         )

@@ -12,7 +12,7 @@ import './../../main.scss';
 export default class Marlin extends Component{
     render(){
         return(
-            <div>
+            <div className="details-hero-container">
                 <h1>Marlin</h1>
             </div>
         )

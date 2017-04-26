@@ -9,7 +9,7 @@ import './styles.css'
 export default class About extends Component{
     render(){
         return(
-            <div>
+            <div className="details-hero-container">
                 <h1>About Page</h1>
             </div>
         )

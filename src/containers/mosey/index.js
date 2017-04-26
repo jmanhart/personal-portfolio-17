@@ -12,7 +12,7 @@ import './../../main.scss';
 export default class Mosey extends Component{
     render(){
         return(
-            <div>
+            <div className="details-hero-container">
                 <h1>Mosey</h1>
             </div>
         )

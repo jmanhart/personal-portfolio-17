@@ -12,9 +12,10 @@ import './../../main.scss';
 export default class Garmin extends Component{
     render(){
         return(
-            <div>
-                <h1>Garmin</h1>
+            <div className="test">
+                <h1>Garminnn</h1>
             </div>
+      
         )
     }
 }

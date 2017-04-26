@@ -1,13 +1,13 @@
 {
-  "name": "sketch-files",
+  "name": "port-17",
   "version": "0.0.1",
-  "description": "sketch-files",
+  "description": "port-17",
   "scripts": {
     "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmanhart/sketch-files.git"
+    "url": "git+https://github.com/jmanhart/port-17.git"
   },
   "author": "Dude",
   "license": "MIT",
