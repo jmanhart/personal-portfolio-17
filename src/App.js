@@ -6,7 +6,6 @@ import Interactive from 'react-interactive';
 import { Link } from 'react-router';
 
 //Import Components
-import Navigation from './components/navigation'
 import Footer from './components/footer'
 import MenuNav from './components/menuNav'
 import MenuIcon from './components/menuIcon'

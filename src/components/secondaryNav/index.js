@@ -8,6 +8,8 @@ import { Link } from 'react-router';
 import './styles.scss';
 import './../../main.scss';
 
+const ACTIVE = { background: 'rgba(0,0,0,0.2)'}
+
 export default class SecondaryNav extends Component{
     render(){
         return(
@@ -16,21 +18,21 @@ export default class SecondaryNav extends Component{
                     <nav>
                         <ul>
                             <li>
-                                <Link to="/about/itemOne">
+                                <Link activeStyle={{ color: 'red' }} to="/about/itemOne">
                                     <span className="secondary-nav-label">
                                         {this.props.itemOneLabel}
                                     </span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/about/itemTwo">
+                                <Link activeClassName="is-active" to="/about/itemTwo">
                                     <span className="secondary-nav-label">
                                         {this.props.itemTwoLabel}
                                     </span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/about/itemThree">
+                                <Link activeClassName="is-active" to="/about/itemThree">
                                     <span className="secondary-nav-label">
                                         {this.props.itemThreeLabel}
                                     </span>

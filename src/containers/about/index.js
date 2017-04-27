@@ -10,6 +10,7 @@ import './../../main.scss';
 
 //Import Components
 import SecondaryNav from '../../components/secondaryNav'
+import BackIcon from '../../components/backIcon'
 
 export default class About extends Component{
     render(){
@@ -20,7 +21,8 @@ export default class About extends Component{
                     itemTwoLabel="Label Two"
                     itemThreeLabel="Label Three"
                 />
-                <div className="details-hero-container">
+                <BackIcon />
+                <div>
                     {this.props.children}
                 </div>
             </div>

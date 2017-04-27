@@ -14,14 +14,21 @@
 			list-style: none;
 			font-size: 0.75em;
 			line-height: 250%;
-			color: #354860;
+			color: rgba(0,0,0,0.4);
 			font-family: 'Work Sans', sans-serif;
 			margin: 15px;
 			padding: 0;
+			transition: all 0.2s ease-in;
 			&:hover{
-				color:white;
+				color:rgba(0,0,0,0.8);
 				text-decoration: underline;
+				transition: all 0.2s ease-out;
 			}
 		}
 	}
+}
+
+.is-active{
+	color: rgba(0, 0, 0, 0.75);
+	transition: all 0.2s ease-in;
 }

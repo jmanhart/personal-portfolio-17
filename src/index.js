@@ -10,14 +10,18 @@ import Garmin from './containers/garmin';
 import Marlin from './containers/marlin';
 import Mosey from './containers/mosey';
 import Blog from './containers/blog';
+import SubPageOne from './containers/subPages/sub-01.js'
+import SubPageTwo from './containers/subPages/sub-02.js'
+import SubPageThree from './containers/subPages/sub-03.js'
 
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
     <Route path="/about" mapMenuTitle="About" component={About}>
-      <Route path="/about/itemOne" mapMenuTitle="Garmin" component={Garmin} />
-      <Route path="/about/itemTwo" mapMenuTitle="Garmin" component={Mosey} />
-      <Route path="/about/itemThree" mapMenuTitle="Garmin" component={Marlin} />
+      <IndexRoute component={SubPageOne}/>
+      <Route path="/about/itemOne" mapMenuTitle="SubPage 01" component={SubPageOne} />
+      <Route path="/about/itemTwo" mapMenuTitle="SubPage 02" component={SubPageTwo} />
+      <Route path="/about/itemThree" mapMenuTitle="SubPage 03" component={SubPageThree} />
     </Route>
     <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
     <Route path="/marlin" mapMenuTitle="Marlin" component={Marlin} />
