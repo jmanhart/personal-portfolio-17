@@ -9,6 +9,7 @@ import { Link } from 'react-router';
 import Footer from './components/footer'
 import MenuNav from './components/menuNav'
 import MenuIcon from './components/menuIcon'
+import MobileNav from './components/mobileNav'
 
 //Import Styles
 import './main.scss'
@@ -44,15 +45,19 @@ export default class App extends Component{
     render(){
         return(
             <div className="wrapper" className={(this.state.nav) ? "nav--open" : null}>
+                {/*
                 <div className="left" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
 				<div className="right" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
 				<div className="top" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
                 <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
                 <MenuNav closeNav={this.closeNav}/>
+                <Footer/>
+                */}
                     <div id="content">
                         {this.props.children}
                     </div>
-                <Footer/>
+                    <MobileNav />
+            
             </div>
         )
     }
