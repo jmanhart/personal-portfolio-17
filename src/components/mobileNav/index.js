@@ -21,7 +21,9 @@ export default class MobileNav extends Component{
                     <li><Link to="/blog">blog</Link></li>
                     <li><Link to="/blog">blog</Link></li>
                     <li><Link to="/blog">blog</Link></li>
-                    <li><MenuIcon toggleNav={this.props.closeNav} /></li>
+                    <li>
+                        <MenuIcon toggleNav={this.props.closeNav} />
+                    </li>
                 </ul>
 
             </div>
