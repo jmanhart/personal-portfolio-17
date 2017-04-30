@@ -52,11 +52,14 @@ export default class App extends Component{
                 <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
                 <MenuNav closeNav={this.closeNav}/>
                 <Footer/>
+                 <MobileNav />
                 */}
+                <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
+                <MenuNav closeNav={this.closeNav}/>
                     <div id="content">
                         {this.props.children}
                     </div>
-                    <MobileNav />
+                <MobileNav />
             
             </div>
         )
