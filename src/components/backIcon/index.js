@@ -16,7 +16,7 @@ export default class BackIcon extends Component{
     return(
       <div className="back-icon">
         <Link activeClassName="is-active" to="/">
-        <p>Back</p>
+        <span className="back-label">Back</span>
         </Link>
       </div>
 		)
