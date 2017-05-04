@@ -8,14 +8,16 @@ import { Link } from 'react-router';
 import './../../styles/styles.css';
 import './../../main.scss';
 
+//Import Components
+import BackIcon from '../../components/backIcon'
 
 export default class Mosey extends Component{
     render(){
         return(
             <div className="details-hero-container">
-                <h1>Mosey</h1>
+              <BackIcon />
+              <h1>Mosey</h1>
             </div>
         )
     }
 }
-

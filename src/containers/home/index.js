@@ -79,12 +79,12 @@ export default class Home extends Component{
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="block-content">
                         <div className="leftcolumn">
-                            
+
                             <h2>Blog</h2>
                             <h3>Concept for a desktop text editing application for iOS.</h3>
-                            <Link to="/marlin">
+                            <Link to="/blog">
                                 <button>
-                                    Lets Get Strange (;´༎ຶД༎ຶ`)
+                                    `Lets Get Strange (;༎ຶД༎ຶ)`
                                 </button>
                             </Link>
                         </div>
@@ -97,5 +97,3 @@ export default class Home extends Component{
         )
     }
 }
-
-

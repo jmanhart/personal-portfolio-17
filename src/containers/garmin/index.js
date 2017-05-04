@@ -8,15 +8,18 @@ import { Link } from 'react-router';
 import './../../styles/styles.css';
 import './../../main.scss';
 
+//Import Components
+import BackIcon from '../../components/backIcon'
+
 
 export default class Garmin extends Component{
     render(){
         return(
              <div className="details-hero-container">
+               <BackIcon />
                 <h1>Garmin</h1>
             </div>
-      
+
         )
     }
 }
-

@@ -14,14 +14,12 @@ export default class BackIcon extends Component{
   }
   render(){
     return(
-      <div className="back-icon">
-        <Link activeClassName="is-active" to="/">
-        <span className="back-label">Back</span>
-        </Link>
-      </div>
+      <Link activeClassName="is-active" to="/">
+        <div className="back-icon">
+            <span className="back-label">Back</span>
+        </div>
+      </Link>
 		)
 	}
 
 }
-
-

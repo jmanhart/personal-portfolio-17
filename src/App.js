@@ -54,13 +54,16 @@ export default class App extends Component{
                 <Footer/>
                  <MobileNav />
                 */}
+                <div className="left" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
+                <div className="right" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
+                <div className="top" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
                 <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
                 <MenuNav closeNav={this.closeNav}/>
                     <div id="content">
                         {this.props.children}
                     </div>
                 <MobileNav />
-            
+
             </div>
         )
     }
