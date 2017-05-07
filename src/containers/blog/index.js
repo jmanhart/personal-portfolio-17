@@ -10,16 +10,14 @@ import './../../main.scss';
 
 //Import Components
 import BackIcon from '../../components/backIcon'
-
+import HeroBlock from '../../components/heroBlock'
 
 export default class Blog extends Component{
     render(){
         return(
           <div>
             <BackIcon/>
-            <div className="details-hero-container">
-              <h1>Blog</h1>
-            </div>
+            <HeroBlock label="Duder" />
             <div className="details-body-container">
               <div className="details-body-content">
                 <h1>Headling and other cool stuff you know oh yeah</h1>
