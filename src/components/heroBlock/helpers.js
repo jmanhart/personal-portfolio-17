@@ -1,13 +1,15 @@
 import dynamics from 'dynamics.js'
 
-export let heroOnload = function(el){
+
+
+export let messengerOnMount = function(el){
     dynamics.animate(el,{
-        translateY: -200,
+        translateY: -90,
         translateX: 0,
         opacity: 1
       },{
         type: dynamics.spring,
-        duration: 1000,
+        duration: 883,
         frequency: 83,
         friction: 171,
       })
