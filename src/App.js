@@ -45,10 +45,20 @@ export default class App extends Component{
             nav: false
         })
     }
-    render(){
+
+    getColor() {
+      console.log("hi")
+        let color;
+        switch(window.location.pathname) {
+            case '/': color = blue;
+            case '/blog': color= green;
+        }
+    }
+
+    render(color){
         return(
             <div className="wrapper" className={(this.state.nav) ? "nav--open" : null}>
-                <div className="left" style={{backgroundColor: barColor}}></div>
+                <div className="left" style={{backgroundColor: color}}></div>
                 <div className="right" style={{backgroundColor: barColor}}></div>
                 <div className="top" style={{backgroundColor: barColor}}></div>
                 <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
