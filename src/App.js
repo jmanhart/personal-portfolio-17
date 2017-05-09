@@ -50,14 +50,15 @@ export default class App extends Component{
       console.log("hi")
         let color;
         switch(window.location.pathname) {
-            case '/': color = blue;
-            case '/blog': color= green;
+            case '/': color = "blue";
+            case '/blog': color= "green";
         }
     }
 
     render(color){
         return(
             <div className="wrapper" className={(this.state.nav) ? "nav--open" : null}>
+                {this.getColor()}
                 <div className="left" style={{backgroundColor: color}}></div>
                 <div className="right" style={{backgroundColor: barColor}}></div>
                 <div className="top" style={{backgroundColor: barColor}}></div>
