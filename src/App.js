@@ -13,11 +13,14 @@ import MobileNav from './components/mobileNav'
 
 //Import Styles
 import './main.scss'
+import './lib/vars.scss';
 
 const propTypes = {
   children: PropTypes.element.isRequired,
   routes: PropTypes.array.isRequired,
 };
+
+let barColor = 'rgba(222, 226, 227, 1)'
 
 export default class App extends Component{
     constructor(){
@@ -45,18 +48,9 @@ export default class App extends Component{
     render(){
         return(
             <div className="wrapper" className={(this.state.nav) ? "nav--open" : null}>
-                {/*
-                <div className="left" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
-				<div className="right" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
-				<div className="top" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
-                <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
-                <MenuNav closeNav={this.closeNav}/>
-                <Footer/>
-                 <MobileNav />
-                */}
-                <div className="left" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
-                <div className="right" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
-                <div className="top" style={{backgroundColor: 'rgba(222, 226, 227, 0.90)'}}></div>
+                <div className="left" style={{backgroundColor: barColor}}></div>
+                <div className="right" style={{backgroundColor: barColor}}></div>
+                <div className="top" style={{backgroundColor: barColor}}></div>
                 <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
                 <MenuNav closeNav={this.closeNav}/>
                     <div id="content">

@@ -1,19 +1,11 @@
-// @import 'bourbon';
-// @import 'bourbon';
-// @import '~bourbon-neat';
-//
 
-$desktop: new-breakpoint( min-width 768px);
-$below-desktop: new-breakpoint( max-width 1000px);
-$tablet: new-breakpoint( min-width 640px max-width 767px);
-$below-tablet: new-breakpoint( max-width 767px);
-$mobile: new-breakpoint( max-width 639px);
-$below-mobile: new-breakpoint( max-width 639px);
+//Import Global Colors
+@import '/lib/vars.scss';
 
 
 .hero-label {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.8);
+    color: $black;
     margin: 0;
   	max-width: 35em;
   	font-size: 2em;
