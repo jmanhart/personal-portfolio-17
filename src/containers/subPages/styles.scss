@@ -25,11 +25,15 @@
 .item-wrapper{
   background-color: rgba(0, 0, 0, 0.05);
   width: 30%;
-  margin: 0em 0em 1em 0em;
+  margin: 0em 0em 1.5em 0em;
   .item-thumbnail{
-    height: 9em;
+    height: 10em;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.05)
+  }
+  .item-label{
+    font-size: 1em;
+    text-align: center;
   }
 }
 
