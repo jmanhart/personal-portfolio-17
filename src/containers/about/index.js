@@ -16,10 +16,10 @@ export default class About extends Component{
     render(){
         return(
             <div>
-                <SecondaryNav 
-                    itemOneLabel="Label One"
-                    itemTwoLabel="Label Two"
-                    itemThreeLabel="Label Three"
+                <SecondaryNav
+                    itemOneLabel="Books"
+                    itemTwoLabel="Movies"
+                    itemThreeLabel="Music"
                 />
                 <BackIcon />
                 <div>
@@ -29,4 +29,3 @@ export default class About extends Component{
         )
     }
 }
-

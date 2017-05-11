@@ -18,11 +18,10 @@ export default class SubPageThree extends Component{
             <div className="sub-page-wrapper">
                 <div className="sub-page-container">
                     <div className="main-block">
-                        <h2>Sub Page Three</h2>
+                        <h2>Music</h2>
                     </div>
                 </div>
             </div>
         )
     }
 }
-

@@ -17,12 +17,43 @@ export default class SubPageOne extends Component{
         return(
             <div className="sub-page-wrapper">
                 <div className="sub-page-container">
-                    <div className="main-block">
-                        <h2>Sub Page One</h2>
+
+                  <div className="item-grid-wrapper">
+
+                    <div className="item-wrapper">
+                      <div className="item-thumbnail"/>
+                      <h2>Books</h2>
                     </div>
+
+                    <div className="item-wrapper">
+                      <div className="item-thumbnail"/>
+                      <h2>Books</h2>
+                    </div>
+
+                    <div className="item-wrapper">
+                      <div className="item-thumbnail"/>
+                      <h2>Books</h2>
+                    </div>
+
+                    <div className="item-wrapper">
+                      <div className="item-thumbnail"/>
+                      <h2>Books</h2>
+                    </div>
+
+                    <div className="item-wrapper">
+                      <div className="item-thumbnail"/>
+                      <h2>Books</h2>
+                    </div>
+
+                    <div className="item-wrapper">
+                      <div className="item-thumbnail"/>
+                      <h2>Books</h2>
+                    </div>
+
+                  </div>
+
                 </div>
             </div>
         )
     }
 }
-
