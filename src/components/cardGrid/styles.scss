@@ -1,0 +1,22 @@
+@import '../../lib/vars.scss';
+
+
+.card-grid-container {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.09);
+    margin: 0em 00em;
+    height: 50vmin;
+    flex-direction: row;
+    justify-content: center;
+    display:flex;
+    .card-grid{
+      background-color: $FPO;
+      width:70%;
+      height: 100%;
+      .card-item{
+        background-color: $FPO;
+        height: 10em;
+        width: 30%;
+      }
+    }
+}

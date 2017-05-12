@@ -3,6 +3,9 @@ import Interactive from 'react-interactive';
 import { Link } from 'react-router';
 import './styles.css';
 
+//Import Components
+import CardGrid from '../../components/cardGrid'
+
 
 export default class Home extends Component{
     render(){
@@ -92,6 +95,7 @@ export default class Home extends Component{
                     </div>
                 </div>
 
+                <CardGrid />
 
             </div>
         )
