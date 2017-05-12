@@ -59,6 +59,9 @@ export default class SubPageOne extends Component{
         return(
           <div className="sub-page-wrapper">
             <div className="sub-page-container">
+              <div>
+                <p>Some of My favorite books</p>
+              </div>
               <div className="item-grid-wrapper">
                 {data.map((item) => {
                   return (
