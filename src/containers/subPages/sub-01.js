@@ -16,12 +16,6 @@ import './data/books.js'
 
 const data = [
     {
-      "title": "Catcher in the Rye",
-      "author": "JD.Salinger",
-      "image": "../../src/public/images/books/catcher-in-the-rye.jpg",
-      "link":"https://www.amazon.com/Catcher-Rye-J-D-Salinger/dp/0316769487/ref=sr_1_1?ie=UTF8&qid=1494548313&sr=8-1&keywords=catcher+in+the+rye",
-    },
-    {
       "title": "Ishmael",
       "author":"Daniel Quinn",
       "image":"../../src/public/images/books/ishmael.jpg",
@@ -51,7 +45,30 @@ const data = [
       "image":"../../src/public/images/books/blood-meridian.jpg",
       "link":"https://www.amazon.com/Invisible-Man-Ralph-Ellison/dp/0679732764/ref=sr_1_1?ie=UTF8&qid=1494550152&sr=8-1&keywords=invisible+man",
     },
-
+    {
+      "title": "The Shape of Design",
+      "author":"Frank Chimero",
+      "image":"../../src/public/images/books/shape-of-design.jpg",
+      "link":"https://www.amazon.com/Shape-Design-Frank-Chimero/dp/0985472200/ref=sr_1_1?ie=UTF8&qid=1494555724&sr=8-1&keywords=frank+chimero",
+    },
+    {
+      "title": "Hot Water Music",
+      "author":"Charles Bukowski",
+      "image":"../../src/public/images/books/hot-water-music.jpg",
+      "link":"https://www.amazon.com/Hot-Water-Music-Charles-Bukowski/dp/0876855966/ref=sr_1_4?ie=UTF8&qid=1494555824&sr=8-4&keywords=Hot+water+music",
+    },
+    {
+      "title": "God is not Great",
+      "author":"Christopher Hitchens",
+      "image":"../../src/public/images/books/god-is-not.jpg",
+      "link":"https://www.amazon.com/God-Not-Great-Religion-Everything/dp/0446697966/ref=sr_1_1?ie=UTF8&qid=1494555980&sr=8-1&keywords=god+is+not+great",
+    },
+    {
+      "title": "Nine Stories",
+      "author":"J.D. Salinger",
+      "image":"../../src/public/images/books/nine-stories.jpg",
+      "link":"https://www.amazon.com/Nine-Stories-J-D-Salinger/dp/B000J6Y93E/ref=sr_1_7?ie=UTF8&qid=1494556116&sr=8-7&keywords=nine+stories+by+j.d.+salinger",
+    },
 ]
 
 export default class SubPageOne extends Component{
@@ -59,9 +76,6 @@ export default class SubPageOne extends Component{
         return(
           <div className="sub-page-wrapper">
             <div className="sub-page-container">
-              <div>
-                <p>Some of My favorite books</p>
-              </div>
               <div className="item-grid-wrapper">
                 {data.map((item) => {
                   return (
@@ -70,8 +84,10 @@ export default class SubPageOne extends Component{
                         <div className="item-thumbnail">
                           <img key={item.title} src={item.image}/>
                         </div>
-                        <h2 className="item-title" key={item.title}>{item.title}</h2>
-                        <h3 className="item-author" key={item.author}>{item.author}</h3>
+                        <div className="item-copy">
+                          <span className="item-title" key={item.title}>{item.title}</span>
+                          <span className="item-author" key={item.author}>{item.author}</span>
+                        </div>
                         </a>
                       </div>
                   )

@@ -1,0 +1,17 @@
+@import '../../lib/vars.scss';
+
+
+.about-wrapper{
+  background-color: $FPO;
+  .about-header{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about-label{
+      color: $black;
+      font-family: sans-serif;
+      font-size: 1.5em;
+    }
+  }
+}
