@@ -1,3 +1,5 @@
+@import '../../lib/vars.scss';
+
 .sub-page-wrapper{
     height: 100%;
     width: 100%;
@@ -9,7 +11,7 @@
 .sub-page-container{
     height: 100%;
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 .main-block{
@@ -18,27 +20,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.0);
 
 }
 
 .item-wrapper{
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: $FPO;
   width: 30%;
   margin: 0em 0em 1.5em 0em;
   .item-thumbnail{
-    height: 10em;
+    max-height: 20em;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.05)
+    background-color: $FPO;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5em;
+    img{
+      height: 100%;
+      max-height: 15em;
+      transition: all 0.2s ease-in;
+      &:hover{
+        filter: saturate(0%) brightness(50%);
+        transition: all 0.2s ease-in;
+      }
+    }
   }
-  .item-label{
+  .item-title{
     font-size: 1em;
-    text-align: center;
+    text-align: left;
+  }
+  .item-author{
+    font-size: 0.75em;
+    text-align: left;
   }
 }
 
+
 .item-grid-wrapper{
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: $FPO;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
