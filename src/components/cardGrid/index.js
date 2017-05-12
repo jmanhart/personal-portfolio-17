@@ -19,7 +19,9 @@ export default class CardGrid extends Component{
     return(
       <div className="card-grid-container">
         <div className="card-grid">
-          <h1>Tesdcsst</h1>
+          <div className="card" />
+          <div className="card" />
+          <div className="card" />
         </div>
       </div>
 		)
