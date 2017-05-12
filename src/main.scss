@@ -69,7 +69,7 @@ button{
     align-items: center;
     padding: 1em 0em;
     border-radius: 0.75em;
-    border: 1px solid #EBEFF4;
+    border: 1px solid $gray01;
     color: rgba(0,0,0,.70);
     min-width: 23em;
     background-color: rgba(0,0,0,0);
@@ -324,7 +324,7 @@ button:hover{
     position: relative;
     overflow: hidden;
     width: 100%;
-    border-bottom: 1px solid #EBEFF4;
+    border-bottom: 1px solid $gray01;
     /*background-color:#EEF4FB;
     background-image: linear-gradient(0deg, #2A5281, #5183C1);*/
 }

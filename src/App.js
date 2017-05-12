@@ -59,7 +59,7 @@ export default class App extends Component{
         return(
             <div className="wrapper" className={(this.state.nav) ? "nav--open" : null}>
                 {this.getColor()}
-                <div className="left" style={{backgroundColor: color}}></div>
+                <div className="left" style={{backgroundColor: barColor}}></div>
                 <div className="right" style={{backgroundColor: barColor}}></div>
                 <div className="top" style={{backgroundColor: barColor}}></div>
                 <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />

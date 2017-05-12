@@ -79,7 +79,7 @@ export default class SubPageOne extends Component{
               <div className="item-grid-wrapper">
                 {data.map((item) => {
                   return (
-                      <div className="item-wrapper">
+                      <div className="item-wrapper" id="books">
                         <a key={item.title} href={item.link}>
                         <div className="item-thumbnail">
                           <img key={item.title} src={item.image}/>
