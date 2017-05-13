@@ -14,14 +14,27 @@ import './../../main.scss';
 //Import Local Styles
 import './styles.scss'
 
+
 export default class CardGrid extends Component{
   render(){
     return(
       <div className="card-grid-container">
         <div className="card-grid">
-          <div className="card" />
-          <div className="card" />
-          <div className="card" />
+          <Link className="card" to="/about">
+            <div className="card-content">
+              <span className="card-title">Favorites</span>
+            </div>
+          </Link>
+          <Link className="card" to="/about">
+            <div className="card-content">
+              <span className="card-title">Blog</span>
+            </div>
+          </Link>
+          <Link className="card" to="/about">
+            <div className="card-content">
+              <span className="card-title">Blog</span>
+            </div>
+          </Link>
         </div>
       </div>
 		)
