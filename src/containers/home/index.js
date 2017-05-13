@@ -78,7 +78,7 @@ export default class Home extends Component{
                     </div>
                 </div>
 
-                {/*Block Five*/}
+                {/*Block Five
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="block-content">
                         <div className="leftcolumn">
@@ -93,7 +93,7 @@ export default class Home extends Component{
                         </div>
                         <div className="rightcolumn" />
                     </div>
-                </div>
+                </div>*/}
 
                 <CardGrid />
 

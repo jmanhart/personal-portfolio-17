@@ -27,7 +27,7 @@ export default class CardGrid extends Component{
           </Link>
           <Link className="card" to="/favorites/books">
             <div className="card-content">
-              <span className="card-title">Blog</span>
+              <span className="card-title">Lets Get Strange (;༎ຶД༎ຶ)</span>
             </div>
           </Link>
           <Link className="card" to="/favorites/books">
