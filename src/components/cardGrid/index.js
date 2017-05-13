@@ -20,19 +20,19 @@ export default class CardGrid extends Component{
     return(
       <div className="card-grid-container">
         <div className="card-grid">
-          <Link className="card" to="/about">
+          <Link className="card" to="/favorites/books">
             <div className="card-content">
               <span className="card-title">Favorites</span>
             </div>
           </Link>
-          <Link className="card" to="/about">
+          <Link className="card" to="/favorites/books">
             <div className="card-content">
               <span className="card-title">Blog</span>
             </div>
           </Link>
-          <Link className="card" to="/about">
+          <Link className="card" to="/favorites/books">
             <div className="card-content">
-              <span className="card-title">Blog</span>
+              <span className="card-title">Coffee Shops</span>
             </div>
           </Link>
         </div>

@@ -18,7 +18,7 @@ export default class Home extends Component{
                         <div className="hero-content">
                             <span className="hero-label">John Manhart</span>
                             <span className="sub-hero-label">UX Designer and Developer living in KC</span>
-                            <a href="/about">
+                            <a href="/blog">
                                 <button>
                                     About Me
                                 </button>

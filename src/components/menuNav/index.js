@@ -23,7 +23,7 @@ export default class MenuNav extends Component{
           <div className="mobile-nav" onClick={this.props.closeNav}>
             <nav>
               <ul>
-                <li><span className="mobile-nav-label"><Link to="/about">about</Link></span></li>
+                <li><span className="mobile-nav-label"><Link to="/blog">about</Link></span></li>
                 <li><span className="mobile-nav-label"><Link to="/blog">blog</Link></span></li>
               </ul>
             </nav>

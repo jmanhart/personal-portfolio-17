@@ -12,9 +12,9 @@ export default class MobileNav extends Component{
     return(
         <div className="mobile-nav" onClick={this.props.closeNav}>
             <ul>
-                <Link to="/about"><li>About</li></Link>
-                <Link to="/blog"><li>Contact</li></Link>
-                <Link to="/mosey"><li>Work</li></Link>
+                <Link to="/favorites/books"><li>Books</li></Link>
+                <Link to="/favorites/movies"><li>Movies</li></Link>
+                <Link to="/favorites/music"><li>Music</li></Link>
             </ul>
         </div>
 		)

@@ -18,21 +18,21 @@ export default class SecondaryNav extends Component{
                     <nav>
                         <ul>
                             <li>
-                                <Link activeStyle={{ color: 'red' }} to="/about/itemOne">
+                                <Link activeStyle={{ color: 'red' }} to="/favorites/books">
                                     <span className="secondary-nav-label">
                                         {this.props.itemOneLabel}
                                     </span>
                                 </Link>
                             </li>
                             <li>
-                                <Link activeClassName="is-active" to="/about/itemTwo">
+                                <Link activeClassName="is-active" to="/favorites/movies">
                                     <span className="secondary-nav-label">
                                         {this.props.itemTwoLabel}
                                     </span>
                                 </Link>
                             </li>
                             <li>
-                                <Link activeClassName="is-active" to="/about/itemThree">
+                                <Link activeClassName="is-active" to="/favorites/music">
                                     <span className="secondary-nav-label">
                                         {this.props.itemThreeLabel}
                                     </span>
@@ -45,4 +45,3 @@ export default class SecondaryNav extends Component{
         )
     }
 }
-
