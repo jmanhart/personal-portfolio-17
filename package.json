@@ -12,6 +12,7 @@
   "author": "Dude",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.16.1",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-html5video": "^1.4.0",
@@ -19,7 +20,8 @@
     "react-router": "^3.0.0",
     "react-router-dom": "^4.1.1",
     "react-router-scroll": "^0.4.2",
-    "react-transition-group": "^1.1.1"
+    "react-transition-group": "^1.1.1",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
