@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import Interactive from 'react-interactive';
 import { Link } from 'react-router';
-import './styles.css';
+import './styles.scss';
 
 //Import Components
 import CardGrid from '../../components/cardGrid'
@@ -27,6 +27,17 @@ export default class Home extends Component{
                     </div>
                 </div>
 
+                {/*Block One Full*/}
+                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
+
+                        <div className="block-full">
+                            <span className="block-date">2013 – 2017</span>
+                            <span className="block-title">MARLIN</span>
+                            <span className="block-body">Farm-to-table seitan twee selvage actually. Cardigan 3 wolf moon banh mi, organic pop-up scenester lyft aesthetic sartorial tote bag cliche marfa cornhole yr you probably haven't heard of them.</span>
+                        </div>
+                
+                </div>
+
                 {/*Block Two*/}
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="block-content">
@@ -40,7 +51,9 @@ export default class Home extends Component{
                                 </button>
                             </Link>
                         </div>
-                        <div className="rightcolumn" />
+                        <div className="rightcolumn" >
+                          <div className="column-item" />
+                        </div>
                     </div>
                 </div>
 
@@ -57,7 +70,9 @@ export default class Home extends Component{
                                 </button>
                             </Link>
                         </div>
-                        <div className="rightcolumn" />
+                        <div className="rightcolumn" >
+                          <div className="column-item" />
+                        </div>
                     </div>
                 </div>
 
@@ -74,7 +89,9 @@ export default class Home extends Component{
                                 </button>
                             </Link>
                         </div>
-                        <div className="rightcolumn" />
+                        <div className="rightcolumn" >
+                          <div className="column-item" />
+                        </div>
                     </div>
                 </div>
 
