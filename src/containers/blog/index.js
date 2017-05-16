@@ -13,6 +13,20 @@ import './../../main.scss';
 import BackIcon from '../../components/backIcon'
 import HeroBlock from '../../components/heroBlock'
 
+
+const myApi = axios.create({
+  baseURL: 'http://api.tumblr.com/v2/blog/jmanhart.tumblr.com/posts?api_key=0G1UDWvxbMr3njFv3dGvTxlYj56dNVHc4pzBOX4QJOu2BXVlJi',
+  timeout: 10000,
+  withCredentials: true,
+  transformRequest: [(data) => JSON.stringify(data.data)],
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+  }
+});
+
+
+
 export default class Blog extends Component{
     constructor(props){
       super(props)
@@ -21,22 +35,22 @@ export default class Blog extends Component{
       }
     }
 
-    componentDidMount(){
-      axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
-        .then(res => {
-          const posts = res.data.data.children.map(obj => obj.data);
-          this.setState({ posts });
-        })
-    }
+    // componentDidMount(){
+    //   axios.get(`http://api.tumblr.com/v2/blog/jmanhart.tumblr.com/posts?api_key=0G1UDWvxbMr3njFv3dGvTxlYj56dNVHc4pzBOX4QJOu2BXVlJi`)
+    //     .then(res => {
+    //       const posts = res.data.data.children.map(obj => obj.data);
+    //       this.setState({ posts });
+    //     })
+    // }
 
     render(){
         return(
           <div>
             <BackIcon/>
-            <HeroBlock label="Duder" />
+            <HeroBlock label="Blog" />
             <div className="details-body-container">
               <div className="details-body-content">
-                <h1>{`/r/${this.props.subreddit}`}</h1>
+                <h1>Test</h1>
                   <ul>
                     {this.state.posts.map(post =>
                       <li key={post.id}>{post.title}</li>

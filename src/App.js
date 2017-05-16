@@ -67,7 +67,7 @@ export default class App extends Component{
                     <div id="content">
                         {this.props.children}
                     </div>
-                <MobileNav />
+                {/* <MobileNav />*/}
                 <Footer />
 
             </div>
