@@ -20,7 +20,7 @@ const propTypes = {
   routes: PropTypes.array.isRequired,
 };
 
-let barColor = 'rgba(222, 226, 227, 1)'
+let barColor = '#ff9d18'
 
 export default class App extends Component{
     constructor(){

@@ -16,6 +16,7 @@ export default class Home extends Component{
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="hero-container">
                         <div className="hero-content">
+                            <img src="../../src/public/images/me-blk.png"/>
                             <span className="hero-label">John Manhart</span>
                             <span className="sub-hero-label">UX Designer and Developer living in KC</span>
                             <a href="/blog">

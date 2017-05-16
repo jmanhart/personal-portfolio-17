@@ -17,6 +17,24 @@
 }
 
 
+.hero-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	  height: 85vmin;
+	.hero-content{
+		width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+  img{
+    width: 30%;
+  }
+}
+
 .column-item{
   height: 5em;
   width: 5em;
@@ -29,7 +47,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   flex-direction: column;
   .place{
     display: flex;
