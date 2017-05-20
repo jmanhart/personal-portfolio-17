@@ -16,27 +16,19 @@ import HeroBlock from '../../components/heroBlock'
 
 
 const data = [
-    {
-      "city": "Austin",
-      "state":"Texas",
-    },
-    {
-      "city": "Kansas City",
-      "state":"MO",
-    },
-    {
-      "city": "Springfield",
-      "state":"MO",
-    },
-    {
-      "city": "St. Louis",
-      "state":"MO",
-    },
-    {
-      "city": "Tulsa",
-      "state":"Oklahoma",
-    },
+    { "city": "Fayettville", "state": "Arkansas" },
+    { "city": "San Francisco", "state": "California" },
+    { "city": "Boston", "state": "Massachusetts" },
+    { "city": "Kansas City", "state": "Missouri" },
+    { "city": "Springfield", "state": "Missouri" },
+    { "city": "St. Louis", "state": "Missouri" },
+    { "city": "NYC", "state": "New York" },
+    { "city": "Oklahoma City", "state": "Oklahoma" },
+    { "city": "Tulsa", "state": "Oklahoma" },
+    { "city": "Austin", "state": "Texas" },
+    { "city": "Seattle", "state": "Washington" },
 ]
+
 
 export default class Coffee extends Component{
     render(){
