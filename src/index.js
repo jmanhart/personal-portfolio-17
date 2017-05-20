@@ -15,6 +15,7 @@ import Garmin from './containers/garmin';
 import Marlin from './containers/marlin';
 import Mosey from './containers/mosey';
 import Blog from './containers/blog';
+import Coffee from './containers/coffee';
 import SubPageOne from './containers/subPages/sub-01.js'
 import SubPageTwo from './containers/subPages/sub-02.js'
 import SubPageThree from './containers/subPages/sub-03.js'
@@ -32,6 +33,7 @@ const routes = (
     <Route path="/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
     <Route path="/blog" mapMenuTitle="Blog" component={Blog} />
+    <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
   </Route>
 );
 
