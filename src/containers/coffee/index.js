@@ -16,10 +16,10 @@ import HeroBlock from '../../components/heroBlock'
 
 
 const data = [
-    { "city": "Fayettville", "state": "Arkansas" },
+    { "city": "Fayettville", "state": "Arkansas", "link":"/coffee/kansas-city" },
     { "city": "San Francisco", "state": "California" },
     { "city": "Boston", "state": "Massachusetts" },
-    { "city": "Kansas City", "state": "Missouri" },
+    { "city": "Kansas City", "state": "Missouri", "link":"/coffee/kansas-city"},
     { "city": "Springfield", "state": "Missouri" },
     { "city": "St. Louis", "state": "Missouri" },
     { "city": "NYC", "state": "New York" },
@@ -39,12 +39,12 @@ export default class Coffee extends Component{
                 <div className="card-grid">
                   {data.map((item) => {
                     return (
-                      <a className="card" key={item.city} href={item.link}>
+                      <Link className="card" key={item.link} to={item.link}>
                         <div className="card-content">
                           <span className="card-city" key={item.city} >{item.city}</span>
                           <span className="card-state" key={item.state} >{item.state}</span>
                         </div>
-                      </a>
+                      </Link>
                     )
                   })}
                 </div>

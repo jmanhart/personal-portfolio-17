@@ -20,6 +20,20 @@ import SubPageOne from './containers/subPages/sub-01.js'
 import SubPageTwo from './containers/subPages/sub-02.js'
 import SubPageThree from './containers/subPages/sub-03.js'
 
+
+//Import Coffee supPages
+import KansasCity from './containers/coffee/subPages/kansasCity.js'
+
+const data = [
+    {
+      "path": "/coffee/kansas-city",
+      "component": {KansasCity},
+      "mapMenuTitle": "kansas-city",
+    },
+
+]
+
+
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
@@ -33,8 +47,15 @@ const routes = (
     <Route path="/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
     <Route path="/blog" mapMenuTitle="Blog" component={Blog} />
-    <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
+    <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee}/>
+
+    {/* Coffee Cites */}
+    <Route path="/coffee/kansas-city" mapMenuTitle="Kansas City" component={KansasCity} />
+
   </Route>
+
+
+
 );
 
 render(
