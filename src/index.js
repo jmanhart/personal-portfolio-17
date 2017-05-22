@@ -24,14 +24,7 @@ import SubPageThree from './containers/subPages/sub-03.js'
 //Import Coffee supPages
 import KansasCity from './containers/coffee/subPages/kansasCity.js'
 
-const data = [
-    {
-      "path": "/coffee/kansas-city",
-      "component": {KansasCity},
-      "mapMenuTitle": "kansas-city",
-    },
 
-]
 
 
 const routes = (
@@ -52,8 +45,8 @@ const routes = (
     {/* Coffee Cites */}
     <Route path="/coffee/kansas-city" mapMenuTitle="Kansas City" component={KansasCity} />
 
-  </Route>
 
+  </Route>
 
 
 );
