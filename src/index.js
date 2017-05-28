@@ -16,6 +16,7 @@ import Marlin from './containers/marlin';
 import Mosey from './containers/mosey';
 import Blog from './containers/blog';
 import Coffee from './containers/coffee';
+import Test from './containers/test';
 import SubPageOne from './containers/subPages/sub-01.js'
 import SubPageTwo from './containers/subPages/sub-02.js'
 import SubPageThree from './containers/subPages/sub-03.js'
@@ -41,9 +42,14 @@ const routes = (
     <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
     <Route path="/blog" mapMenuTitle="Blog" component={Blog} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee}/>
+    <Route path="/test" mapMenuTitle="Test" component={Test}>
+      <Route path="/test/garmin" mapMenuTitle="Books" component={Garmin} />
+      <Route path="/test/mosey" mapMenuTitle="Movies" component={Mosey} />
+      <Route path="/test/marlin" mapMenuTitle="Movies" component={Marlin} />
+    </Route>
 
     {/* Coffee Cites */}
-    <Route path="/coffee/kansas-city" mapMenuTitle="Kansas City" component={KansasCity} />
+    <Route path="/coffee/kansas-city" mapMenuTitle="Kansas City" component={KansasCity}/>
 
 
   </Route>
