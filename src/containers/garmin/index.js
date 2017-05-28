@@ -17,7 +17,7 @@ export default class Garmin extends Component{
     render(){
         return(
           <div>
-            <BackIcon/>
+    
             <HeroBlock label="Garmin" />
             <div className="details-body-container">
               <div className="details-body-content">

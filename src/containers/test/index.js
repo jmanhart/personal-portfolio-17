@@ -20,28 +20,46 @@ export default class Test extends Component{
     render(){
         return(
           <div id="page">
-            <header className="content">
-                <div className="branding">(; ༎ຶД༎ຶ)</div>
+
+            <header className="side-navigation-container">
                 <div className="site-links">
+
+                  <div className="branding">
+                    John Manhart
+                  </div>
+
+                  <div className="internal-links">
                     <ul>
-                      <Link to="/test/garmin">
-                        <li>Garmin</li>
-                      </Link>
-
-                      <Link to="/test/marlin">
-                        <li>Marlin</li>
-                      </Link>
-
                       <Link to="/test/mosey">
-                        <li>Mosey</li>
+                        <li>About</li>
                       </Link>
-
+                      <Link to="/test/home">
+                        <li>Work</li>
+                      </Link>
+                      <Link to="/test/marlin">
+                        <li>Blog</li>
+                      </Link>
+                      <Link to="/test/mosey">
+                        <li>Likes</li>
+                      </Link>
+                      <Link to="/test/mosey">
+                        <li>Coffee</li>
+                      </Link>
                     </ul>
-                </div>
+                  </div>
+
+                  <div className="external-links">
+                    social media links
+                  </div>
+
+
+                  </div>
             </header>
+
             <div className="main-content">
               {this.props.children}
             </div>
+
           </div>
 
         )

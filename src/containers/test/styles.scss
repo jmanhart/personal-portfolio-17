@@ -14,11 +14,11 @@ body {
 }
 
 
-.content{
+.side-navigation-container{
   position: fixed;
   top: 0;
   left: 10px;
-  width: 17vw;
+  width: 12em;
   height: 100vh;
   background: white;
   border-right: 10px solid black;
@@ -30,28 +30,40 @@ body {
 }
 
 .main-content{
-  margin-left: 17vw;
-  width: calc(72vw - 8px);
+  margin-left: 12em;
+  // width: calc(72vw - 8px);
+  width: 100%;
   height: calc(100vh - 8px);
-  padding: 5vw;
   position: relative;
   overflow: scroll;
 }
 
 
 .branding{
-  height: 17vw;
-  border-bottom: 10px solid black;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(0,0,0,0.1);
+  p {
+    color: white;
+  }
 }
 
 .site-links{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2em 2em;
   display: flex;
   flex: 1;
-  background-color: pink;
+  ul{
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+  }
+  li{
+    padding: 1em 0em;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
 }

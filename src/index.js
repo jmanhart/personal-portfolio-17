@@ -42,7 +42,8 @@ const routes = (
     <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
     <Route path="/blog" mapMenuTitle="Blog" component={Blog} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee}/>
-    <Route path="/test" mapMenuTitle="Test" component={Test}>
+    <Route path="/test" mapMenuTitle="Test" component={Test} render={applyRouterMiddleware(useScroll())}>
+      <IndexRoute component={Garmin}/>
       <Route path="/test/garmin" mapMenuTitle="Books" component={Garmin} />
       <Route path="/test/mosey" mapMenuTitle="Movies" component={Mosey} />
       <Route path="/test/marlin" mapMenuTitle="Movies" component={Marlin} />
