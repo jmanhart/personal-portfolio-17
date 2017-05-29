@@ -11,10 +11,15 @@ export default class About extends Component{
     render(){
         return(
             <div className="about-wrapper">
-              <span className="label-emoji">✌</span>
-              <span className="label-01">Yo, I'm John.</span>
-              <span className="label-02">A Designer, Developer currently living in Kansas City</span>
-              <span className="label-04">Currently at Garmin</span>
+              <div className="about-block">
+
+                <span className="label-01">👋 I'm John.</span>
+                <span className="label-02">A Designer, Developer currently living in Kansas City</span>
+                <span className="label-04">Currently at Garmin</span>
+              </div>
+              <div>
+                <span className="label-05">More Shit Below</span>
+              </div>
             </div>
         )
     }

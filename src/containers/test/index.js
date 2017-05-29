@@ -29,7 +29,10 @@ export default class Test extends Component{
                 <div className="site-links">
 
                   <div className="branding">
-                    <span className="label-03">John Manhart</span>
+
+                    <span className="label-03">✌</span>
+                    <span className="label-03">John</span>
+                    <span className="label-03">Manhart</span>
                     <span className="label-04">User Experince</span>
                   </div>
 

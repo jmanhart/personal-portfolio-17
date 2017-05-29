@@ -52,6 +52,13 @@ $serif: 'Eczar', serif;
   font-family: $sans-serif;
 }
 
+.label-05{
+  color:rgba(0,0,0,0.6);
+  font-size: 0.75em;
+  padding-bottom: 0.5em;
+  font-family: $sans-serif;
+}
+
 .internal-nav-label{
   color: rgba(0,0,0,0.8);
   transition: all 0.2s ease-in;
