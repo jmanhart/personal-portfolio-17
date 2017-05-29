@@ -19,6 +19,52 @@ $FPO: rgba(0, 0, 0, 0.05);
 $sans-serif: 'Work Sans', sans-serif;
 $serif: 'Eczar', serif;
 
+
+.label-emoji{
+  font-size: 3.5em;
+}
+
+.label-01{
+  color: $black;
+  font-family: $sans-serif;
+  font-size: 3em;
+  padding-bottom: 0.25em;
+}
+
+.label-02{
+  color: $black;
+  font-family: $sans-serif;
+  font-size: 1em;
+  padding-bottom: 0.25em;
+}
+
+.label-03{
+  color:rgba(0,0,0,0.8);
+  font-size: 1em;
+  padding-bottom: 0.1 5em;
+  font-family: $sans-serif;
+}
+
+.label-04{
+  color:rgba(0,0,0,0.6);
+  font-size: 0.75em;
+  padding-bottom: 0.5em;
+  font-family: $sans-serif;
+}
+
+.internal-nav-label{
+  color: rgba(0,0,0,0.8);
+  transition: all 0.2s ease-in;
+  &:hover{
+    text-decoration: underline;
+    transition: all 0.2s ease-in;
+  }
+}
+
+
+
+//Padding
+
 // @mixin font-weight($weight) {
 //   $weights: (
 //     thin: 100,

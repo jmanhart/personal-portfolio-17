@@ -1,3 +1,5 @@
+@import '../../lib/vars.scss';
+
 body {
     background: #fff;
     border-left: 10px solid black;
@@ -53,6 +55,7 @@ body {
     color:rgba(0,0,0,0.8);
     font-size: 1em;
     padding-bottom: 0.5em;
+    font-family: $sans-serif;
   }
   .branding-title{
     color:rgba(0,0,0,0.4);
@@ -76,7 +79,7 @@ body {
   li{
     padding: 1em 0em;
     width: 100%;
-    font-family: sans-serif;
+    font-family: $sans-serif;
   }
 
 }

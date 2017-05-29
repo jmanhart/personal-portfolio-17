@@ -29,26 +29,26 @@ export default class Test extends Component{
                 <div className="site-links">
 
                   <div className="branding">
-                    <span className="branding-name">John Manhart</span>
-                    <span className="branding-title">User Experince</span>
+                    <span className="label-03">John Manhart</span>
+                    <span className="label-04">User Experince</span>
                   </div>
 
                   <div className="internal-links">
                     <ul>
                       <Link activeStyle={ACTIVE} to="/test/about">
-                        <li>About</li>
+                        <li><span className="internal-nav-label">About</span></li>
                       </Link>
                       <Link activeStyle={ACTIVE} to="/test/home">
-                        <li>Work</li>
+                        <li><span className="internal-nav-label">Work</span></li>
                       </Link>
                       <Link activeStyle={ACTIVE} to="/test/marlin">
-                        <li>Blog</li>
+                        <li><span className="internal-nav-label">Blog</span></li>
                       </Link>
                       <Link activeStyle={ACTIVE} to="/test/favorites">
-                        <li>Likes</li>
+                        <li><span className="internal-nav-label">Likes</span></li>
                       </Link>
                       <Link activeStyle={ACTIVE} to="/test/coffee">
-                        <li>Coffee</li>
+                        <li><span className="internal-nav-label">Coffee</span></li>
                       </Link>
                     </ul>
                   </div>
