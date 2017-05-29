@@ -17,7 +17,6 @@ export default class Marlin extends Component{
     render(){
         return(
           <div>
-            <BackIcon/>
             <HeroBlock label="Marlin" />
             <div className="details-body-container">
               <div className="details-body-content">

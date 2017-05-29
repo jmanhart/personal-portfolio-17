@@ -34,7 +34,6 @@ export default class Coffee extends Component{
     render(){
         return(
           <div>
-            <BackIcon/>
               <div className="card-grid-container">
                 <div className="card-grid">
                   {data.map((item) => {

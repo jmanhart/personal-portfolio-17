@@ -9,7 +9,9 @@ import App from './App';
 import ScrollToTop from './components/ScrollToTop';
 
 //Import Containers
+
 import Home from './containers/home';
+import About from './containers/about';
 import Favorites from './containers/favorites';
 import Garmin from './containers/garmin';
 import Marlin from './containers/marlin';
@@ -43,10 +45,19 @@ const routes = (
     <Route path="/blog" mapMenuTitle="Blog" component={Blog} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee}/>
     <Route path="/test" mapMenuTitle="Test" component={Test} render={applyRouterMiddleware(useScroll())}>
-      <IndexRoute component={Garmin}/>
-      <Route path="/test/garmin" mapMenuTitle="Books" component={Garmin} />
-      <Route path="/test/mosey" mapMenuTitle="Movies" component={Mosey} />
-      <Route path="/test/marlin" mapMenuTitle="Movies" component={Marlin} />
+      <IndexRoute component={Home}/>
+      <Route path="/test/home" mapMenuTitle="Home" component={Home} />
+      <Route path="/test/about" mapMenuTitle="About" component={About} />
+      <Route path="/test/garmin" mapMenuTitle="Garmin" component={Garmin} />
+      <Route path="/test/mosey" mapMenuTitle="Mosey" component={Mosey} />
+      <Route path="/test/marlin" mapMenuTitle="Marlin" component={Marlin} />
+      <Route path="/test/coffee" mapMenuTitle="Coffee" component={Coffee}/>
+      <Route path="/test/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
+        <IndexRoute component={SubPageOne}/>
+        <Route path="/test/favorites/books" mapMenuTitle="Books" component={SubPageOne} />
+        <Route path="/test/favorites/movies" mapMenuTitle="Movies" component={SubPageTwo} />
+        <Route path="/test/favorites/music" mapMenuTitle="Music" component={SubPageThree} />
+      </Route>
     </Route>
 
     {/* Coffee Cites */}

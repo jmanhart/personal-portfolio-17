@@ -12,7 +12,7 @@ export default class Home extends Component{
         return(
             <div>
 
-                {/*Block One*/}
+                {/*Block One
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="hero-container">
                         <div className="hero-content">
@@ -26,7 +26,7 @@ export default class Home extends Component{
                             </a>
                         </div>
                     </div>
-                </div>
+                </div>*/}
 
                 {/*Garmin*/}
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
@@ -77,7 +77,7 @@ export default class Home extends Component{
                     </div>
                 </div>
 
-                <CardGrid />
+              
 
             </div>
         )

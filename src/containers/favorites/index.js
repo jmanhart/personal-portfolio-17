@@ -19,7 +19,6 @@ export default class Favorites extends Component{
     render(){
         return(
             <div className="about-wrapper">
-              <BackIcon />
               <div className="about-header">
                 <h1 className="about-label">Just a few  of my favorite things.</h1>
               </div>

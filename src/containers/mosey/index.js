@@ -16,7 +16,6 @@ export default class Mosey extends Component{
     render(){
         return(
           <div>
-            <BackIcon/>
             <HeroBlock label="Mosey" />
             <div className="details-body-container">
               <div className="details-body-content">

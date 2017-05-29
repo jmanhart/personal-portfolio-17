@@ -46,7 +46,6 @@ export default class Blog extends Component{
     render(){
         return(
           <div>
-            <BackIcon/>
             <HeroBlock label="Blog" />
             <div className="details-body-container">
               <div className="details-body-content">

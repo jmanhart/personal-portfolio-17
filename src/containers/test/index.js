@@ -15,6 +15,10 @@ import './styles.scss';
 import BackIcon from '../../components/backIcon'
 import HeroBlock from '../../components/heroBlock'
 
+const ACTIVE = {
+  color: 'rgba(0,0,0,0.8)',
+  textDecoration:'underline',
+}
 
 export default class Test extends Component{
     render(){
@@ -25,31 +29,34 @@ export default class Test extends Component{
                 <div className="site-links">
 
                   <div className="branding">
-                    John Manhart
+                    <span className="branding-name">John Manhart</span>
+                    <span className="branding-title">User Experince</span>
                   </div>
 
                   <div className="internal-links">
                     <ul>
-                      <Link to="/test/mosey">
+                      <Link activeStyle={ACTIVE} to="/test/about">
                         <li>About</li>
                       </Link>
-                      <Link to="/test/home">
+                      <Link activeStyle={ACTIVE} to="/test/home">
                         <li>Work</li>
                       </Link>
-                      <Link to="/test/marlin">
+                      <Link activeStyle={ACTIVE} to="/test/marlin">
                         <li>Blog</li>
                       </Link>
-                      <Link to="/test/mosey">
+                      <Link activeStyle={ACTIVE} to="/test/favorites">
                         <li>Likes</li>
                       </Link>
-                      <Link to="/test/mosey">
+                      <Link activeStyle={ACTIVE} to="/test/coffee">
                         <li>Coffee</li>
                       </Link>
                     </ul>
                   </div>
 
                   <div className="external-links">
-                    social media links
+                    <i className="fa fa-dribbble fa-1x"/>
+                    <i className="fa fa-github fa-1x"/>
+                    <i className="fa fa-instagram fa-1x"/>
                   </div>
 
 
