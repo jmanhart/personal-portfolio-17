@@ -11,22 +11,62 @@ import './../../main.scss';
 //Import Local Styles
 import './styles.scss';
 
-//Import Components
-import SecondaryNav from '../../components/secondaryNav'
-import BackIcon from '../../components/backIcon'
+
+const ACTIVE = {
+  color: 'rgba(0,0,0,0.8)',
+  textDecoration:'underline',
+}
+
+const navStyles = {
+  paddingRight: '3em',
+  fontSize: '0.75em',
+}
 
 export default class Favorites extends Component{
+
+    siteNavigation(){
+      return(
+        <div className="secondary-nav">
+            <nav>
+                <ul>
+                    <li>
+                        <Link activeStyle={ACTIVE} to="/test/favorites/books">
+                            <span className="internal-nav-label" style={navStyles}>
+                                Books
+                            </span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeStyle={ACTIVE} to="/test/favorites/movies">
+                            <span className="internal-nav-label" style={navStyles}>
+                                Movies
+                            </span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeStyle={ACTIVE} to="/test/favorites/music">
+                            <span className="internal-nav-label" style={navStyles}>
+                                Music
+                            </span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeStyle={ACTIVE} to="/test/favorites/podcasts">
+                            <span className="internal-nav-label" style={navStyles}>
+                              Podcasts
+                            </span>
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      )
+    }
+
     render(){
         return(
-            <div className="about-wrapper">
-              <div className="about-header">
-                <h1 className="about-label">Just a few  of my favorite things.</h1>
-              </div>
-              <SecondaryNav
-                  itemOneLabel="Books"
-                  itemTwoLabel="Movies"
-                  itemThreeLabel="Music"
-              />
+            <div className="favorites-wrapper">
+              {this.siteNavigation()}
               <div>
                   {this.props.children}
               </div>

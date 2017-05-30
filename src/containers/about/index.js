@@ -22,13 +22,13 @@ export default class About extends Component{
               </div>
             </div>
 
-            <div className="about-wrapper">
+            <div className="details-wrapper">
               <div className="about-block">
-                <span className="label-01"><s>ARKANSAS</s></span>
-                <span className="label-01"><s>MEXICO</s></span>
-                <span className="label-01"><s>MICHIGAN</s></span>
-                <span className="label-01"><s>MISSOURI</s></span>
-                <span className="label-01">KANSAS CITY</span>
+                <span className="label-01 strike">Arkansas</span>
+                <span className="label-01 strike">Mexico</span>
+                <span className="label-01 strike">Michigan</span>
+                <span className="label-01 strike">Missouri</span>
+                <span className="label-01">Kansas City</span>
               </div>
             </div>
 

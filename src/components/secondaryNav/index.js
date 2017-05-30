@@ -15,31 +15,7 @@ export default class SecondaryNav extends Component{
         return(
             <div>
                 <div className="secondary-nav">
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link activeStyle={{ color: 'red' }} to="/test/favorites/books">
-                                    <span className="secondary-nav-label">
-                                        {this.props.itemOneLabel}
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link activeClassName="is-active" to="/test/favorites/movies">
-                                    <span className="secondary-nav-label">
-                                        {this.props.itemTwoLabel}
-                                    </span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link activeClassName="is-active" to="/test/favorites/music">
-                                    <span className="secondary-nav-label">
-                                        {this.props.itemThreeLabel}
-                                    </span>
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
+
                 </div>
             </div>
         )

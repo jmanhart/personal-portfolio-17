@@ -20,6 +20,10 @@ $sans-serif: 'Work Sans', sans-serif;
 $serif: 'Eczar', serif;
 
 
+.strike{
+  text-decoration: line-through;
+}
+
 .label-emoji{
   font-size: 3.5em;
 }
@@ -62,6 +66,7 @@ $serif: 'Eczar', serif;
 .internal-nav-label{
   color: rgba(0,0,0,0.8);
   transition: all 0.2s ease-in;
+  font-family: $sans-serif;
   &:hover{
     text-decoration: underline;
     transition: all 0.2s ease-in;

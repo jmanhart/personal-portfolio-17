@@ -3,7 +3,7 @@
 .sub-page-wrapper{
     height: 100%;
     width: 100%;
-    padding: 2em 0em;
+    padding: 7em 0em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
     padding-bottom: 0.75em;
     img{
       height: 100%;
-      max-height: 15em;
+      max-height: 8em;
       transition: all 0.2s ease-in;
       box-shadow: -1px 2px 1px 1px rgba(0,0,0,0.10);;
       &:hover{
