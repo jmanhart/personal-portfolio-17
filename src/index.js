@@ -22,6 +22,7 @@ import Test from './containers/test';
 import SubPageOne from './containers/subPages/sub-01.js'
 import SubPageTwo from './containers/subPages/sub-02.js'
 import SubPageThree from './containers/subPages/sub-03.js'
+import Podcasts from './containers/subPages/Podcasts.js'
 
 
 //Import Coffee supPages
@@ -57,6 +58,7 @@ const routes = (
         <Route path="/test/favorites/books" mapMenuTitle="Books" component={SubPageOne} />
         <Route path="/test/favorites/movies" mapMenuTitle="Movies" component={SubPageTwo} />
         <Route path="/test/favorites/music" mapMenuTitle="Music" component={SubPageThree} />
+        <Route path="/test/favorites/podcasts" mapMenuTitle="Podcasts" component={Podcasts} />
       </Route>
     </Route>
 
