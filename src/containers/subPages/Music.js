@@ -53,7 +53,7 @@ const data = [
 
 ]
 
-export default class SubPageThree extends Component{
+export default class Music extends Component{
     render(){
         return(
           <div className="sub-page-wrapper">

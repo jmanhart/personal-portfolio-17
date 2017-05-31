@@ -19,10 +19,10 @@ import Mosey from './containers/mosey';
 import Blog from './containers/blog';
 import Coffee from './containers/coffee';
 import Test from './containers/test';
-import SubPageOne from './containers/subPages/sub-01.js'
-import SubPageTwo from './containers/subPages/sub-02.js'
-import SubPageThree from './containers/subPages/sub-03.js'
+import Books from './containers/subPages/Books.js'
 import Podcasts from './containers/subPages/Podcasts.js'
+import Movies from './containers/subPages/Movies.js'
+import Music from './containers/subPages/Music.js'
 
 
 //Import Coffee supPages
@@ -34,12 +34,6 @@ import KansasCity from './containers/coffee/subPages/kansasCity.js'
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
-      <IndexRoute component={SubPageOne}/>
-      <Route path="/favorites/books" mapMenuTitle="Books" component={SubPageOne} />
-      <Route path="/favorites/movies" mapMenuTitle="Movies" component={SubPageTwo} />
-      <Route path="/favorites/music" mapMenuTitle="Music" component={SubPageThree} />
-    </Route>
     <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
     <Route path="/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
@@ -54,10 +48,10 @@ const routes = (
       <Route path="/test/marlin" mapMenuTitle="Marlin" component={Marlin} />
       <Route path="/test/coffee" mapMenuTitle="Coffee" component={Coffee}/>
       <Route path="/test/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
-        <IndexRoute component={SubPageOne}/>
-        <Route path="/test/favorites/books" mapMenuTitle="Books" component={SubPageOne} />
-        <Route path="/test/favorites/movies" mapMenuTitle="Movies" component={SubPageTwo} />
-        <Route path="/test/favorites/music" mapMenuTitle="Music" component={SubPageThree} />
+        <IndexRoute component={Books}/>
+        <Route path="/test/favorites/books" mapMenuTitle="Books" component={Books} />
+        <Route path="/test/favorites/movies" mapMenuTitle="Movies" component={Movies} />
+        <Route path="/test/favorites/music" mapMenuTitle="Music" component={Music} />
         <Route path="/test/favorites/podcasts" mapMenuTitle="Podcasts" component={Podcasts} />
       </Route>
     </Route>

@@ -71,7 +71,7 @@ const data = [
     },
 ]
 
-export default class SubPageOne extends Component{
+export default class Books extends Component{
     componentDidUpdate() {
       window.scrollTo(0,0);
     }

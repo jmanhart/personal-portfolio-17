@@ -46,7 +46,7 @@ const data = [
 
 ]
 
-export default class SubPageTwo extends Component{
+export default class Movies extends Component{
     render(){
         return(
           <div className="sub-page-wrapper">
