@@ -1,85 +1,75 @@
-import React, { PropTypes, Component } from 'react';
-import Interactive from 'react-interactive';
+import React, { PropTypes, Component, StyleSheet } from 'react';
+import {render} from 'react-dom';
+import dynamics from 'dynamics.js';
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
+
+//Import Global Styles
+import './../../styles/styles.css';
+import './../../main.scss';
+
+//Local Styles
 import './styles.scss';
 
 //Import Components
-import CardGrid from '../../components/cardGrid'
+import BackIcon from '../../components/backIcon'
+import HeroBlock from '../../components/heroBlock'
 
+const ACTIVE = {
+  color: 'rgba(0,0,0,0.8)',
+  textDecoration:'underline',
+}
 
 export default class Home extends Component{
     render(){
         return(
-            <div>
+          <div id="page">
 
-                {/*Block One
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="hero-container">
-                        <div className="hero-content">
-                            <img src="../../src/public/images/me-blk.png"/>
-                            <span className="hero-label">John Manhart</span>
-                            <span className="sub-hero-label">UX Designer and Developer living in KC</span>
-                            <a href="/blog">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>*/}
+            <header className="side-navigation-container">
+                <div className="site-links">
 
-                {/*Garmin*/}
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="block-full">
-                        <div className="place">
-                          <span className="block-date">2017 – PRESENT</span>
-                          <span className="block-title">Garmin</span>
-                          <span className="block-position">UX Designer</span>
-                            <a href="/garmin">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                  <div className="branding">
+                    <span className="label-03">✌</span>
+                    <span className="label-03">John</span>
+                    <span className="label-03">Manhart</span>
+                    <span className="label-04">User Experince</span>
+                  </div>
 
-                {/*Mosey*/}
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="block-full">
-                        <div className="place">
-                          <span className="block-date">2015 – PRESENT</span>
-                          <span className="block-title">Mosey</span>
-                          <span className="block-position">Mobile Developer</span>
-                            <a href="/mosey">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                  <div className="internal-links">
+                    <ul>
+                      <Link activeStyle={ACTIVE} to="/about">
+                        <li><span className="internal-nav-label">About</span></li>
+                      </Link>
+                      <Link activeStyle={ACTIVE} to="/work">
+                        <li><span className="internal-nav-label">Work</span></li>
+                      </Link>
+                      <Link activeStyle={ACTIVE} to="/marlin">
+                        <li><span className="internal-nav-label">Blog</span></li>
+                      </Link>
+                      <Link activeStyle={ACTIVE} to="/favorites">
+                        <li><span className="internal-nav-label">Likes</span></li>
+                      </Link>
+                      <Link activeStyle={ACTIVE} to="/coffee">
+                        <li><span className="internal-nav-label">Coffee</span></li>
+                      </Link>
+                    </ul>
+                  </div>
 
-                {/*Block One Full*/}
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="block-full">
-                        <div className="place">
-                          <span className="block-date">2013 – 2017</span>
-                          <span className="block-title">Marlin</span>
-                          <span className="block-position">UX Developer & Designer</span>
-                          <span className="block-sub-text">Starbucks  |  Unilever  |  Bush's Beans | French's </span>
-                            <a href="/marlin">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                  <div className="external-links">
+                    <i className="fa fa-dribbble fa-1x"/>
+                    <i className="fa fa-github fa-1x"/>
+                    <i className="fa fa-instagram fa-1x"/>
+                  </div>
 
-              
+                  </div>
+            </header>
 
+            <div className="main-content">
+              {this.props.children}
             </div>
+
+          </div>
+
         )
     }
 }

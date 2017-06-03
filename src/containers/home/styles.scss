@@ -1,188 +1,92 @@
 @import '../../lib/vars.scss';
 
-.full{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+body {
+    background: #fff;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    overflow: hidden;
 }
 
+#page {
 
-.hero{
-    background-color: green;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.hero-container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	  height: 85vmin;
-	.hero-content{
-		width: 100%;
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-  img{
-    width: 30%;
-  }
-}
-
-.column-item{
-  height: 5em;
-  width: 5em;
-  background-color: $gray01;
-}
-
-.block-full{
-  background-color: $white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
   width: 100%;
-  height: 75vh;
+  display: flex;
+}
+
+
+.side-navigation-container{
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: 12em;
+  height: 100vh;
+  background: white;
+  border-right: 10px solid black;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  display: flex;
   flex-direction: column;
-  .place{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex: 3;
-    background-color: rgba(0,0,0,0.0);
-    .block-date{
-      color: $orange01;
-      font-family: sans-serif;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-    }
-    .block-title{
-      color: $dark01;
-      font-family: sans-serif;
-      font-weight: bold;
-      font-size: 3em;
-      padding: 0.25em 0.25em;
-      letter-spacing: 0.03em;
-    }
-    .block-position{
-      color: $dark01;
-      text-align: center;
-      font-family: sans-serif;
-      font-size: 1.25em;
-      padding-bottom: 0.5em;
-    }
-    .block-sub-text{
-      color: $gray02;
-      font-family: sans-serif;
-      text-align: center;
-      font-size: .75em;
-      line-height: 1.65em;
-      letter-spacing: 0.03em;
-    }
+
+}
+
+.main-content{
+  margin-left: 12em;
+  // width: calc(72vw - 8px);
+  width: 100%;
+  height: calc(100vh - 8px);
+  position: relative;
+  overflow: scroll;
+}
+
+
+.branding{
+  display: flex;
+  background-color: rgba(0,0,0,0);
+  font-family: sans-serif;
+  flex-direction: column;
+  display: flex;
+  .branding-icon{
+    padding-bottom: 0.15em;
   }
-  .brands{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: rgba(0,0,0,0.0);
-
+  .branding-name{
+    color:rgba(0,0,0,0.8);
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    font-family: $sans-serif;
   }
-
-}
-
-
-
-
-@media screen and (max-width: 425px) {
-  .block-full{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    .block-date{
-      font-family: sans-serif;
-      font-weight: bold;
-      font-size: 0.75em;
-    }
-    .block-title{
-      font-family: sans-serif;
-      font-weight: bold;
-      font-size: 3em;
-    }
-    .block-body{
-      width: 90%;
-      font-size: 0.75em;
-
-    }
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.hero-container{
-    background-color: rgba(0,0,0,0.0);
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content{
-    background-color: rgba(0,0,0,0.1);
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-card-container{
-    background-color: rgba(0, 0, 0, 0.05);
-    height:100%;
-    width: 33%;
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero-card-content{
-    background-color: rgba(0, 0, 0, 0.05);
-    height: 8em;
-    width: 100%;
-}
-
-.card-label{
-    font-family: sans-serif;
+  .branding-title{
+    color:rgba(0,0,0,0.4);
     font-size: 0.75em;
-    text-align: center;
-    margin: .75em 0em;
-}*/
+
+  }
+}
+
+.site-links{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2em 2em;
+  display: flex;
+  flex: 1;
+  ul{
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+  }
+  li{
+    padding: 1em 0em;
+    width: 100%;
+    font-family: $sans-serif;
+  }
+
+}
+
+.external-links{
+  display: flex;
+  i{
+    padding: 0em 0.95em 0em 0em;
+  }
+}
