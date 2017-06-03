@@ -30,28 +30,28 @@ export default class Favorites extends Component{
             <nav>
                 <ul>
                     <li>
-                        <Link activeStyle={ACTIVE} to="/test/favorites/books">
+                        <Link activeStyle={ACTIVE} to="/favorites/books">
                             <span className="internal-nav-label" style={navStyles}>
                                 Books
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link activeStyle={ACTIVE} to="/test/favorites/movies">
+                        <Link activeStyle={ACTIVE} to="/favorites/movies">
                             <span className="internal-nav-label" style={navStyles}>
                                 Movies
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link activeStyle={ACTIVE} to="/test/favorites/music">
+                        <Link activeStyle={ACTIVE} to="/favorites/music">
                             <span className="internal-nav-label" style={navStyles}>
                                 Music
                             </span>
                         </Link>
                     </li>
                     <li>
-                        <Link activeStyle={ACTIVE} to="/test/favorites/podcasts">
+                        <Link activeStyle={ACTIVE} to="/favorites/podcasts">
                             <span className="internal-nav-label" style={navStyles}>
                               Podcasts
                             </span>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom';
-import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory, Switch } from 'react-router';
 import { useScroll } from 'react-router-scroll';
 
 import App from './App';
@@ -19,7 +19,6 @@ import Marlin from './containers/marlin';
 import Mosey from './containers/mosey';
 import Blog from './containers/blog';
 import Coffee from './containers/coffee';
-import Test from './containers/test';
 import Books from './containers/subPages/Books.js'
 import Podcasts from './containers/subPages/Podcasts.js'
 import Movies from './containers/subPages/Movies.js'
@@ -35,22 +34,20 @@ import KansasCity from './containers/coffee/subPages/kansasCity.js'
 const routes = (
 
   <Route path="/" mapMenuTitle="Home" component={Home}>
-    <IndexRoute component={Home} />
-      <Route path="/about" mapMenuTitle="About" component={About} />
-      <Route path="/work" mapMenuTitle="Work" component={Work}>
-        <IndexRoute component={Work}/>
-        <Route path="/work/garmin" mapMenuTitle="Garmin" component={Garmin} />
-        <Route path="/work/mosey" mapMenuTitle="Mosey" component={Mosey} />
-        <Route path="/work/marlin" mapMenuTitle="Marlin" component={Marlin} />
-      </Route>
-      <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
-      <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
-        <IndexRoute component={Books}/>
-        <Route path="/favorites/books" mapMenuTitle="Books" component={Books} />
-        <Route path="/favorites/movies" mapMenuTitle="Movies" component={Movies} />
-        <Route path="/favorites/music" mapMenuTitle="Music" component={Music} />
-        <Route path="/favorites/podcasts" mapMenuTitle="Podcasts" component={Podcasts} />
-      </Route>
+    <IndexRoute component={About} />
+    <Route path="/about" mapMenuTitle="About" component={About} />
+    <Route path="/work" mapMenuTitle="Work" component={Work} />
+    <Route path="/work/garmin" mapMenuTitle="Garmin" component={Garmin} />
+    <Route path="/work/mosey" mapMenuTitle="Mosey" component={Mosey} />
+    <Route path="/work/marlin" mapMenuTitle="Marlin" component={Marlin} />
+    <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
+    <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
+      <IndexRoute component={Books}/>
+      <Route path="/favorites/books" mapMenuTitle="Books" component={Books} />
+      <Route path="/favorites/movies" mapMenuTitle="Movies" component={Movies} />
+      <Route path="/favorites/music" mapMenuTitle="Music" component={Music} />
+      <Route path="/favorites/podcasts" mapMenuTitle="Podcasts" component={Podcasts} />
+    </Route>
   </Route>
 
 

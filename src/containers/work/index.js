@@ -15,10 +15,10 @@ export default class Work extends Component{
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="block-full">
                         <div className="place">
-                          <span className="block-date">2017 – PRESENT</span>
-                          <span className="block-title">Garmin</span>
-                          <span className="block-position">UX Designer</span>
-                            <a href="/work/garmin">
+                          <span className="label-04">2017 – PRESENT</span>
+                          <span className="label-01">Garmin</span>
+                          <span className="label-02">UX Designer</span>
+                            <a href="/marlin">
                                 <button>
                                     About Me
                                 </button>
@@ -31,10 +31,10 @@ export default class Work extends Component{
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="block-full">
                         <div className="place">
-                          <span className="block-date">2015 – PRESENT</span>
-                          <span className="block-title">Mosey</span>
-                          <span className="block-position">Mobile Developer</span>
-                            <a href="/mosey">
+                            <span className="label-04">2015 – PRESENT</span>
+                            <span className="label-01">Mosey</span>
+                            <span className="label-02">UX Developer</span>
+                            <a href="/marlin">
                                 <button>
                                     About Me
                                 </button>
@@ -47,15 +47,14 @@ export default class Work extends Component{
                 <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
                     <div className="block-full">
                         <div className="place">
-                          <span className="block-date">2013 – 2017</span>
-                          <span className="block-title">Marlin</span>
-                          <span className="block-position">UX Developer & Designer</span>
-                          <span className="block-sub-text">Starbucks  |  Unilever  |  Bush's Beans | French's </span>
-                            <a href="/marlin">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
+                          <span className="label-04">2013 – 2017</span>
+                          <span className="label-01">Marlin</span>
+                          <span className="label-02">UX Developer</span>
+                          <a href="/marlin">
+                              <button>
+                                  About Me
+                              </button>
+                          </a>
                         </div>
                     </div>
                 </div>
