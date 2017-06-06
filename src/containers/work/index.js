@@ -12,8 +12,8 @@ export default class Work extends Component{
         return(
             <div>
                 {/*Garmin*/}
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="block-full">
+                <div className="block-container"  >
+                    <div className="block-full" >
                         <div className="place">
                           <span className="label-04">2017 – PRESENT</span>
                           <span className="label-01">Garmin</span>
