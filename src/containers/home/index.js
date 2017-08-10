@@ -25,7 +25,7 @@ export default class Home extends Component{
         return(
           <div id="page">
 
-            <header className="side-navigation-container">
+            {/*<header className="side-navigation-container">
                 <div className="site-links">
 
                   <div className="branding">
@@ -62,7 +62,7 @@ export default class Home extends Component{
                   </div>
 
                   </div>
-            </header>
+            </header>*/}
 
             <div className="main-content">
               {this.props.children}

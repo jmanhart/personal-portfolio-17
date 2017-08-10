@@ -60,7 +60,7 @@ export default class App extends Component{
             <div className="wrapper" className={(this.state.nav) ? "nav--open" : null}>
                 {this.getColor()}
 
-                <MenuIcon toggleNav={this.toggleNav} closeNav={this.closeNav} />
+      
                 <MenuNav closeNav={this.closeNav}/>
                     <div id="content">
                         {this.props.children}
@@ -70,7 +70,7 @@ export default class App extends Component{
                   <div className="right" style={{backgroundColor: barColor}}></div>
                   <div className="top" style={{backgroundColor: barColor}}></div>
                   <Footer />*/}
-        
+
 
             </div>
         )
