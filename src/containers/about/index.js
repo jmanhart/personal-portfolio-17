@@ -15,16 +15,14 @@ export default class About extends Component{
 
               <div className="title-block">
                 <span className="label-01">John Manhart</span>
-                <span className="label-02">A Product Designer, Developer, Writer, living & working in Kansas City.</span>
-                <span className="label-04">Currently desiging for Garmin</span>
+                <span className="label-02">Is a Product Designer & Developer living in Kansas City. <span className="roll-over">Need to know more?</span></span>
+                <span className="label-03">Currently desiging for <span className="roll-over-two">Garmin</span></span>
               </div>
 
               <div className="social-block">
-                <span className="label-04">Github</span>
-                <span className="label-04">Dribbble</span>
-                <span className="label-04">Medium</span>
-                <span className="label-04">About</span>
-
+                <span className="label-05">Github</span>
+                <span className="label-05">Dribbble</span>
+                <span className="label-05">Medium</span>
               </div>
 
             </div>
