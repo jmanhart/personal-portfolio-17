@@ -62,7 +62,19 @@ export default class Home extends Component{
                   </div>
 
                   </div>
-            </header>*/}
+            </header>
+
+            <div className="details-wrapper">
+              <div className="about-block">
+                <span className="label-01 strike">Arkansas</span>
+                <span className="label-01 strike">Mexico</span>
+                <span className="label-01 strike">Michigan</span>
+                <span className="label-01 strike">Missouri</span>
+                <span className="label-01">Kansas City</span>
+              </div>
+            </div>
+
+            */}
 
             <div className="main-content">
               {this.props.children}

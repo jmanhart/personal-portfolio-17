@@ -10,29 +10,25 @@ import './styles.scss'
 export default class About extends Component{
     render(){
         return(
-          <div>
-            <div className="about-wrapper">
-              <div className="about-block">
-                <span className="label-01">👋 I'm John.</span>
-                <span className="label-02">A Designer, Developer currently living in Kansas City</span>
-                <span className="label-04">Currently at Garmin</span>
+
+            <div className="wrapper">
+
+              <div className="title-block">
+                <span className="label-01">John Manhart</span>
+                <span className="label-02">A Product Designer, Developer, Writer, living & working in Kansas City.</span>
+                <span className="label-04">Currently desiging for Garmin</span>
               </div>
-              <div>
-                <span className="label-05">More Shit About Me Below</span>
+
+              <div className="social-block">
+                <span className="label-04">Github</span>
+                <span className="label-04">Dribbble</span>
+                <span className="label-04">Medium</span>
+                <span className="label-04">About</span>
+
               </div>
+
             </div>
 
-            <div className="details-wrapper">
-              <div className="about-block">
-                <span className="label-01 strike">Arkansas</span>
-                <span className="label-01 strike">Mexico</span>
-                <span className="label-01 strike">Michigan</span>
-                <span className="label-01 strike">Missouri</span>
-                <span className="label-01">Kansas City</span>
-              </div>
-            </div>
-
-          </div>
 
         )
     }

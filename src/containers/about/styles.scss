@@ -1,16 +1,18 @@
 @import '../../lib/vars.scss';
 
 
-.about-wrapper{
+.wrapper{
   height: 100vh;
   width: 100%;
   background-color: transparent;
-  padding-left: 3em;
-  padding-bottom: 3em;
+  padding-top: 8em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 35vh;
+  align-items: flex-start;
 }
 
 .details-wrapper{
@@ -21,9 +23,19 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.about-block{
+.title-block{
   display: flex;
   flex-direction: column;
+  width: 30em;
+  background-color: transparent;
+}
+
+.social-block{
+  display: flex;
+  align-items: space-around;
+  justify-content: flex-start;
+  background-color: transparent;
+  width: 30em;
 }

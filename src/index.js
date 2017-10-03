@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom';
 import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory, Switch } from 'react-router';
-import { useScroll } from 'react-router-scroll';
+
 
 import App from './App';
 
@@ -41,7 +41,7 @@ const routes = (
     <Route path="/work/mosey" mapMenuTitle="Mosey" component={Mosey} />
     <Route path="/work/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
-    <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
+    <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} >
       <IndexRoute component={Books}/>
       <Route path="/favorites/books" mapMenuTitle="Books" component={Books} />
       <Route path="/favorites/movies" mapMenuTitle="Movies" component={Movies} />
@@ -57,39 +57,6 @@ render(
   <Router
     history={browserHistory}
     routes={routes}
-    render={applyRouterMiddleware(useScroll())}
   />,
   document.getElementById('root'),
 );
-
-
-
-{/*  <Route path="/" mapMenuTitle="Home" component={App}>
-    <IndexRoute component={Home}/>
-    <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
-    <Route path="/marlin" mapMenuTitle="Marlin" component={Marlin} />
-    <Route path="/mosey" mapMenuTitle="Mosey" component={Mosey} />
-    <Route path="/blog" mapMenuTitle="Blog" component={Blog} />
-    <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee}/>
-    <Route path="/test" mapMenuTitle="Test" component={Test} render={applyRouterMiddleware(useScroll())}>
-      <IndexRoute component={Home}/>
-      <Route path="/test/home" mapMenuTitle="Home" component={Home} />
-      <Route path="/test/about" mapMenuTitle="About" component={About} />
-      <Route path="/test/garmin" mapMenuTitle="Garmin" component={Garmin} />
-      <Route path="/test/mosey" mapMenuTitle="Mosey" component={Mosey} />
-      <Route path="/test/marlin" mapMenuTitle="Marlin" component={Marlin} />
-      <Route path="/test/coffee" mapMenuTitle="Coffee" component={Coffee}/>
-      <Route path="/test/favorites" mapMenuTitle="Favorites" component={Favorites} render={applyRouterMiddleware(useScroll())}>
-        <IndexRoute component={Book}/>
-        <Route path="/test/favorites/books" mapMenuTitle="Books" component={Books} />
-        <Route path="/test/favorites/movies" mapMenuTitle="Movies" component={Movies} />
-        <Route path="/test/favorites/music" mapMenuTitle="Music" component={Music} />
-        <Route path="/test/favorites/podcasts" mapMenuTitle="Podcasts" component={Podcasts} />
-      </Route>
-    </Route>
-
-
-    <Route path="/coffee/kansas-city" mapMenuTitle="Kansas City" component={KansasCity}/>
-
-
-  </Route>*/}
