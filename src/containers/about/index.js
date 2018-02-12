@@ -18,7 +18,7 @@ export default class About extends Component{
             <div className="wrapper">
 
               <div className="title-block">
-                <span className="label-01">John Manhart</span>
+                <span className="label-01">Hello, I'm John Manhart</span>
                 <span className="label-02">Is a Product Designer & Developer living in Kansas City. <span className="roll-over">Need to know more?</span></span>
                 <span className="label-03">Currently designing for <span className="roll-over-two"><a href="https://www.garmin.com/en-US">Garmin</a></span></span>
               </div>
