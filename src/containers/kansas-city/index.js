@@ -9,6 +9,10 @@ import { Link } from 'react-router';
 //Import Local Styles
 // import './styles.scss'
 
+//Import Components
+import BackIcon from '../../components/backIcon'
+
+
 
 
 export default class KansasCity extends Component{
@@ -16,7 +20,7 @@ export default class KansasCity extends Component{
         return(
 
             <div className="wrapper">
-
+              <BackIcon />
               <div className="title-block">
                 <span className="label-01">How can you tell you are in Kansas City?</span>
                 <span className="label-02">

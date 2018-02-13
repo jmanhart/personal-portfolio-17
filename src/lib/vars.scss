@@ -2,9 +2,9 @@
 $white: rgba(255,255,255,1);
 $black: rgba(0,0,0,1);
 $gray01: rgba(222, 226, 227, 1);
-$gray02: rgba(0,0,0,0.5);
+$gray02: rgba(0,0,0,0.3);
 $gray03: rgba(0,0,0,0.9);
-$gray04: rgba(0,0,0,0.9);
+$gray04: rgba(0,0,0,0.6);
 
 
 $dark01: rgba(0,0,0,0.8);
@@ -82,8 +82,10 @@ $serif: 'Eczar', serif;
   font-family: $sans-serif;
   padding-right: 2em;
   transition: all 0.5s ease-in;
+  // padding-bottom: 0.02em;
+  // // box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
   &:hover{
-    text-decoration: underline;
+    // text-decoration: underline;
     transition: all 0.5s ease-in;
   }
 }
@@ -159,7 +161,7 @@ $serif: 'Eczar', serif;
     padding-right: 2em;
     transition: all 0.5s ease-in;
     &:hover{
-      text-decoration: underline;
+      // text-decoration: underline;
       transition: all 0.5s ease-in;
     }
   }
@@ -186,9 +188,9 @@ $serif: 'Eczar', serif;
   font-family: $sans-serif;
   padding-bottom: 0.5em;
   font-weight: 300;
-
+  transition: all 0.5s ease-in;
   &:hover{
-    text-decoration: underline;
+    color: $gray03;
     transition: all 0.5s ease-in;
   }
 }
@@ -200,10 +202,16 @@ $serif: 'Eczar', serif;
   padding-bottom: 0.5em;
   font-weight: 300;
   transition: all 0.2s ease-in;
+  padding-bottom: 0.02em;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
 
   &:hover{
-    text-decoration: underline;
-    transition: all 0.2s ease-in;
+    // text-decoration: underline;
+    // transition: all 0.2s ease-in;
+    transition: ease-in-out .6s;
+    transition-timing-function: ease-out;
+    text-decoration: none;
+    box-shadow: inset 0 -18px 0 rgba(0,0,0,0.2);
 
   }
 }

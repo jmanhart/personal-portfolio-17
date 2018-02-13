@@ -14,9 +14,9 @@ export default class BackIcon extends Component{
   }
   render(){
     return(
-      <Link activeClassName="is-active" to="/">
+      <Link activeClassName="is-active" to={this.props.linkBack || "/"}>
         <div className="back-icon">
-            <span className="back-label">Back</span>
+            <span className="roll-over internal-link-color">Back</span>
         </div>
       </Link>
 		)

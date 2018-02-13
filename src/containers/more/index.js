@@ -11,7 +11,7 @@ import './styles.scss'
 
 //Import Components
 import Filter from '../../components/filter/index.js'
-
+import BackIcon from '../../components/backIcon'
 
 const data = [
     {
@@ -33,7 +33,7 @@ export default class More extends Component{
         return(
           <div>
             <div className="wrapper">
-
+              <BackIcon />
               <div className="title-block">
                 <span className="label-01">I love the internet and...</span>
                 <span className="label-02">

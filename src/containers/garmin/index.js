@@ -18,7 +18,7 @@ export default class Garmin extends Component{
         return(
           <div>
             <div className="wrapper">
-
+              <BackIcon />
               <div className="title-block">
                 <span className="label-01">Garmin Connect</span>
                 <span className="label-02">
@@ -30,9 +30,6 @@ export default class Garmin extends Component{
                   Li & Floyd, Run the Jewels, bikes, learning, my Rasberry Pi, reading, espresso, Breaking Bad, boxing, my audio technica m50x, Continental Philosophy, Silicon Valley, The Rolling Stones, Killer Mike, Bernie Sanders, Christopher Hitchens and much more...
                 </span>
               </div>
-
-
-
             </div>
           </div>
 
