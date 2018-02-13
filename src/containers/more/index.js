@@ -4,25 +4,40 @@ import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 
-//Import Global Styles
-import './../../styles/styles.css';
-import './../../main.scss';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+//Import Local Styles
+import './styles.scss'
 
 //Import Components
-import BackIcon from '../../components/backIcon'
-import HeroBlock from '../../components/heroBlock'
+import Filter from '../../components/filter/index.js'
 
 
-export default class Garmin extends Component{
+const data = [
+    {
+      "rank": "1.",
+      "title": "Cool Hand Luke",
+    },
+    {
+      "rank": "2.",
+      "title": "Intersteller",
+    },
+    {
+      "rank": "3.",
+      "title": "In Bruges",
+    },
+]
+
+export default class More extends Component{
     render(){
         return(
           <div>
             <div className="wrapper">
 
               <div className="title-block">
-                <span className="label-01">Garmin Connect</span>
+                <span className="label-01">I love the internet and...</span>
                 <span className="label-02">
-                  UX Designer, 2017 – Present</span>
+                  Li & Floyd, Run the Jewels, bikes, reading, espresso, my audio technica m50x, Continental Philosophy and much more...</span>
               </div>
 
               <div className="title-block">
@@ -38,4 +53,12 @@ export default class Garmin extends Component{
 
         )
     }
+}
+
+let styles = {
+  container: {
+    height: 2000,
+    backgroundColor: 'rgba(0,0,0,0.15)',
+
+  }
 }

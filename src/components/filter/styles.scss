@@ -1,0 +1,26 @@
+@import '../../lib/vars.scss';
+
+
+.internal-filtering{
+  display: flex;
+  flex-direction: row;
+  height: 2em;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 0.5em;
+}
+
+
+.fav-wrapper{
+  // background-color: pink;
+  height: 2em;
+  margin-bottom: 0.25em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 33em;
+}
+
+.filter-block {
+  margin-top: 1em;
+}

@@ -12,7 +12,9 @@ import ScrollToTop from './components/ScrollToTop';
 
 import Home from './containers/home';
 import About from './containers/about';
+import More from './containers/more';
 import Work from './containers/work';
+import KansasCity from './containers/kansas-city';
 import Favorites from './containers/favorites';
 import Garmin from './containers/garmin';
 import Marlin from './containers/marlin';
@@ -25,8 +27,7 @@ import Movies from './containers/subPages/Movies.js'
 import Music from './containers/subPages/Music.js'
 
 
-//Import Coffee supPages
-import KansasCity from './containers/coffee/subPages/kansasCity.js'
+
 
 
 
@@ -36,11 +37,13 @@ const routes = (
   <Route path="/" mapMenuTitle="Home" component={Home}>
     <IndexRoute component={About} />
     <Route path="/about" mapMenuTitle="About" component={About} />
+    <Route path="/more" mapMenuTitle="More" component={More} />
     <Route path="/work" mapMenuTitle="Work" component={Work} />
-    <Route path="/work/garmin" mapMenuTitle="Garmin" component={Garmin} />
+    <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
     <Route path="/work/mosey" mapMenuTitle="Mosey" component={Mosey} />
     <Route path="/work/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
+    <Route path="/kansas-city" mapMenuTitle="Favorites" component={KansasCity} />
     <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} >
       <IndexRoute component={Books}/>
       <Route path="/favorites/books" mapMenuTitle="Books" component={Books} />

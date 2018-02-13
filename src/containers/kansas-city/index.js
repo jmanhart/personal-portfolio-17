@@ -4,25 +4,23 @@ import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 
-//Import Global Styles
-import './../../styles/styles.css';
-import './../../main.scss';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-//Import Components
-import BackIcon from '../../components/backIcon'
-import HeroBlock from '../../components/heroBlock'
+//Import Local Styles
+// import './styles.scss'
 
 
-export default class Garmin extends Component{
+
+export default class KansasCity extends Component{
     render(){
         return(
-          <div>
+
             <div className="wrapper">
 
               <div className="title-block">
-                <span className="label-01">Garmin Connect</span>
+                <span className="label-01">How can you tell you are in Kansas City?</span>
                 <span className="label-02">
-                  UX Designer, 2017 – Present</span>
+                  Its says it on everyones fucking shirt.</span>
               </div>
 
               <div className="title-block">
@@ -31,10 +29,8 @@ export default class Garmin extends Component{
                 </span>
               </div>
 
-
-
             </div>
-          </div>
+
 
         )
     }

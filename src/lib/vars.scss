@@ -2,7 +2,9 @@
 $white: rgba(255,255,255,1);
 $black: rgba(0,0,0,1);
 $gray01: rgba(222, 226, 227, 1);
-$gray02: rgba(0,0,0,0.2);
+$gray02: rgba(0,0,0,0.5);
+$gray03: rgba(0,0,0,0.9);
+$gray04: rgba(0,0,0,0.9);
 
 
 $dark01: rgba(0,0,0,0.8);
@@ -19,6 +21,17 @@ $FPO: rgba(0, 0, 0, 0.05);
 $sans-serif: 'Work Sans', sans-serif;
 $serif: 'Eczar', serif;
 
+.body-color-light{
+  color: $gray02
+}
+
+.body-color{
+  color: $gray03
+}
+
+.internal-link-color{
+  color: $gray04
+}
 
 .strike{
   text-decoration: line-through;
@@ -46,11 +59,12 @@ $serif: 'Eczar', serif;
 }
 
 .label-03{
-  color:rgba(0,0,0,0.3);
+  // color:rgba(0,0,0,0.3);
   font-size: 1em;
   padding-bottom: 0.1 5em;
   font-family: $sans-serif;
   font-weight: 300;
+  line-height: 1.65em;
 }
 
 .label-04{
@@ -74,6 +88,35 @@ $serif: 'Eczar', serif;
   }
 }
 
+.label-06{
+  color:rgba(0,0,0,0.6);
+  font-size: 1em;
+  font-family: $sans-serif;
+  padding-right: 2em;
+  transition: all 0.5s ease-in;
+  &:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+  }
+}
+
+.label-07{
+  color:rgba(0,0,0,0.6);
+  font-size: 1.25em;
+  font-family: $sans-serif;
+  padding-right: 0.75em;
+  transition: all 0.5s ease-in;
+}
+
+.label-08{
+  color:rgba(0,0,0,0.9);
+  font-size: 1.25em;
+  font-family: $sans-serif;
+  padding-right: 0.75em;
+  padding-top: 1em;
+  transition: all 0.5s ease-in;
+}
+
 @media screen and (max-width: 425px) {
   .label-01{
     color: $black;
@@ -93,7 +136,7 @@ $serif: 'Eczar', serif;
   }
 
   .label-03{
-    color:rgba(0,0,0,0.3);
+    color:rgba(0,0,0,0.9);
     font-size: 1em;
     padding-bottom: 0.1 5em;
     font-family: $sans-serif;
