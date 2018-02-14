@@ -3,20 +3,19 @@ import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
-import './../../styles/styles.css';
-import './styles.css'
+// import './../../styles/styles.css';
+import './styles.scss'
 
 export default class Footer extends Component{
     render(){
         return(
             <div>
-                <div className="footer-container">
-                    <span className="footer-sign-off">Say Hi! 
-                        <span className="footer-email">manhartjohn@gmail.com</span>
-                    </span>
-                </div>
+              <div className="social-block">
+                <a href="https://github.com/jmanhart"><span className="label-footer">Github</span></a>
+                <a href="https://dribbble.com/manhart"><span className="label-footer">Dribbble</span></a>
+                <a href="https://medium.com/@JohnManhart"><span className="label-footer">Medium</span></a>
+              </div>
             </div>
         )
     }
 }
-

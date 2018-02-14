@@ -9,6 +9,9 @@ import { Link } from 'react-router';
 //Import Local Styles
 import './styles.scss'
 
+//Import Components
+import Footer from './../../components/footer/'
+
 const greeting = [
     "Hello,",
     "Hi,",
@@ -24,17 +27,17 @@ const greeting = [
     "Hej,",
     "Bonjour,",
     "Oh hey,",
-
 ]
 
 
 export default class About extends Component{
 
+
     getRandomGreeting(){
       let rando = Math.floor((Math.random() * greeting.length));
       return (
         <span className="label-01">{greeting[rando]} I'm John</span>
-      )
+      );
     }
 
     renderProductDesignerLink(){
@@ -89,11 +92,9 @@ export default class About extends Component{
 
     render(){
         return(
-
             <div className="wrapper">
               <div className="title-block">
                 {this.getRandomGreeting()}
-
                 <span className="label-02">
                   A {this.renderProductDesignerLink()} & {this.renderDeveloperLink()} living in {this.renderKansasCityLink()} and working for {this.renderGarminLink()} Need to know {this.renderMoreLink()}?
                 </span>
@@ -104,11 +105,11 @@ export default class About extends Component{
                   </Link>
                 </span>
               </div>
-              <div className="social-block">
-                <a href="https://github.com/jmanhart"><span className="label-05">Github</span></a>
-                <a href="https://dribbble.com/manhart"><span className="label-05">Dribbble</span></a>
-                <a href="https://medium.com/@JohnManhart"><span className="label-05">Medium</span></a>
-              </div>
+
+
+              <Footer />
+
+
             </div>
 
         )
