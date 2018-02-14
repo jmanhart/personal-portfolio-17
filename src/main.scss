@@ -2,6 +2,52 @@
 //Import Global Colors
 @import '/lib/vars.scss';
 
+.dude {
+  background-color: green;
+}
+
+
+.block{
+  display: flex;
+  // flex-direction: column;
+  width:100%;
+  max-width: 33em;
+}
+
+.definition {
+  // background-color: pink;
+  padding-bottom: $spacer-medium;
+  // height: 2000px;
+}
+
+.definition-number {
+  padding-right: 0.5em;
+}
+
+.definition-option {
+
+}
+
+.definition-option {
+
+}
+
+.definition-phonetics {
+
+}
+
+
+hr {
+  border: 0 none;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  background: none;
+  height:0;
+}
+
+a{
+      background-color: white;
+      // height: 3em;
+}
 
 .hero-label {
     font-family: $sans-serif;
@@ -346,11 +392,11 @@ button:hover{
     width: 70vh;
 }
 
-.dude{
-    height: 10em;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-}
+// .dude{
+//     height: 10em;
+//     width: 100%;
+//     background-color: rgba(0, 0, 0, 0);
+// }
 
 
 

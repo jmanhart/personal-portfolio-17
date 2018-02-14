@@ -19,12 +19,13 @@ export default class KansasCity extends Component{
     render(){
         return(
 
+          <div>
             <div className="wrapper">
               <BackIcon />
               <div className="title-block">
                 <span className="label-01">How can you tell you are in Kansas City?</span>
                 <span className="label-02">
-                  Its says it on everyones fucking shirt.</span>
+                  It says so on everyone's fucking shirt...</span>
               </div>
 
               <div className="title-block">
@@ -32,8 +33,24 @@ export default class KansasCity extends Component{
                   Li & Floyd, Run the Jewels, bikes, learning, my Rasberry Pi, reading, espresso, Breaking Bad, boxing, my audio technica m50x, Continental Philosophy, Silicon Valley, The Rolling Stones, Killer Mike, Bernie Sanders, Christopher Hitchens and much more...
                 </span>
               </div>
-
+              <div className="title-block">
+                <span className="label-03 body-color">
+                  Li & Floyd, Run the Jewels, bikes, learning, my Rasberry Pi, reading, espresso, Breaking Bad, boxing, my audio technica m50x, Continental Philosophy, Silicon Valley, The Rolling Stones, Killer Mike, Bernie Sanders, Christopher Hitchens and much more...
+                </span>
+              </div>
+              <div className="title-block">
+                <span className="label-03 body-color">
+                  Li & Floyd, Run the Jewels, bikes, learning, my Rasberry Pi, reading, espresso, Breaking Bad, boxing, my audio technica m50x, Continental Philosophy, Silicon Valley, The Rolling Stones, Killer Mike, Bernie Sanders, Christopher Hitchens and much more...
+                </span>
+              </div>
+              <div className="title-block">
+                <span className="label-03 body-color">
+                  Li & Floyd, Run the Jewels, bikes, learning, my Rasberry Pi, reading, espresso, Breaking Bad, boxing, my audio technica m50x, Continental Philosophy, Silicon Valley, The Rolling Stones, Killer Mike, Bernie Sanders, Christopher Hitchens and much more...
+                </span>
+              </div>
             </div>
+          </div>
+
 
 
         )

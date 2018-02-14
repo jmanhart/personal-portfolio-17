@@ -14,6 +14,8 @@ import Home from './containers/home';
 import About from './containers/about';
 import More from './containers/more';
 import Work from './containers/work';
+import Developer from './containers/developer';
+import ProductDesigner from './containers/product-designer';
 import KansasCity from './containers/kansas-city';
 import Favorites from './containers/favorites';
 import Garmin from './containers/garmin';
@@ -44,6 +46,8 @@ const routes = (
     <Route path="/work/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
     <Route path="/kansas-city" mapMenuTitle="Favorites" component={KansasCity} />
+    <Route path="/product-designer" mapMenuTitle="Favorites" component={ProductDesigner} />
+    <Route path="/developer" mapMenuTitle="Favorites" component={Developer} />
     <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} >
       <IndexRoute component={Books}/>
       <Route path="/favorites/books" mapMenuTitle="Books" component={Books} />
