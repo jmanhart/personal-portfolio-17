@@ -21,8 +21,15 @@ $FPO: rgba(0, 0, 0, 0.05);
 $sans-serif: 'Work Sans', sans-serif;
 $serif: 'Eczar', serif;
 
+$font-xlarge: 2.75em;
+$font-large: 1.75em;
+$font-medium: 1.00em;
+
 
 $spacer-medium: 1em;
+$spacer-small: 0.5em;
+
+
 
 .flex-colum{
   flex-direction: column;
@@ -48,31 +55,51 @@ $spacer-medium: 1em;
   font-size: 3.5em;
 }
 
+
+// This is Hero title and main Headline of page
 .label-01{
   color: $black;
   font-family: $sans-serif;
-  font-size: 2.85em;
-  padding-bottom: 0.4em;
+  font-size: $font-xlarge;
+  padding-bottom: $spacer-small;
   font-weight: 500;
 }
 
+// This is lead in and setup copy
 .label-02{
   color: $black;
   font-family: $sans-serif;
-  font-size: 1.75em;
-  line-height: 1.35em;
-  padding-bottom: 0.65em;
+  font-size: $font-large;
+  line-height: $font-large;
+  padding-bottom: $spacer-small;
   font-weight: 300;
 }
 
+// This is button, sub copy
 .label-03{
-  // color:rgba(0,0,0,0.3);
-  font-size: 1em;
-  padding-bottom: 0.1 5em;
+  font-size: $font-medium;
+  padding-bottom: $spacer-small;
   font-family: $sans-serif;
   font-weight: 300;
   line-height: 1.65em;
 }
+
+.body-01{
+  font-size: $font-medium;
+  padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 300;
+  line-height: 1.65em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+
+//////////////////////
+
+
 
 .label-04{
   color:rgba(0,0,0,0.6);
