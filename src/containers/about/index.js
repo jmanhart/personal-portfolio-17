@@ -99,11 +99,11 @@ export default class About extends Component{
                   A {this.renderProductDesignerLink()} & {this.renderDeveloperLink()} living in {this.renderKansasCityLink()} and working for {this.renderGarminLink()} Need to know {this.renderMoreLink()}?
                 </span>
 
-                <span className="label-03 body-color-light">
+                {/*<span className="label-03 body-color-light">
                   <Link to="/more">
                     <span className="roll-over-two internal-link-color">Portfolio available upon request. </span>
                   </Link>
-                </span>
+                </span>*/}
               </div>
 
 

@@ -24,6 +24,24 @@
   }
 }
 
+.label-footer-02{
+  color:rgba(0,0,0,0.6);
+  font-size: 0.75em;
+  font-family: $sans-serif;
+  // border: 1px solid #dee2e3;
+  // border-radius: 0.5em;
+  margin: 1.75em 3em 0.5em 0em;
+  padding: 0.5em 0.5em;
+  transition: all 0.15s ease-in;
+  background-color: rgba(255,255,255,1);
+  background-blend-mode: difference;
+  &:hover{
+    transition: all 0.15s ease-in;
+    color:rgba(0,0,0,1);
+    // border: 1px solid $gray02;
+  }
+}
+
 
 @media screen and (max-width: 425px) {
   .social-block{

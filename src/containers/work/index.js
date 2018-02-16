@@ -1,67 +1,102 @@
-import React, { PropTypes, Component } from 'react';
-import Interactive from 'react-interactive';
+import React, { PropTypes, Component, StyleSheet } from 'react';
+import {render} from 'react-dom';
+import dynamics from 'dynamics.js';
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
-import './styles.scss';
+
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+//Import Styles
+// import './styles.scss'
+// import '../../main.scss'
 
 //Import Components
-import CardGrid from '../../components/cardGrid'
+import BackIcon from '../../components/backIcon'
+import CardMain from '../../components/cardMain'
 
+
+const data = [
+    {
+      "cardLink": "https://github.com/jmanhart/framer-sketchbook",
+      "cardTitle": "Framer Sketchbook",
+      "cardSubText": "Collection of Framer basics, sketchs, and designs.",
+      "cardImage":"./src/public/images/logos/framer.png",
+      "cardLocation": "View on Github",
+      "link":"/coffee/kansas-city"
+    },
+    {
+      "cardLink": "https://www.meetup.com/Sketch-Design-Kansas-City/",
+      "cardTitle": "K.C. Sketch Meetup",
+      "cardSubText": "Orginazier of the official Sketch Meetup for Kansas City.",
+      "cardImage":"./src/public/images/logos/sketch-kc.png",
+      "cardLocation": "View on Meetup",
+      "link":"/coffee/kansas-city"
+    },
+    {
+      "cardLink": "https://github.com/jmanhart/react-sketchapp",
+      "cardTitle": "React-SketchApp",
+      "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
+      "cardImage":"./src/public/images/logos/react-sketchapp.png",
+      "cardLocation": "View on Github",
+      "link":"/coffee/kansas-city"
+    },
+    {
+      "cardLink": "https://github.com/jmanhart/swift-sketchbook",
+      "cardTitle": "Swift Sketchbook",
+      "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
+      "cardImage":"./src/public/images/logos/swift.png",
+      "cardLocation": "View on Github",
+      "link":"/coffee/kansas-city"
+    },
+
+]
 
 export default class Work extends Component{
+
+    renderHeroDefinition(){
+      return(
+        <div>
+          <div className="block flex-colum">
+            <span className="label-01">Recent Work</span>
+            <span className="label-03 body-color">
+              Collection of relavent work, learning, projects, and community engament
+
+            </span>
+          </div>
+        </div>
+      )
+    }
+
+
+    renderExtraActivities(){
+      return(
+        <div>
+          {data.map((item) => {
+            return (
+              <CardMain
+                cardLink={item.cardLink}
+                cardTitle={item.cardTitle}
+                cardSubText={item.cardSubText}
+                cardImage={item.cardImage}
+                cardLocation={item.cardLocation}
+                />
+            )
+          })}
+      </div>
+      )
+    }
+
     render(){
         return(
-            <div>
-                {/*Garmin*/}
-                <div className="block-container"  >
-                    <div className="block-full" >
-                        <div className="place">
-                          <span className="label-04">2017 – PRESENT</span>
-                          <span className="label-01">Garmin</span>
-                          <span className="label-02">UX Designer</span>
-                            <a href="/marlin">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                {/*Mosey*/}
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="block-full">
-                        <div className="place">
-                            <span className="label-04">2015 – PRESENT</span>
-                            <span className="label-01">Mosey</span>
-                            <span className="label-02">UX Developer</span>
-                            <a href="/marlin">
-                                <button>
-                                    About Me
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                {/*Block One Full*/}
-                <div className="block-container" style={{backgroundColor:'rgba(0,0,0,0)'}}>
-                    <div className="block-full">
-                        <div className="place">
-                          <span className="label-04">2013 – 2017</span>
-                          <span className="label-01">Marlin</span>
-                          <span className="label-02">UX Developer</span>
-                          <a href="/marlin">
-                              <button>
-                                  About Me
-                              </button>
-                          </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
+          <div>
+            <div className="wrapper">
+              <BackIcon />
+              {this.renderHeroDefinition()}
+              <hr/>
+              {this.renderExtraActivities()}
             </div>
+          </div>
+
         )
     }
 }

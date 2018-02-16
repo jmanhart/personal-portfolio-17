@@ -24,6 +24,8 @@ $serif: 'Eczar', serif;
 $font-xlarge: 2.75em;
 $font-large: 1.75em;
 $font-medium: 1.00em;
+$font-small: 0.75em;
+$font-tiny: 0.65em;
 
 
 $spacer-medium: 1em;
@@ -93,6 +95,35 @@ $spacer-small: 0.5em;
   color: rgba(0, 0, 0, 0.9);
 }
 
+.card-01{
+  font-size: $font-medium;
+  width: 85%;
+  // padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 500;
+  line-height: 1.65em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.card-02{
+  font-size: $font-small;
+  width: 85%;
+  padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 300;
+  line-height: 1.65em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.card-03{
+  font-size: $font-tiny;
+  width: 85%;
+  padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 500;
+  line-height: 1.65em;
+  color: $gray02;
+}
 
 
 

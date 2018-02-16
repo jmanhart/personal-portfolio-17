@@ -8,12 +8,11 @@ import { Link } from 'react-router';
 
 //Import Styles
 // import './styles.scss'
-import '../../main.scss'
+// import '../../main.scss'
 
 //Import Components
 import BackIcon from '../../components/backIcon'
-
-
+import CardMain from '../../components/cardMain'
 
 
 export default class ProductDesigner extends Component{
@@ -33,18 +32,18 @@ export default class ProductDesigner extends Component{
               1.
             </span>
             <span className="label-03 body-color">
-               A person who plans the form, look, or workings of something before its being made or built.
+              A person that oversees product vision from a high level (how does this feature make sense for where we want to be in 6 months) to a low execution level (how does styling this button this way impact how the user flows through this flow).
             </span>
           </div>
-
           <div className="block definition">
             <span className="label-03 body-color definition-number">
               2.
             </span>
             <span className="label-03 body-color">
-              A person that goes to a lot of meetings and writes millions upon millions
+              A problem solver.
             </span>
           </div>
+
         </div>
       )
     }
@@ -52,11 +51,40 @@ export default class ProductDesigner extends Component{
     renderExpandedDefintion(){
       return(
         <div className="block">
-          <hr></hr>
             <span className="label-03 body-color">
-              Lorem ipsum dolor amet enamel pin 90's williamsburg asymmetrical actually vape. Succulents meggings everyday carry echo park literally tilde cred shabby chic bicycle rights health goth art party lo-fi vegan crucifix locavore. Mustache cornhole typewriter plaid normcore banh mi whatever church-key tumblr affogato readymade everyday carry unicorn raclette flannel. Street art master cleanse tilde shabby chic, crucifix fingerstache migas.
+              <hr/>
 
-              Cliche leggings whatever tumeric, ramps slow-carb pop-up mixtape. Wayfarers lumbersexual butcher actually, jean shorts offal tumblr single-origin coffee af letterpress. Squid vegan deep v crucifix four dollar toast. Readymade la croix tote bag asymmetrical fam biodiesel art party salvia yr enamel pin jean shorts. Subway tile lumbersexual kickstarter pop-up. Photo booth franzen yr synth dreamcatcher, kickstarter pitchfork kinfolk iceland occupy austin air plant you probably haven't heard of them.
+
+                {/*
+
+                  Tools/Work style
+                  - Post its and Dry erase <br/>
+                  - Sketch <br/>
+                  - Invision for lo-fi prototyping <br/>
+                  - Framer for Hi-fi prototyping (Mobile) <br/>
+                  - HTML/CSS/JS for Hi-fi prototyping (Web) <br/>
+                  - Git for file/code managment <br/>
+                  - Release<br/>
+                  - Beer<br/>
+                  It’s about the entire process of creating a product or experience. This begins with by reseraching a  problem, defining the problem and than thinking about all the possible solutions. That will eventually lead to the best design.
+
+                <br/>
+
+                It’s about the entire process from problem ideation and birth up to development and 1 year post release. Working with project owners, visual designers, QA, business analysts, and researchers. Handling FQC's from the field and making sure that button is just the right shade of green.
+
+                A product designer should be able is express the idea in the lowest of fedilities with post-post it and dry erase up to the highest of fi with smart, clean prototypes that hit all platforms and every X you can imagine.
+
+                I wish I got paid by the post it and dry earse marker because that is where I like to start. Rifting, drafting, erasing and at the core sketching.
+
+                [Image of dry earse and post it note]
+
+                When the time is right and digital needs to be introduce.*/}
+
+
+
+
+
+
             </span>
 
         </div>
@@ -72,8 +100,6 @@ export default class ProductDesigner extends Component{
               {this.renderExpandedDefintion()}
             </div>
           </div>
-
-
 
         )
     }
