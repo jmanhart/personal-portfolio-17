@@ -56,11 +56,10 @@ export default class Work extends Component{
     renderHeroDefinition(){
       return(
         <div>
-          <div className="block flex-colum">
+          <div className="block flex-colum spacer-below">
             <span className="label-01">Recent Work</span>
             <span className="label-03 body-color">
               Collection of relavent work, learning, projects, and community engament
-
             </span>
           </div>
         </div>
@@ -68,34 +67,25 @@ export default class Work extends Component{
     }
 
 
-    renderExtraActivities(){
-      return(
-        <div>
-          {data.map((item) => {
-            return (
-              <CardMain
-                cardLink={item.cardLink}
-                cardTitle={item.cardTitle}
-                cardSubText={item.cardSubText}
-                cardImage={item.cardImage}
-                cardLocation={item.cardLocation}
-                />
-            )
-          })}
-      </div>
-      )
-    }
+
 
     render(){
         return(
-          <div>
             <div className="wrapper">
-              <BackIcon />
-              {this.renderHeroDefinition()}
-              <hr/>
-              {this.renderExtraActivities()}
+
+              {data.map((item) => {
+                return (
+                  <CardMain
+                    cardLink={item.cardLink}
+                    cardTitle={item.cardTitle}
+                    cardSubText={item.cardSubText}
+                    cardImage={item.cardImage}
+                    cardLocation={item.cardLocation}
+                    />
+                )
+              })}
             </div>
-          </div>
+
 
         )
     }

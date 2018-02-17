@@ -28,10 +28,15 @@ $font-small: 0.75em;
 $font-tiny: 0.65em;
 
 
+$spacer-large: 2em;
 $spacer-medium: 1em;
 $spacer-small: 0.5em;
 
 
+
+.spacer-below{
+  padding-bottom: $spacer-large;
+}
 
 .flex-colum{
   flex-direction: column;
@@ -101,7 +106,7 @@ $spacer-small: 0.5em;
   // padding-bottom: $spacer-small;
   font-family: $sans-serif;
   font-weight: 500;
-  line-height: 1.65em;
+  // line-height: 1.65em;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -111,7 +116,7 @@ $spacer-small: 0.5em;
   padding-bottom: $spacer-small;
   font-family: $sans-serif;
   font-weight: 300;
-  line-height: 1.65em;
+  // line-height: 1.65em;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -121,7 +126,7 @@ $spacer-small: 0.5em;
   padding-bottom: $spacer-small;
   font-family: $sans-serif;
   font-weight: 500;
-  line-height: 1.65em;
+  // line-height: 1.65em;
   color: $gray02;
 }
 

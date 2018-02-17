@@ -12,16 +12,28 @@
   margin-bottom: 1.25em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   transition: all 0.25s ease-in;
-  // &:hover{
-  //   // text-decoration: underline;
-  //   border: 1px solid $gray02;
-  //   transition: all 0.25s ease-in;
-  // }
-
 }
 
+@media screen and (max-width: 425px) {
+  .card-wrapper{
+    background-color: transparent;
+    height: 18em;
+    min-height: 12em;
+    width: 100%;
+    max-width: 30em;
+    border: 1px solid #dee2e3;
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-bottom: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.25s ease-in;
+  }
 
+}
 
 .card-hero{
   width: 100%;
@@ -72,6 +84,10 @@
 
 }
 
-.cat{
-  color:pink;
+
+@media screen and (max-width: 425px) {
+  .card-information{
+    flex-direction: column;
+  }
+
 }
