@@ -17,6 +17,7 @@ import Work from './containers/work';
 import Developer from './containers/developer';
 import ProductDesigner from './containers/product-designer';
 import KansasCity from './containers/kansas-city';
+import Colophon from './containers/colophon';
 import Favorites from './containers/favorites';
 import Garmin from './containers/garmin';
 import Marlin from './containers/marlin';
@@ -39,6 +40,7 @@ const routes = (
   <Route path="/" mapMenuTitle="Home" component={Home}>
     <IndexRoute component={About} />
     <Route path="/about" mapMenuTitle="About" component={About} />
+    <Route path="/colophon" mapMenuTitle="Colophon" component={Colophon} />
     <Route path="/more" mapMenuTitle="More" component={More} />
     <Route path="/work" mapMenuTitle="Work" component={Work} />
     <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
