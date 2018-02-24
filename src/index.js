@@ -18,10 +18,10 @@ import Developer from './containers/developer';
 import ProductDesigner from './containers/product-designer';
 import KansasCity from './containers/kansas-city';
 import Colophon from './containers/colophon';
-import Favorites from './containers/favorites';
+// import Favorites from './containers/favorites';
 import Garmin from './containers/garmin';
-import Marlin from './containers/marlin';
-import Mosey from './containers/mosey';
+// import Marlin from './containers/marlin';
+// import Mosey from './containers/mosey';
 import Blog from './containers/blog';
 import Coffee from './containers/coffee';
 import Books from './containers/subPages/Books.js'
@@ -44,19 +44,10 @@ const routes = (
     <Route path="/more" mapMenuTitle="More" component={More} />
     <Route path="/work" mapMenuTitle="Work" component={Work} />
     <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
-    <Route path="/work/mosey" mapMenuTitle="Mosey" component={Mosey} />
-    <Route path="/work/marlin" mapMenuTitle="Marlin" component={Marlin} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
     <Route path="/kansas-city" mapMenuTitle="Favorites" component={KansasCity} />
     <Route path="/product-designer" mapMenuTitle="Favorites" component={ProductDesigner} />
     <Route path="/developer" mapMenuTitle="Favorites" component={Developer} />
-    <Route path="/favorites" mapMenuTitle="Favorites" component={Favorites} >
-      <IndexRoute component={Books}/>
-      <Route path="/favorites/books" mapMenuTitle="Books" component={Books} />
-      <Route path="/favorites/movies" mapMenuTitle="Movies" component={Movies} />
-      <Route path="/favorites/music" mapMenuTitle="Music" component={Music} />
-      <Route path="/favorites/podcasts" mapMenuTitle="Podcasts" component={Podcasts} />
-    </Route>
   </Route>
 
 
