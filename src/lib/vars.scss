@@ -70,7 +70,6 @@ $spacer-small: 0.5em;
   font-size: $font-xlarge;
   padding-bottom: $spacer-small;
   font-weight: 500;
-  hanging-punctuation: first;
 }
 
 // This is lead in and setup copy
@@ -100,6 +99,12 @@ $spacer-small: 0.5em;
   line-height: 1.65em;
   color: rgba(0, 0, 0, 0.9);
 }
+
+.body-02{
+  font-size: $font-medium;
+  font-family: $sans-serif;
+}
+
 
 .card-01{
   font-size: $font-medium;

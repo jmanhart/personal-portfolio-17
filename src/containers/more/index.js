@@ -50,15 +50,17 @@ export default class More extends Component{
     renderExpandedDefintion(){
       return(
         <div className="block">
-            {favorites.map((item) => {
-              return (
-                <a key={item.link} to={item.link}>
-                  <span className="body-01" key={item.fav}>
-                    {item.fav}
-                  </span>
-                </a>
-              )
-            })}
+
+            <span className="body-01">
+              {favorites.map((item) => {
+                return (
+                  <a key={item.link} href={item.link}>
+                    <span key={item.fav}>{item.fav}, </span>
+                  </a>
+                )
+              })}
+            </span>
+
 
 
 
