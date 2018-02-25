@@ -54,7 +54,7 @@ export default class More extends Component{
             <span className="body-01">
               {favorites.map((item) => {
                 return (
-                  <a key={item.link} href={item.link}>
+                  <a style={{textTransform: "underline"}} key={item.link} href={item.link}>
                     <span key={item.fav}>{item.fav}, </span>
                   </a>
                 )

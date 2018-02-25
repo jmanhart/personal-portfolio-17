@@ -15,7 +15,7 @@ export const favorites = [
   },
   {
     fav:"react-native",
-    link: "whatever",
+
   },
   {
     fav: "india pale ale's",
@@ -25,6 +25,12 @@ export const favorites = [
   },
   {
     fav: "watching very very bad movies",
+  },
+  {
+    fav: "watching very very good movies",
+  },
+  {
+    fav: "watching movies with subtitles",
   }
 ]
 
