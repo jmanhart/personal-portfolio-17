@@ -13,33 +13,60 @@ import './styles.scss'
 import Filter from '../../components/filter/index.js'
 import BackIcon from '../../components/backIcon'
 
-const data = [
-    {
-      "rank": "1.",
-      "title": "Cool Hand Luke",
-    },
-    {
-      "rank": "2.",
-      "title": "Intersteller",
-    },
-    {
-      "rank": "3.",
-      "title": "In Bruges",
-    },
+
+const quotes = [
+  {
+    quote:"The secret of getting ahead is getting started",
+    by:"Mark Twain",
+  },
+  {
+    quote:"The essence of the independent mind lies not in what it thinks, but in how it thinks.",
+    by:"Christopher Hitchens",
+  },
+  {
+    quote:"The future is not really the future. It's just a present that looks good.",
+    by:"Steven Heller",
+  },
+  {
+    quote:"Design is thinking made visual.",
+    by:"Saul Bass",
+  },
+  {
+    quote:"Words have meaning, type has spirit.",
+    by:"Paula Scher",
+  },
+  {
+    quote: "Keep on rockin' in the free world.",
+    by: "Neil Young",
+  },
+  {
+    quote: "The big print giveth and the small print taketh away.",
+    by: "Tom Waits",
+  },
+  {
+    quote:"Never sit around and wait for the phone to ring.",
+    by: "Louise Fili",
+  },
+  {
+    quote: "Work gets work",
+    by: "Michael Stelzer"
+  },
 ]
+
 
 export default class More extends Component{
 
-    renderHeroDefinition(){
-      return(
+    getRandomQuote(){
+      let rando = Math.floor((Math.random() * quotes.length));
+      return (
         <div>
           <div className="block flex-colum">
-            <span className="label-01">I love the internet and...</span>
+            <span className="label-01">"{quotes[rando].quote}"</span>
             <span className="label-02">
-              Li & Floyd, Run the Jewels, bikes, reading, espresso, my audio technica m50x, Continental Philosophy and much more...</span>
+               – {quotes[rando].by}</span>
           </div>
         </div>
-      )
+      );
     }
 
     renderExpandedDefintion(){
@@ -61,7 +88,7 @@ export default class More extends Component{
           <div>
             <div className="wrapper">
               <BackIcon />
-              {this.renderHeroDefinition()}
+              {this.getRandomQuote()}
               {this.renderExpandedDefintion()}
             </div>
           </div>
