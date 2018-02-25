@@ -9,49 +9,13 @@ import { Link } from 'react-router';
 //Import Local Styles
 import './styles.scss'
 
+//Import Data
+import {quotes} from './quoteData.js'
+import {favorites} from './favoriteData.js'
+
 //Import Components
 import Filter from '../../components/filter/index.js'
 import BackIcon from '../../components/backIcon'
-
-
-const quotes = [
-  {
-    quote:"The secret of getting ahead is getting started",
-    by:"Mark Twain",
-  },
-  {
-    quote:"The essence of the independent mind lies not in what it thinks, but in how it thinks.",
-    by:"Christopher Hitchens",
-  },
-  {
-    quote:"The future is not really the future. It's just a present that looks good.",
-    by:"Steven Heller",
-  },
-  {
-    quote:"Design is thinking made visual.",
-    by:"Saul Bass",
-  },
-  {
-    quote:"Words have meaning, type has spirit.",
-    by:"Paula Scher",
-  },
-  {
-    quote: "Keep on rockin' in the free world.",
-    by: "Neil Young",
-  },
-  {
-    quote: "The big print giveth and the small print taketh away.",
-    by: "Tom Waits",
-  },
-  {
-    quote:"Never sit around and wait for the phone to ring.",
-    by: "Louise Fili",
-  },
-  {
-    quote: "Work gets work",
-    by: "Michael Stelzer"
-  },
-]
 
 
 export default class More extends Component{
@@ -86,9 +50,24 @@ export default class More extends Component{
     renderExpandedDefintion(){
       return(
         <div className="block">
-          <hr></hr>
+            {favorites.map((item) => {
+              return (
+                <a key={item.link} to={item.link}>
+                  <span className="body-01" key={item.fav}>
+                    {item.fav}
+                  </span>
+                </a>
+              )
+            })}
+
+
+
+
             <span className="body-01">
-              beign vegan (when I'am around Li), beign vegetarian (all the other times), my audio-technica ath-m50x headphones, react and react-native, IPA's, whiskey, meeting new people, watching very very bad movies, watching very very good movies, watching movies with subtitles, pre-Garth country music, brownies, The Rolling Stones, Neil Young, Christopher Hitches, Framer, Sketch, Swift, my Switch, The Coffee Ethic, Atom, Robert Frank, Aaron Draplin, James Victore, Jon Gold, Koen Bok, The Apple Pencil, The Texas Longhorns and sparkling water.
+
+
+
+              {/*beign vegan (when I'am around Li), beign vegetarian (all the other times), my audio-technica ath-m50x headphones, react and react-native, IPA's, whiskey, meeting new people, watching very very bad movies, watching very very good movies, watching movies with subtitles, pre-Garth country music, brownies, The Rolling Stones, Neil Young, Christopher Hitches, Framer, Sketch, Swift, my Switch, The Coffee Ethic, Atom, Robert Frank, Aaron Draplin, James Victore, Jon Gold, Koen Bok, The Apple Pencil, The Texas Longhorns and sparkling water.*/}
             </span>
 
         </div>
