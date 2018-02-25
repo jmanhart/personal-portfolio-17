@@ -61,9 +61,23 @@ export default class More extends Component{
       return (
         <div>
           <div className="block flex-colum">
-            <span className="label-01">"{quotes[rando].quote}"</span>
+            <span className="label-01">{quotes[rando].quote}</span>
             <span className="label-02">
                – {quotes[rando].by}</span>
+          </div>
+        </div>
+      );
+    }
+
+
+    renderMyThoughts(){
+      return (
+        <div>
+          <div className="block flex-colum">
+            <span className="label-01">Li and Floyd are my absolute favorites, but after that it goes...</span>
+            <span className="label-02">
+              espresso, learning, movies, reading, biking, boxing, bass, drawing <a href="https://www.instagram.com/syrus.syrus.syrus/">( ༎ຶД༎ຶ)</a>,
+            </span>
           </div>
         </div>
       );
@@ -74,9 +88,7 @@ export default class More extends Component{
         <div className="block">
           <hr></hr>
             <span className="body-01">
-              Lorem ipsum dolor amet enamel pin 90's williamsburg asymmetrical actually vape. Succulents meggings everyday carry echo park literally tilde cred shabby chic bicycle rights health goth art party lo-fi vegan crucifix locavore. Mustache cornhole typewriter plaid normcore banh mi whatever church-key tumblr affogato readymade everyday carry unicorn raclette flannel. Street art master cleanse tilde shabby chic, crucifix fingerstache migas.
-
-              Cliche leggings whatever tumeric, ramps slow-carb pop-up mixtape. Wayfarers lumbersexual butcher actually, jean shorts offal tumblr single-origin coffee af letterpress. Squid vegan deep v crucifix four dollar toast. Readymade la croix tote bag asymmetrical fam biodiesel art party salvia yr enamel pin jean shorts. Subway tile lumbersexual kickstarter pop-up. Photo booth franzen yr synth dreamcatcher, kickstarter pitchfork kinfolk iceland occupy austin air plant you probably haven't heard of them.
+              beign vegan (when I'am around Li), beign vegetarian (all the other times), my audio-technica ath-m50x headphones, react and react-native, IPA's, whiskey, meeting new people, watching very very bad movies, watching very very good movies, watching movies with subtitles, pre-Garth country music, brownies, The Rolling Stones, Neil Young, Christopher Hitches, Framer, Sketch, Swift, my Switch, The Coffee Ethic, Atom, Robert Frank, Aaron Draplin, James Victore, Jon Gold, Koen Bok, The Apple Pencil, The Texas Longhorns and sparkling water.
             </span>
 
         </div>
@@ -88,7 +100,7 @@ export default class More extends Component{
           <div>
             <div className="wrapper">
               <BackIcon />
-              {this.getRandomQuote()}
+              {this.renderMyThoughts()}
               {this.renderExpandedDefintion()}
             </div>
           </div>
