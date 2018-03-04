@@ -23,6 +23,7 @@ import Garmin from './containers/garmin';
 // import Marlin from './containers/marlin';
 // import Mosey from './containers/mosey';
 import Blog from './containers/blog';
+import Resume from './containers/resume';
 import Coffee from './containers/coffee';
 import Books from './containers/subPages/Books.js'
 import Podcasts from './containers/subPages/Podcasts.js'
@@ -40,6 +41,7 @@ const routes = (
   <Route path="/" mapMenuTitle="Home" component={Home}>
     <IndexRoute component={About} />
     <Route path="/about" mapMenuTitle="About" component={About} />
+    <Route path="/resume" mapMenuTitle="Resume" component={Resume} />
     <Route path="/colophon" mapMenuTitle="Colophon" component={Colophon} />
     <Route path="/more" mapMenuTitle="More" component={More} />
     <Route path="/work" mapMenuTitle="Work" component={Work} />

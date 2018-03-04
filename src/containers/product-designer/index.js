@@ -53,7 +53,7 @@ export default class ProductDesigner extends Component{
         <div className="block">
             <span className="label-03 body-color">
               <hr/>
-
+                I consider myself very lucky in the knowing in some shape or form what I wanted to do. From my
 
                 {/*
 

@@ -36,7 +36,7 @@ export default class About extends Component{
     getRandomGreeting(){
       let rando = Math.floor((Math.random() * greeting.length));
       return (
-        <span className="label-01">{greeting[rando]} I'm John</span>
+        <span className="label-01">{greeting[rando]} I'm <Link to="/more" className="roll-over">John</Link></span>
       );
     }
 
@@ -82,9 +82,9 @@ export default class About extends Component{
 
     renderMoreLink(){
       return(
-        <Link to="/more">
+        <Link to="/work">
           <span className="roll-over internal-link-color">
-            more
+            Recent Work
           </span>
         </Link>
       )
@@ -96,7 +96,11 @@ export default class About extends Component{
               <div className="title-block">
                 {this.getRandomGreeting()}
                 <span className="label-02">
-                  A {this.renderProductDesignerLink()} & {this.renderDeveloperLink()} living in {this.renderKansasCityLink()} and working for {this.renderGarminLink()} Need to know {this.renderMoreLink()}?
+                  A {this.renderProductDesignerLink()} & {this.renderDeveloperLink()} living in {this.renderKansasCityLink()} and working for {this.renderGarminLink()}
+                </span>
+
+                <span className="label-02">
+                  {this.renderMoreLink()}
                 </span>
 
                 {/*<span className="label-03 body-color-light">

@@ -57,6 +57,7 @@ export default class Work extends Component{
     renderHeroDefinition(){
       return(
         <div>
+
           <div className="block flex-colum spacer-below">
             <span className="label-01">Recent Work</span>
             <span className="label-03 body-color">
@@ -73,7 +74,8 @@ export default class Work extends Component{
     render(){
         return(
             <div className="wrapper">
-
+              <BackIcon/>
+              {this.renderHeroDefinition()}
               {data.map((item) => {
                 return (
                   <CardMain
