@@ -1,0 +1,76 @@
+@import '../../lib/vars.scss';
+
+
+ul.timeline li {
+    position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
+    /* use padding-bottom instead of margin-bottom.*/
+    margin-bottom: 0; /* This overrides previously specified margin-bottom */
+    padding-bottom: 2.5em;
+}
+
+ul.timeline li:after {
+    /* bullets */
+    // ./src/public/images/bullet-01.svg
+    content: url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
+    // content: url("/../public/images/bullet-01.png");
+    position: absolute;
+    left: -26px; /*adjust manually*/
+    top: 0px;
+}
+
+ul.timeline li:before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: -16px; /* adjust manually */
+    border-left: 1px solid $gray02;
+    height: 100%;
+    width: 1px;
+}
+
+ul.timeline li:first-child:before {
+   /* first li's line */
+   top: 10px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+ul.timeline li:last-child:before {
+    /* last li's line */
+   height: 10px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+
+// ul{
+//   // list-style-position: inside;
+//   padding-left: 2px;
+// }
+
+.timeline-label{
+  font-size: 1.5em;
+}
+
+.timeline-date{
+  font-size: 0.75em;
+}
+
+.timeline-position{
+  font-size: 0.75em;
+
+}
+
+li{
+  // position: relative;
+  // display: inline-block;
+  list-style-type: none;
+  // width: 2px;
+  // height: 100%;
+  // background: #000;
+}
+
+.timeline-entry{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+h1{
+  font-size: 2em;
+
+}
