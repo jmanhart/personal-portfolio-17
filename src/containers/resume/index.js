@@ -22,24 +22,71 @@ export default class Resume extends Component{
       return(
         <div>
           <div className="block flex-colum">
-            <span className="label-01">Resume</span>
+            <span className="label-01">Timeline</span>
             <span className="label-02">
               Ok you asked for it!</span>
           </div>
 
           <div className="block definition">
-            <span className="label-03 body-color definition-number">
-              1.
-            </span>
-            <span className="label-03 body-color">
-              A person that oversees product vision from a high level (how does this feature make sense for where we want to be in 6 months) to a low execution level (how does styling this button this way impact how the user flows through this flow).
-            </span>
+
           </div>
         </div>
       )
     }
 
-    renderExpandedDefintion(){
+    renderWorkTimeline(){
+      return(
+        <div className="block">
+          <span className="label-03 body-color">
+          <ul className="timeline">
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Garmin, UX Designer</span>
+                <span className="timeline-date">2017 – present</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Mosey, JavaScript Developer</span>
+                <span className="timeline-date">2015 – 2017</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Marlin, UX / UI Developer</span>
+                <span className="timeline-date">2015 – 2017</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Marlin, Designer</span>
+                <span className="timeline-date">2013 – 2015</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Missouri State University</span>
+                <span className="timeline-date">Class of 2013</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+          </ul>
+          </span>
+        </div>
+      )
+    }
+
+
+
+    renderFunTimeline(){
       return(
         <div className="block">
           <span className="label-03 body-color">
@@ -62,9 +109,17 @@ export default class Resume extends Component{
 
             <li>
               <div className="timeline-entry">
-                <span className="timeline-label">⛰️ First trip to Colorado </span>
+                <span className="timeline-label">⛰️ Colorado </span>
                 <span className="timeline-date">July 11 – July 17, 2017</span>
                 <span>Insane alttitude was a bitch.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Went Vegan </span>
+                <span className="timeline-date">July 1, 2017</span>
+                <span>They Lost :(</span>
               </div>
             </li>
 
@@ -84,8 +139,8 @@ export default class Resume extends Component{
 
             <li>
               <div className="timeline-entry">
-                <span className="timeline-label">Mosey, JS Developer</span>
-                <span className="timeline-date">2015-present</span>
+                <span className="timeline-label">SEATTLE</span>
+                <span className="timeline-date">October 12 – 17 2016</span>
                 <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
               </div>
             </li>
@@ -136,13 +191,21 @@ export default class Resume extends Component{
       )
     }
 
+
+
+
+
+
+
+
+
     render(){
         return(
           <div>
             <div className="wrapper">
               <BackIcon />
               {this.renderHeroDefinition()}
-              {this.renderExpandedDefintion()}
+              {this.renderWorkTimeline()}
             </div>
           </div>
 
@@ -166,4 +229,11 @@ export default class Resume extends Component{
     <li>Marlin</li>
     <li>Missouri State</li>
   </ul>
+
+  <span className="label-03 body-color definition-number">
+    1.
+  </span>
+  <span className="label-03 body-color">
+    A person that oversees product vision from a high level (how does this feature make sense for where we want to be in 6 months) to a low execution level (how does styling this button this way impact how the user flows through this flow).
+  </span>
 */}

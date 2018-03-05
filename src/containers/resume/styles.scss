@@ -5,14 +5,15 @@ ul.timeline li {
     position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
     /* use padding-bottom instead of margin-bottom.*/
     margin-bottom: 0; /* This overrides previously specified margin-bottom */
-    padding-bottom: 2.5em;
+    padding-bottom: 2.0em;
+
 }
 
 ul.timeline li:after {
     /* bullets */
     // ./src/public/images/bullet-01.svg
-    content: url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
-    // content: url("/../public/images/bullet-01.png");
+    // content: url('http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/RedDisc.svg/20px-RedDisc.svg.png');
+    content: url("/src/public/images/bullet-01.svg");
     position: absolute;
     left: -26px; /*adjust manually*/
     top: 0px;
@@ -73,4 +74,8 @@ li{
 h1{
   font-size: 2em;
 
+}
+
+ul{
+  padding-left: 1.15em;
 }
