@@ -44,36 +44,72 @@ export default class Resume extends Component{
         <div className="block">
           <span className="label-03 body-color">
           <ul className="timeline">
-
             <li>
               <div className="timeline-entry">
-                <span className="timeline-label">Garmin UX Designer</span>
-                <span className="timeline-date">2017-present</span>
+                <span className="timeline-label">One Year at Garmin!</span>
+                <span className="timeline-date">Feburary 27, 2018</span>
                 <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
               </div>
             </li>
 
             <li>
               <div className="timeline-entry">
-                <span className="timeline-label">UX Designer</span>
-                <span className="timeline-position">Garmin</span>
-                <span className="timeline-date">2017-present</span>
+                <span className="timeline-label">🏈 First Chiefs Game </span>
+                <span className="timeline-date">November 26, 2017</span>
+                <span>They Lost :(</span>
               </div>
             </li>
 
             <li>
               <div className="timeline-entry">
-                <span className="timeline-label">UX Designer</span>
-                <span className="timeline-position">Garmin</span>
-                <span className="timeline-date">2017-present</span>
+                <span className="timeline-label">⛰️ First trip to Colorado </span>
+                <span className="timeline-date">July 11 – July 17, 2017</span>
+                <span>Insane alttitude was a bitch.</span>
               </div>
             </li>
 
             <li>
               <div className="timeline-entry">
-                <span className="timeline-label">UX Designer</span>
-                <span className="timeline-position">Garmin</span>
-                <span className="timeline-date">2017-present</span>
+                <span className="timeline-label">First Day at Garmin!</span>
+                <span className="timeline-date">Feburary 27, 2017</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">🚚 Moved to Kansas City!</span>
+                <span className="timeline-date">Feburary 24, 2017</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Mosey, JS Developer</span>
+                <span className="timeline-date">2015-present</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">🎉 Got Married</span>
+                <span className="timeline-date">September 29, 2016</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">Marlin, UX / UI Developer</span>
+                <span className="timeline-date">2013-2017</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
+              </div>
+            </li>
+
+            <li>
+              <div className="timeline-entry">
+                <span className="timeline-label">🎓 Graduated, Missouri State</span>
+                <span className="timeline-date">Class of 2013</span>
+                <span>Lorem ipsum dolor amet squid fam 8-bit, wayfarers dreamcatcher artisan marfa poke seitan gastropub vice butcher ugh meditation. Glossier cloud bread scenester brunch, church-key prism forage raw denim affogato retro. Hammock put a bird on it vegan tattooed.</span>
               </div>
             </li>
 
