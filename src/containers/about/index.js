@@ -84,7 +84,7 @@ export default class About extends Component{
       return(
         <Link to="/work">
           <span className="roll-over internal-link-color">
-            Recent Projects & Activities
+            Recent Work
           </span>
         </Link>
       )
@@ -96,7 +96,7 @@ export default class About extends Component{
               <div className="title-block">
                 {this.getRandomGreeting()}
                 <span className="label-02">
-                  A {this.renderProductDesignerLink()} & {this.renderDeveloperLink()} living in {this.renderKansasCityLink()} and working for {this.renderGarminLink()}.
+                  A Designer & Developer living in Kansas City and working for Garmin.
                 </span>
 
                 <span className="label-03">
