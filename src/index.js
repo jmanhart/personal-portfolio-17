@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { render } from 'react-dom';
 import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory, Switch } from 'react-router';
 
-
 import App from './App';
 
 //Import Components
