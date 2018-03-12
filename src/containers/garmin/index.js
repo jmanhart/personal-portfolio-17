@@ -10,7 +10,7 @@ import './../../main.scss';
 
 //Import Components
 import BackIcon from '../../components/backIcon'
-import HeroBlock from '../../components/heroBlock'
+
 
 
 

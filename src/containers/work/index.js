@@ -12,7 +12,7 @@ import { Link } from 'react-router';
 
 //Import Components
 import BackIcon from '../../components/backIcon'
-import CardMain from '../../components/cardMain'
+
 import Footer from '../../components/footer'
 
 
