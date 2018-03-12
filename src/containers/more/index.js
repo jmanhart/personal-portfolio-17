@@ -16,6 +16,7 @@ import {favorites} from './favoriteData.js'
 //Import Components
 import Filter from '../../components/filter/index.js'
 import BackIcon from '../../components/backIcon'
+import Timeline from '../../components/timeline'
 
 
 export default class More extends Component{
@@ -50,7 +51,6 @@ export default class More extends Component{
     renderExpandedDefintion(){
       return(
         <div className="block">
-
             <span className="body-01">
               {favorites.map((item) => {
                 return (
@@ -60,18 +60,6 @@ export default class More extends Component{
                 )
               })}
             </span>
-
-
-
-
-
-            <span className="body-01">
-
-
-
-              {/*beign vegan (when I'am around Li), beign vegetarian (all the other times), my audio-technica ath-m50x headphones, react and react-native, IPA's, whiskey, meeting new people, watching very very bad movies, watching very very good movies, watching movies with subtitles, pre-Garth country music, brownies, The Rolling Stones, Neil Young, Christopher Hitches, Framer, Sketch, Swift, my Switch, The Coffee Ethic, Atom, Robert Frank, Aaron Draplin, James Victore, Jon Gold, Koen Bok, The Apple Pencil, The Texas Longhorns and sparkling water.*/}
-            </span>
-
         </div>
       )
     }
@@ -83,6 +71,7 @@ export default class More extends Component{
               <BackIcon />
               {this.renderMyThoughts()}
               {this.renderExpandedDefintion()}
+              <Timeline />
             </div>
           </div>
 
