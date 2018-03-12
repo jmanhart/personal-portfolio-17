@@ -23,7 +23,7 @@ const greeting = [
     "Hullo,",
     "Hola,",
     "Ciao,",
-    "👋🏻",
+    "👋🏻,",
     "Hej,",
     "Bonjour,",
     "Oh hey,",
