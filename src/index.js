@@ -4,11 +4,8 @@ import { applyRouterMiddleware, Router, Route, IndexRoute, browserHistory, Switc
 
 import App from './App';
 
-//Import Components
-import ScrollToTop from './components/ScrollToTop';
 
 //Import Containers
-
 import Home from './containers/home';
 import About from './containers/about';
 import More from './containers/more';

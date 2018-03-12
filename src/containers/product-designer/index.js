@@ -12,7 +12,6 @@ import { Link } from 'react-router';
 
 //Import Components
 import BackIcon from '../../components/backIcon'
-import CardMain from '../../components/cardMain'
 
 
 export default class ProductDesigner extends Component{
