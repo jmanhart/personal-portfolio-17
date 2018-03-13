@@ -12,6 +12,7 @@ import { Link } from 'react-router';
 
 //Import Components
 import BackIcon from '../../components/backIcon'
+import WorkCard from '../../components/workCard'
 
 import Footer from '../../components/footer'
 
@@ -78,7 +79,7 @@ export default class Work extends Component{
               {this.renderHeroDefinition()}
               {data.map((item) => {
                 return (
-                  <CardMain
+                  <WorkCard
                     cardLink={item.cardLink}
                     cardTitle={item.cardTitle}
                     cardSubText={item.cardSubText}

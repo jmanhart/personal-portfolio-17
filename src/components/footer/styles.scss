@@ -49,10 +49,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 2em;
+    flex-direction: column;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    // height: 2em;
   }
   .label-footer{
     color:rgba(0,0,0,0.6);
