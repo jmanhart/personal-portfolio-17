@@ -62,7 +62,7 @@ export default class Work extends Component{
           <div className="block flex-colum spacer-below">
             <span className="label-01">Recent Work</span>
             <span className="label-03 body-color">
-              Collection of relavent work, learning, projects, and community engament
+              Collection of relavent work, projects, and community engagement.
             </span>
           </div>
         </div>
@@ -88,10 +88,7 @@ export default class Work extends Component{
                     />
                 )
               })}
-            <Footer/>
             </div>
-
-
         )
     }
 }
