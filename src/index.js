@@ -22,6 +22,7 @@ import Books from './containers/subPages/Books.js'
 import Podcasts from './containers/subPages/Podcasts.js'
 import Movies from './containers/subPages/Movies.js'
 import Music from './containers/subPages/Music.js'
+import Contact from './containers/contact'
 
 
 
@@ -43,6 +44,7 @@ const routes = (
     <Route path="/kansas-city" mapMenuTitle="Favorites" component={KansasCity} />
     <Route path="/product-designer" mapMenuTitle="Favorites" component={ProductDesigner} />
     <Route path="/developer" mapMenuTitle="Favorites" component={Developer} />
+    <Route path="/contact" mapMenuTitle="Contact" component={Contact} />
   </Route>
 
 

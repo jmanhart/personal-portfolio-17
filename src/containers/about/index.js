@@ -33,10 +33,17 @@ const greeting = [
 export default class About extends Component{
 
 
+  dude(){
+    return(
+      console.log("fart")
+    )
+  }
     getRandomGreeting(){
       let rando = Math.floor((Math.random() * greeting.length));
       return (
-        <span className="label-01">{greeting[rando]} I'm <Link to="/more" className="roll-over">John!</Link></span>
+        <span className="label-01" onClick={this.dude()}>{greeting[rando]} I'm <Link to="/more" className="roll-over">John!</Link>
+        
+      </span>
       );
     }
 
@@ -94,6 +101,7 @@ export default class About extends Component{
         return(
             <div className="wrapper">
               <div className="title-block">
+
                 {this.getRandomGreeting()}
                 <span className="label-02">
                   A Designer & Developer living in Kansas City and working for Garmin.
