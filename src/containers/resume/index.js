@@ -22,6 +22,16 @@ import {timelineData} from './TimelineData.js'
 
 export default class Resume extends Component{
 
+  renderResumeIntro(){
+    return (
+      <div>
+        <div className="block flex-colum">
+          <span className="label-01">It all really started with a pirated copy of photoshop...</span>
+        </div>
+      </div>
+    );
+  }
+
     renderWorkTimeline(){
       return(
         <div className="block">
@@ -44,11 +54,13 @@ export default class Resume extends Component{
         </div>
       )
     }
+
     render(){
         return(
           <div>
             <div className="wrapper">
               <BackIcon />
+              {this.renderResumeIntro()}
               {this.renderWorkTimeline()}
             </div>
           </div>

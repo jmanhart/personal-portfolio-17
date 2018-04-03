@@ -21,7 +21,7 @@ export default class WorkCard extends Component{
             <a href={this.props.cardLink || "String Missing"}>
               <div className="card-information">
                 <div className="information-img">
-                  <img src={this.props.cardImage || "String Missing"} />
+                  <img src={this.props.cardImage || "Image Missing"} />
                 </div>
                 <div className="information-copy">
                   <span className="card-01">{this.props.cardTitle || "String Missing"}</span>

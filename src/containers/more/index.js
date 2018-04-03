@@ -41,7 +41,7 @@ export default class More extends Component{
           <div className="block flex-colum">
             <span className="label-01">Li and Floyd are my absolute favorites, but after that it goes...</span>
             <span className="label-02">
-              espresso, learning, movies, reading, biking, boxing, bass, drawing <a href="https://www.instagram.com/syrus.syrus.syrus/">( ༎ຶД༎ຶ)</a>,
+              espresso, learning, movies, reading, biking, boxing, bass, drawing <a href="https://www.instagram.com/syrus.syrus.syrus/">( ༎ຶД༎ຶ)</a>
             </span>
           </div>
         </div>
@@ -54,9 +54,9 @@ export default class More extends Component{
             <span className="body-01">
               {favorites.map((item) => {
                 return (
-                  <a style={{textTransform: "underline"}} key={item.link} href={item.link}>
+
                     <span key={item.fav}>{item.fav}, </span>
-                  </a>
+                
                 )
               })}
             </span>

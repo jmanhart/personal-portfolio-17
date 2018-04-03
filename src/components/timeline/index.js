@@ -12,7 +12,7 @@ import '../../main.scss'
 //Import Local Styles
 import './styles.scss'
 
-//Import Timeline Data 
+//Import Timeline Data
 import {timelineData} from './TimelineData.js'
 
 export default class Timeline extends Component{
