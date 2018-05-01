@@ -7,13 +7,12 @@ import { Link } from 'react-router';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 //Import Styles
-// import './styles.scss'
+import './styles.scss'
 // import '../../main.scss'
 
 //Import Components
 import BackIcon from '../../components/backIcon'
 import WorkCard from '../../components/workCard'
-
 import Footer from '../../components/footer'
 
 
@@ -53,36 +52,25 @@ const data = [
 
 ]
 
-export default class Work extends Component{
-    renderHeroDefinition(){
-      return(
-        <div>
-          <div className="block flex-colum spacer-below">
-            <span className="label-01">Recent Work</span>
-            <span className="label-03 body-color">
-              Collection of relavent work, projects, and community engagement.
-            </span>
-          </div>
-        </div>
-      )
-    }
+export default class Projects extends Component{
+
+  
     render(){
         return(
-            <div className="wrapper">
-              <BackIcon/>
-              {this.renderHeroDefinition()}
+          <div className="projects-wrapper">
+            <BackIcon/>
+            <div className="flex-grid">
               {data.map((item) => {
-                return (
-                  <WorkCard
-                    cardLink={item.cardLink}
-                    cardTitle={item.cardTitle}
-                    cardSubText={item.cardSubText}
-                    cardImage={item.cardImage}
-                    cardLocation={item.cardLocation}
-                    />
+                return(
+                    <div className="project-wrapper col">
+                      <img src={item.cardImage || "Image Missing"} />
+                      <span className="card-01">{item.cardTitle}</span>
+                      
+                    </div>
                 )
               })}
             </div>
+          </div>
         )
     }
 }

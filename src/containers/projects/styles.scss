@@ -1,0 +1,61 @@
+@import '../../lib/vars.scss';
+
+$border-width: 3px;
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.projects-wrapper{
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 8em;
+  padding-left: 5em;
+  padding-right: 3em;
+  padding-bottom: 5em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  // background-color: white;
+}
+
+.col {
+  height: 15em;
+  border: $border-width solid #dee2e3;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 12em;
+}
+
+@media screen and (max-width: 425px) {
+
+  .projects-wrapper{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 425px) {
+  .flex-grid {
+    flex-direction: column;
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+    margin: 0em 0em 1em 0em;
+  }
+}

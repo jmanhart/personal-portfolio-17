@@ -23,15 +23,10 @@ import Podcasts from './containers/subPages/Podcasts.js'
 import Movies from './containers/subPages/Movies.js'
 import Music from './containers/subPages/Music.js'
 import Contact from './containers/contact'
-
-
-
-
-
+import Projects from './containers/projects'
 
 
 const routes = (
-
   <Route path="/" mapMenuTitle="Home" component={Home}>
     <IndexRoute component={About} />
     <Route path="/about" mapMenuTitle="About" component={About} />
@@ -45,9 +40,8 @@ const routes = (
     <Route path="/product-designer" mapMenuTitle="Favorites" component={ProductDesigner} />
     <Route path="/developer" mapMenuTitle="Favorites" component={Developer} />
     <Route path="/contact" mapMenuTitle="Contact" component={Contact} />
+    <Route path="/projects" mapMenuTitle="Projects" component={Projects} />
   </Route>
-
-
 );
 
 render(
