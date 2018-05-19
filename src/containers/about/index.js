@@ -42,7 +42,7 @@ export default class About extends Component{
       let rando = Math.floor((Math.random() * greeting.length));
       return (
         <span className="label-01" onClick={this.dude()}>{greeting[rando]} I'm <Link to="/more" className="roll-over">John!</Link>
-        
+
       </span>
       );
     }
@@ -101,7 +101,7 @@ export default class About extends Component{
         return(
             <div className="wrapper">
               <div className="title-block">
-
+                <img className="image" src="./src/public/images/me-blk.png" />
                 {this.getRandomGreeting()}
                 <span className="label-02">
                   A Designer & Developer living in Kansas City and working for Garmin.
