@@ -54,23 +54,30 @@ const data = [
 
 export default class Projects extends Component{
 
-  
+
     render(){
         return(
-          <div className="projects-wrapper">
-            <BackIcon/>
-            <div className="flex-grid">
-              {data.map((item) => {
-                return(
-                    <div className="project-wrapper col">
-                      <img src={item.cardImage || "Image Missing"} />
-                      <span className="card-01">{item.cardTitle}</span>
-                      
-                    </div>
-                )
-              })}
-            </div>
+          <div className="video-container">
+            <iframe src="http://0.0.0.0:8080/src/public/framer03.framer/index.html"    width="560" height="315" allowfullscreen frameborder="0" >
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+
           </div>
         )
     }
 }
+
+{/*
+  <BackIcon/>
+  <div className="flex-grid">
+    {data.map((item) => {
+      return(
+          <div className="project-wrapper col">
+            <img src={item.cardImage || "Image Missing"} />
+            <span className="card-01">{item.cardTitle}</span>
+
+          </div>
+      )
+    })}
+  </div>
+*/}
