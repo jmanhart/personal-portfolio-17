@@ -14,7 +14,7 @@ import Developer from './containers/developer';
 import ProductDesigner from './containers/product-designer';
 import KansasCity from './containers/kansas-city';
 import Colophon from './containers/colophon';
-import Garmin from './containers/garmin';
+
 import Blog from './containers/blog';
 import Resume from './containers/resume';
 import Coffee from './containers/coffee';
@@ -26,6 +26,13 @@ import Contact from './containers/contact'
 import Projects from './containers/projects'
 import Playground from './containers/playground'
 
+// History Containers
+import History from './containers/history'
+import Garmin from './containers/history-garmin';
+import Mosey from './containers/history-mosey';
+import Marlin from './containers/history-marlin';
+import MissouriState from './containers/history-missouri-state';
+
 
 const routes = (
   <Route path="/" mapMenuTitle="Home" component={Home}>
@@ -35,7 +42,6 @@ const routes = (
     <Route path="/colophon" mapMenuTitle="Colophon" component={Colophon} />
     <Route path="/more" mapMenuTitle="More" component={More} />
     <Route path="/work" mapMenuTitle="Work" component={Work} />
-    <Route path="/garmin" mapMenuTitle="Garmin" component={Garmin} />
     <Route path="/coffee" mapMenuTitle="Coffee" component={Coffee} />
     <Route path="/kansas-city" mapMenuTitle="Favorites" component={KansasCity} />
     <Route path="/product-designer" mapMenuTitle="Favorites" component={ProductDesigner} />
@@ -43,6 +49,11 @@ const routes = (
     <Route path="/contact" mapMenuTitle="Contact" component={Contact} />
     <Route path="/projects" mapMenuTitle="Projects" component={Projects} />
     <Route path="/playground" mapMenuTitle="Playground" component={Playground} />
+    <Route path="/history/garmin" mapMenuTitle="Garmin" component={Garmin} />
+    <Route path="/history/mosey" mapMenuTitle="Garmin" component={Mosey} />
+    <Route path="/history/marlin" mapMenuTitle="Garmin" component={Marlin} />
+    <Route path="/history/missouri-state" mapMenuTitle="Garmin" component={MissouriState} />
+    <Route path="/history" mapMenuTitle="History" component={History} />
   </Route>
 );
 

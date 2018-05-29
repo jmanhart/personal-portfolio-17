@@ -47,6 +47,25 @@ ul.timeline li:last-child:before {
 // }
 
 
+// .blockCurrent {
+//     display: flex;
+//     width: 100%;
+//     max-width: 33em;
+//     background-color: green;
+// }
+
+.blockNew {
+    display: flex;
+    width: 100%;
+    // max-width: 33em;
+    background-color: green;
+}
+
+
+.timeline-content-wrapper{
+  max-width: 33em;
+}
+
 // Timeline Copy
 .timeline-label{
   color: black;

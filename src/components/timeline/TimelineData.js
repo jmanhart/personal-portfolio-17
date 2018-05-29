@@ -5,6 +5,7 @@ export const timelineData = [
     subTitle: "UX Designer",
     dates: "2017 – Present",
     description: "Working apart a large UX team with a focus on features for the vívo series of wearables Garmin Connect mobile application. Worked with a diverse team of business analysts, mobile developers (iOS & Android), QA, UX researchers, and platform designers.",
+    routeTo: "/history/garmin"
   },
   {
     title: "Mosey",
@@ -12,19 +13,22 @@ export const timelineData = [
     subTitle: "JavaScript Developer",
     dates: "2016 – 2018",
     description: "Worked remotely for a small 4 person team to build a mobile application using react-native for rating and scoring resturants.",
+    routeTo: "/history/mosey"
   },
   {
     title: "Marlin",
     image: "./src/public/images/logos/marlin.png",
-    subTitle: "UX Developer",
+    subTitle: "UX Developer & Designer",
     dates: "2013 – 2017",
-    description: "A full service digital advertising agency. My role as UX / UI Developer was to design than develop web and mobile applications. Worked apart teams for clients like Bush's Best Beans, Starbucks's, Unilever Food Service, Hellmann's, and French's.",
+    description: "A full service digital advertising agency. My role as UX Developer & Designer was to design than develop web and mobile applications. Worked apart teams for clients like Bush's Best Beans, Starbucks's, Unilever Food Service, Hellmann's, and French's.",
+    routeTo: "/history/marlin"
   },
   {
     title: "Missouri State",
     subTitle: "Design & Illustration",
     dates: "Class of 2013",
     description: "Dual major with an emphasis in Graphic Design and Illustration. ",
+    routeTo: "/history/missouri-state"
   },
   {
     dates: "See Further Info on Linkedin",

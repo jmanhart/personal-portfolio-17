@@ -78,6 +78,18 @@ ul.timeline li:last-child:before {
 
 }
 
+.timeline-button{
+  font-size: 0.75em;
+  border: 1px solid $gray02;
+  border-radius: 0.5em;
+
+  min-width: 10em;
+  margin: 2.5em 0em;
+  max-width: 5em;
+  text-align: center;
+
+}
+
 li{
   // position: relative;
   // display: inline-block;

@@ -39,7 +39,7 @@ export default class More extends Component{
       return (
         <div>
           <div className="block flex-colum">
-            <span className="label-01">Li and Floyd are my absolute favorites, but after that it goes...</span>
+            <span className="label-01">My wife Li and my cat Floyd are my absolute favorites, but after that it goes...</span>
             <span className="label-02">
               espresso, learning, movies, reading, biking, boxing, bass, drawing <a href="https://www.instagram.com/syrus.syrus.syrus/">( ༎ຶД༎ຶ)</a>
             </span>
@@ -58,7 +58,7 @@ export default class More extends Component{
                     <span key={item.fav}>{item.fav}, </span>
                 
                 )
-              })}
+              })} and so much more...
             </span>
         </div>
       )
@@ -71,7 +71,6 @@ export default class More extends Component{
               <BackIcon />
               {this.renderMyThoughts()}
               {this.renderExpandedDefintion()}
-              <Timeline />
             </div>
           </div>
 

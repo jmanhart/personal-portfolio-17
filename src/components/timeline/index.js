@@ -40,3 +40,10 @@ export default class Timeline extends Component{
       )
     }
 }
+
+
+{/*
+  <Link className="timeline-button" to={item.routeTo}>
+    <span>See More Info</span>
+  </Link>
+*/}

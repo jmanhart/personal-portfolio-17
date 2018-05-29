@@ -19,23 +19,25 @@ export default class Timeline02 extends Component{
 
     render(){
       return(
-        <div className="block">
-          <span className="label-03 body-color">
-          <ul className="timeline">
-            {timelineData.map((item) => {
-              return (
-                <li>
-                  <div className="timeline-entry">
-                    <span className="timeline-date">{item.dates}</span>
-                    <span className="timeline-label">{item.title}</span>
-                    <span className="timeline-sub-title">{item.subTitle}</span>
-                    <span>{item.description}</span>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
-          </span>
+        <div className="blockNew">
+          <div>
+
+            <ul className="timeline">
+              {timelineData.map((item) => {
+                return (
+                  <li className="timeline-content-wrapper">
+                    <div className="timeline-entry">
+                      <span className="timeline-date">{item.dates}</span>
+                      <span className="timeline-label">{item.title}</span>
+                      <span className="timeline-sub-title">{item.subTitle}</span>
+                      <span>{item.description}</span>
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
+    
+          </div>
         </div>
       )
     }

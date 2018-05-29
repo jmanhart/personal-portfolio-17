@@ -96,6 +96,16 @@ export default class About extends Component{
         </Link>
       )
     }
+    
+    renderHistoryLink(){
+      return(
+        <Link to="/history">
+          <span className="roll-over internal-link-color">
+            Timeline
+          </span>
+        </Link>
+      )
+    }
 
     render(){
         return(
@@ -108,7 +118,7 @@ export default class About extends Component{
                 </span>
 
                 <span className="label-03">
-                  {this.renderMoreLink()}
+                  {this.renderMoreLink()} & {this.renderHistoryLink()}
                 </span>
 
                 {/*<span className="label-03 body-color-light">
