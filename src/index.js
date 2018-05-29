@@ -24,6 +24,7 @@ import Movies from './containers/subPages/Movies.js'
 import Music from './containers/subPages/Music.js'
 import Contact from './containers/contact'
 import Projects from './containers/projects'
+import Playground from './containers/playground'
 
 
 const routes = (
@@ -41,6 +42,7 @@ const routes = (
     <Route path="/developer" mapMenuTitle="Favorites" component={Developer} />
     <Route path="/contact" mapMenuTitle="Contact" component={Contact} />
     <Route path="/projects" mapMenuTitle="Projects" component={Projects} />
+    <Route path="/playground" mapMenuTitle="Playground" component={Playground} />
   </Route>
 );
 
