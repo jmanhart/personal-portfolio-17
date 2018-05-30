@@ -5,7 +5,7 @@ Framer.Info =
 	description: "Test Build!"
 
 # Disabling Hints for previewing
-Framer.Extras.Hints.disable()
+# Framer.Extras.Hints.disable()
 
 # Setting up preloader Image
 Framer.Extras.Preloader.enable()
@@ -15,7 +15,7 @@ Framer.Extras.Preloader.enable()
 Framer.Device.background.backgroundColor = "#1D212A"
 
 # Changing the indicator to a cursor from white circle
-document.body.style.cursor = "auto"
+# document.body.style.cursor = "auto"
 
 
 bkg = new BackgroundLayer
