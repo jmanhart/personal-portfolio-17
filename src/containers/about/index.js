@@ -118,7 +118,7 @@ export default class About extends Component{
                 </span>
 
                 <span className="label-03">
-                  {this.renderMoreLink()} & {this.renderHistoryLink()}
+                  {this.renderMoreLink()}  &  {this.renderHistoryLink()}
                 </span>
 
                 {/*<span className="label-03 body-color-light">

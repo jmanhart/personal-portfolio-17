@@ -2,9 +2,7 @@
 //Import Global Colors
 @import '/lib/vars.scss';
 
-.dude {
-  background-color: green;
-}
+
 
 
 .block{
@@ -298,13 +296,21 @@ html, body{
     /*background-color: #DEE9EF;*/
     box-sizing: border-box;
     font-size: 1.15em;
+    border: 0;
 
+}
+
+iframe {
+    border-width: 0px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
-// 
+//
 // .wrapper{
 //     width: 100%;
 //     height: 100%;
