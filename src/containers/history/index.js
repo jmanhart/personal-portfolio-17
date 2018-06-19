@@ -22,25 +22,23 @@ import Timeline from '../../components/timeline'
 export default class History extends Component{
     renderMyThoughts(){
       return (
-        <div>
+
           <div className="block flex-colum">
-        
             <span className="label-02">
               Work history and timeline
             </span>
           </div>
-        </div>
       );
     }
     render(){
         return(
-          <div>
+        
             <div className="wrapper">
               <BackIcon />
               {this.renderMyThoughts()}
               <Timeline />
             </div>
-          </div>
+          
 
 
 
