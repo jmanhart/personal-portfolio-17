@@ -26,6 +26,9 @@ import Contact from './containers/contact'
 import Projects from './containers/projects'
 import Playground from './containers/playground'
 
+// Case Studies
+import CobbCaseStudy from './containers/cobb-case-study'
+
 // History Containers
 import History from './containers/history'
 import Garmin from './containers/history-garmin';
@@ -54,6 +57,7 @@ const routes = (
     <Route path="/history/marlin" mapMenuTitle="Garmin" component={Marlin} />
     <Route path="/history/missouri-state" mapMenuTitle="Garmin" component={MissouriState} />
     <Route path="/history" mapMenuTitle="History" component={History} />
+    <Route path="/cobb-case-study" mapMenuTitle="Cobb Case Study" component={CobbCaseStudy} />
   </Route>
 );
 
