@@ -90,7 +90,8 @@ export default class CobbCaseStudy extends Component{
         {/* IMAGE*/}
         <div className="blockII">
           <Video autoPlay loop muted
-               height="500px">
+               height="500px"
+               width="500px">
               <source src="./src/public/images/cobb-case-study/videos/vid-proto-lang.mov" type="video/mp4" />
           </Video>
         </div>

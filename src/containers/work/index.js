@@ -19,36 +19,18 @@ import Footer from '../../components/footer'
 
 const data = [
     {
-      "cardLink": "https://github.com/jmanhart/framer-sketchbook",
-      "cardTitle": "Framer Sketchbook",
-      "cardSubText": "Collection of Framer basics, sketchs, and designs.",
-      "cardImage":"./src/public/images/logos/framer.png",
-      "cardLocation": "View on Github",
-      "link":"/coffee/kansas-city"
+      "cardTitle": "Mosey",
+      "cardSubText": "Mobile application for internal use.",
+      "cardImage":"./src/public/images/logos/mosey.png",
+      "cardLocation": "View on Project",
+      "cardLink":"/mosey-case-study"
     },
     {
-      "cardLink": "https://www.meetup.com/Sketch-Design-Kansas-City/",
-      "cardTitle": "K.C. Sketch Meetup",
-      "cardSubText": "Orginazier of the official Sketch Meetup for Kansas City.",
-      "cardImage":"./src/public/images/logos/sketch-kc.png",
-      "cardLocation": "View on Meetup",
-      "link":"/coffee/kansas-city"
-    },
-    {
-      "cardLink": "https://github.com/jmanhart/react-sketchapp",
-      "cardTitle": "React-SketchApp",
-      "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
-      "cardImage":"./src/public/images/logos/react-sketchapp.png",
-      "cardLocation": "View on Github",
-      "link":"/coffee/kansas-city"
-    },
-    {
-      "cardLink": "https://github.com/jmanhart/swift-sketchbook",
-      "cardTitle": "Swift Sketchbook",
-      "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
-      "cardImage":"./src/public/images/logos/swift.png",
-      "cardLocation": "View on Github",
-      "link":"/coffee/kansas-city"
+      "cardTitle": "Cobb Connection",
+      "cardSubText": "Mobile application for internal use.",
+      "cardImage":"./src/public/images/logos/cobb.png",
+      "cardLocation": "View on Project",
+      "cardLink":"/cobb-case-study"
     },
 
 ]
@@ -86,3 +68,36 @@ export default class Work extends Component{
         )
     }
 }
+
+{/*
+  {
+    "cardLink": "https://www.meetup.com/Sketch-Design-Kansas-City/",
+    "cardTitle": "K.C. Sketch Meetup",
+    "cardSubText": "Orginazier of the official Sketch Meetup for Kansas City.",
+    "cardImage":"./src/public/images/logos/sketch-kc.png",
+    "cardLocation": "View on Meetup",
+    "link":"/coffee/kansas-city"
+  }, 
+  
+  {
+    "cardTitle": "Framer Sketchbook",
+    "cardSubText": "Collection of Framer basics, sketchs, and designs.",
+    "cardImage":"./src/public/images/logos/framer.png",
+    "cardLocation": "View on Github",
+    "cardLink":"https://github.com/jmanhart/framer-sketchbook"
+  },
+  {
+    "cardTitle": "React-SketchApp",
+    "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
+    "cardImage":"./src/public/images/logos/react-sketchapp.png",
+    "cardLocation": "View on Github",
+    "cardLink":"https://github.com/jmanhart/react-sketchapp"
+  },
+  {
+    "cardTitle": "Swift Sketchbook",
+    "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
+    "cardImage":"./src/public/images/logos/swift.png",
+    "cardLocation": "View on Github",
+    "cardLink":"https://github.com/jmanhart/swift-sketchbook"
+  },
+*/}

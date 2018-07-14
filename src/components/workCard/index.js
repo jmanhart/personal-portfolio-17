@@ -18,7 +18,7 @@ export default class WorkCard extends Component{
     render(){
         return(
           <div className="card-wrapper">
-            <a href={this.props.cardLink || "String Missing"}>
+            <Link to={this.props.cardLink}>
               <div className="card-information">
                 <div className="information-img">
                   <img src={this.props.cardImage || "Image Missing"} />
@@ -29,7 +29,7 @@ export default class WorkCard extends Component{
                   <span className="card-03">{this.props.cardLocation || "String Missing"}</span>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         )
       }
