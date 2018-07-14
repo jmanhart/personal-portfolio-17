@@ -3,6 +3,9 @@ import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
+import {
+    fadeUp,
+ } from './helpers.js'
 
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -27,23 +30,27 @@ const greeting = [
     "Hej,",
     "Bonjour,",
     "Oh hey,",
+    "여보세요,",
 ]
 
 
 export default class About extends Component{
-
-
-  dude(){
-    return(
-      console.log("fart")
-    )
+  constructor(){
+    super()
+  }
+  componentDidMount(){
+    this.fadeIn()
+  }
+  fadeIn() {
+    let el = ReactDOM.findDOMNode(this.refs.line)
+    fadeUp(el)
   }
     getRandomGreeting(){
       let rando = Math.floor((Math.random() * greeting.length));
       return (
-        <span className="label-01" onClick={this.dude()}>{greeting[rando]} I'm <Link to="/more" className="roll-over">John!</Link>
-
-      </span>
+        <span className="label-01 position" ref="line">
+          {greeting[rando]} I'm <Link to="/more" className="roll-over">John!</Link>
+        </span>
       );
     }
 
