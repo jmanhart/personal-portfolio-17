@@ -16,3 +16,13 @@
   justify-content: center;
   margin: 1em 0em;
 };
+
+
+@media screen and (max-width: 425px) {
+  .content-image{
+    width: 100%;
+    height: auto;
+    margin: 1em 0em;
+  }
+
+}
