@@ -103,7 +103,7 @@ export default class About extends Component{
         </Link>
       )
     }
-    
+
     renderHistoryLink(){
       return(
         <Link to="/history">
@@ -118,7 +118,8 @@ export default class About extends Component{
         return(
             <div className="wrapper">
               <div className="title-block">
-                <img className="image" src="./src/public/images/me-blk.png" />
+                <img className="image" src="./src/public/images/me-blk-sun.png" />
+
                 {this.getRandomGreeting()}
                 <span className="label-02">
                   A Designer & Developer living in Kansas City and working for Garmin.

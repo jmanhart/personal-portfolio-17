@@ -13,6 +13,8 @@ import './styles.scss'
 //Import Components
 import BackIcon from '../../components/backIcon'
 import WorkCard from '../../components/workCard'
+import CardList from '../../components/cards/card-list.js'
+import CardHero from '../../components/cards/card-hero.js'
 
 import Footer from '../../components/footer'
 
@@ -20,8 +22,12 @@ import Footer from '../../components/footer'
 const data = [
     {
       "cardTitle": "Mosey",
-      "cardSubText": "Mobile application for internal use.",
+      "cardSubText": "Mobile application developement and UI Developement",
       "cardImage":"./src/public/images/logos/mosey.png",
+      "cardStack": [
+        "React-Native, ",
+        "UX Design, ",
+      ],
       "cardLocation": "View on Project",
       "cardLink":"/mosey-case-study"
     },
@@ -29,6 +35,10 @@ const data = [
       "cardTitle": "Cobb Connection",
       "cardSubText": "Mobile application for internal use.",
       "cardImage":"./src/public/images/logos/cobb.png",
+      "cardStack": [
+        "React-Native",
+        "UX Design",
+      ],
       "cardLocation": "View on Project",
       "cardLink":"/cobb-case-study"
     },
@@ -39,15 +49,14 @@ const dataMeetups = [
       "cardSubText": "Mobile application for internal use.",
       "cardImage":"./src/public/images/logos/framer.png",
       "cardLocation": "View on Facebook group page",
-      "cardLink":"/mosey-case-study"
+      "cardLink": "https://www.facebook.com/groups/FramerKansasCity/",
     },
     {
-      "cardLink": "https://www.meetup.com/Sketch-Design-Kansas-City/",
       "cardTitle": "K.C. Sketch Meetup",
       "cardSubText": "Orginazier of the official Sketch Meetup for Kansas City.",
       "cardImage":"./src/public/images/logos/sketch-kc.png",
       "cardLocation": "View on Meetup",
-      "link":"/coffee/kansas-city"
+      "cardLink": "https://www.meetup.com/Sketch-Design-Kansas-City/",
     },
 ]
 const dataCodeSketchbooks = [
@@ -84,7 +93,7 @@ const dataCodeSketchbooks = [
     "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
     "cardImage":"./src/public/images/logos/python.png",
     "cardLocation": "View on Github",
-    "cardLink":"https://github.com/jmanhart/react-sketchapp"
+    "cardLink":"https://github.com/jmanhart/python-sketchbook"
   },
 ]
 export default class Work extends Component{
@@ -113,10 +122,11 @@ export default class Work extends Component{
           </div>
           {data.map((item) => {
             return (
-              <WorkCard
+              <CardHero
                 cardLink={item.cardLink}
                 cardTitle={item.cardTitle}
                 cardSubText={item.cardSubText}
+                cardStack={item.cardStack}
                 cardImage={item.cardImage}
                 cardLocation={item.cardLocation}
                 />
@@ -138,7 +148,7 @@ export default class Work extends Component{
           </div>
           {dataCodeSketchbooks.map((item) => {
             return (
-              <WorkCard
+              <CardList
                 cardLink={item.cardLink}
                 cardTitle={item.cardTitle}
                 cardSubText={item.cardSubText}
@@ -164,7 +174,7 @@ export default class Work extends Component{
           </div>
           {dataMeetups.map((item) => {
             return (
-              <WorkCard
+              <CardList
                 cardLink={item.cardLink}
                 cardTitle={item.cardTitle}
                 cardSubText={item.cardSubText}

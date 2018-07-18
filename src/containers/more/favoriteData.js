@@ -1,5 +1,28 @@
 export const favorites = [
   {
+    fav: " espresso",
+  },
+  {
+    fav: "learning",
+  },
+  {
+    fav: "movies",
+  },
+  {
+    fav: "reading",
+  },
+  {
+    fav: "biking",
+  },
+  {
+    fav: "boxing",
+  },
+  {
+    fav: "drawing",
+    link: "https://www.instagram.com/syrus.syrus.syrus/",
+  },
+
+  {
     fav: "40% Vegan",
   },
   {

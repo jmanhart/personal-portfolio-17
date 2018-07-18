@@ -1,0 +1,142 @@
+@import '/../../lib/vars.scss';
+
+
+$card-border-style: 1px solid #dee2e3;
+$card-border-radius: 0.5em;
+
+/* -----------------------------------------*/
+/* Card Wrapper Styles
+/* -----------------------------------------*/
+.card-wrapper{
+  background-color: transparent;
+  min-height: 8em;
+  width: 100%;
+  max-width: 30em;
+  border: $card-border-style;
+  border-radius: $card-border-radius;
+  margin-bottom: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.25s ease-in;
+  overflow: hidden;
+}
+
+.information-image{
+  height: 15em;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-hero{
+  width: 100%;
+  height: 80%;
+  background-color: $gray01;
+  display: flex;
+  flex: 2;
+}
+
+.card-information{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  flex: 1;
+  .information-img{
+    display: flex;
+    flex: 3;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 120px;
+      height: 120px;
+    }
+  }
+  .information-copy{
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+    margin-left: $spacer-medium;
+  }
+  .information-chevron{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: $spacer-medium;
+  }
+
+}
+
+.information-container{
+  min-height: 8em;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* -----------------------------------------*/
+/* Label Styles
+/* -----------------------------------------*/
+.card-01{
+  font-size: $font-medium;
+  width: 85%;
+  font-family: $sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.card-02{
+  font-size: $font-small;
+  width: 85%;
+  padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.card-03{
+  font-size: $font-tiny;
+  width: 85%;
+  padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 500;
+  color: $gray02;
+}
+.card-pill-container{
+  background-color: pink;
+}
+.card-pill{
+  font-size: 0.65em;
+  padding-bottom: 0.5em;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  padding: 0.25em 1em;
+  border: $card-border-style;
+  border-radius: $card-border-radius;
+  width: fit-content;
+
+}
+
+
+/* -----------------------------------------*/
+/* Mobile Styles
+/* -----------------------------------------*/
+@media screen and (max-width: 425px) {
+  .card-wrapper{
+    min-height: 12em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-information{
+    flex-direction: column;
+  }
+}

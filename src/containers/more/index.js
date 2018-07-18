@@ -40,9 +40,6 @@ export default class More extends Component{
         <div>
           <div className="block flex-colum">
             <span className="label-01">Li and Floyd are my absolute favorites...</span>
-            <span className="label-02">
-               after that it goes espresso, learning, movies, reading, biking, boxing, bass, drawing <a href="https://www.instagram.com/syrus.syrus.syrus/">( ༎ຶД༎ຶ)</a>
-            </span>
           </div>
         </div>
       );
@@ -52,15 +49,29 @@ export default class More extends Component{
       return(
         <div className="block">
             <span className="body-01">
+              After that it goes
               {favorites.map((item) => {
                 return (
 
                     <span key={item.fav}>{item.fav}, </span>
-                
+
                 )
               })} and so much more...
             </span>
         </div>
+      )
+    }
+
+    renderDev(){
+      return(
+        <div>
+          <img src="http://ghchart.rshah.org/jmanhart" alt="2016rshah's Github chart" />
+        <div className="block">
+            <span className="body-01">
+              I really love tow write code. I love to solve puzzles and problems and at very basic level that is how I see programming. Problem solving. The problem changes and is never 100% defined and the goal always seems different.
+            </span>
+        </div>
+      </div>
       )
     }
 
@@ -71,6 +82,7 @@ export default class More extends Component{
               <BackIcon />
               {this.renderMyThoughts()}
               {this.renderExpandedDefintion()}
+              {this.renderDev()}
             </div>
           </div>
 
