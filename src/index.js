@@ -27,6 +27,9 @@ import Projects from './containers/projects'
 import Playground from './containers/playground'
 import RubberDuck from './containers/rubber-duck'
 
+// Personal
+import Records from './containers/records'
+
 // Case Studies
 import CobbCaseStudy from './containers/cobb-case-study'
 import MoseyCaseStudy from './containers/mosey-case-study'
@@ -62,6 +65,7 @@ const routes = (
     <Route path="/cobb-case-study" mapMenuTitle="Cobb Case Study" component={CobbCaseStudy} />
     <Route path="/mosey-case-study" mapMenuTitle="Cobb Case Study" component={MoseyCaseStudy} />
     <Route path="/rubber-duck" mapMenuTitle="Rubber Duck" component={RubberDuck} />
+    <Route path="/records" mapMenuTitle="Rubber Duck" component={Records} />
   </Route>
 );
 
