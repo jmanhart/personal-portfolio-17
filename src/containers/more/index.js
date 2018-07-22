@@ -39,7 +39,7 @@ export default class More extends Component{
       return (
         <div>
           <div className="block flex-colum">
-            <span className="label-01">Li and Floyd are my absolute favorites...</span>
+            <span className="label-01">Li and Floyd are my absolute favorites.</span>
           </div>
         </div>
       );
@@ -82,7 +82,7 @@ export default class More extends Component{
               <BackIcon />
               {this.renderMyThoughts()}
               {this.renderExpandedDefintion()}
-              {this.renderDev()}
+            
             </div>
           </div>
 

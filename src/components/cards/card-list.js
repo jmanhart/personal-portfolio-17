@@ -23,11 +23,13 @@ export default class CardList extends Component{
                 <div className="information-img">
                   <img src={this.props.cardImage || "Image Missing"} />
                 </div>
+                
                 <div className="information-copy">
                   <span className="card-01">{this.props.cardTitle || "String Missing"}</span>
                   <span className="card-02">{this.props.cardSubText || "String Missing"}</span>
                   <span className="card-03">{this.props.cardLocation || "String Missing"}</span>
                 </div>
+                
               </div>
             </a>
           </div>

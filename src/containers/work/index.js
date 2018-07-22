@@ -46,13 +46,13 @@ const data = [
 const dataMeetups = [
     {
       "cardTitle": "Framer Kansas City",
-      "cardSubText": "Mobile application for internal use.",
-      "cardImage":"./src/public/images/logos/framer.png",
-      "cardLocation": "View on Facebook group page",
+      "cardSubText": "Orginazier of the Framer Kansas City sponsored user group.",
+      "cardImage":"./src/public/images/logos/framer-KC-group.png",
+      "cardLocation": "View on Group on Facebook",
       "cardLink": "https://www.facebook.com/groups/FramerKansasCity/",
     },
     {
-      "cardTitle": "K.C. Sketch Meetup",
+      "cardTitle": "Kansas City Sketch Meetup",
       "cardSubText": "Orginazier of the official Sketch Meetup for Kansas City.",
       "cardImage":"./src/public/images/logos/sketch-kc.png",
       "cardLocation": "View on Meetup",
@@ -62,39 +62,39 @@ const dataMeetups = [
 const dataCodeSketchbooks = [
   {
     "cardTitle": "Framer Sketchbook",
-    "cardSubText": "Collection of Framer basics, sketchs, and designs.",
+    "cardSubText": "Running Sketchbook for Framer interactions, basic concepts, tips, and tricks.",
     "cardImage":"./src/public/images/logos/framer.png",
-    "cardLocation": "View on Github",
+    "cardLocation": "View Project on Github",
     "cardLink":"https://github.com/jmanhart/framer-sketchbook"
   },
   {
+    "cardTitle": "Python Sketchbook",
+    "cardSubText": "Collection of basics and my progress of learning Python.",
+    "cardImage":"./src/public/images/logos/python.png",
+    "cardLocation": "View Project on Github",
+    "cardLink":"https://github.com/jmanhart/python-sketchbook"
+  },
+  {
     "cardTitle": "Swift Sketchbook",
-    "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
+    "cardSubText": "Sketchs and tests using Swift to build UI.",
     "cardImage":"./src/public/images/logos/swift.png",
-    "cardLocation": "View on Github",
+    "cardLocation": "View Project on Github",
     "cardLink":"https://github.com/jmanhart/swift-sketchbook"
   },
   {
-    "cardTitle": "Sketch Plugin Sketchbook",
-    "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
-    "cardImage":"./src/public/images/logos/sketch.png",
-    "cardLocation": "View on Github",
-    "cardLink":"https://github.com/jmanhart/react-sketchapp"
-  },
-  {
     "cardTitle": "React-SketchApp",
-    "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
+    "cardSubText": "Sketch pad for making componets using react-sketchapp.",
     "cardImage":"./src/public/images/logos/react-sketchapp.png",
-    "cardLocation": "View on Github",
+    "cardLocation": "View Project on Github",
     "cardLink":"https://github.com/jmanhart/react-sketchapp"
   },
   {
-    "cardTitle": "Python Sketchbook",
-    "cardSubText": "Sketchs and tests using Swift to build UI nativly for iOS.",
-    "cardImage":"./src/public/images/logos/python.png",
-    "cardLocation": "View on Github",
-    "cardLink":"https://github.com/jmanhart/python-sketchbook"
-  },
+    "cardTitle": "Sketch Plugin",
+    "cardSubText": "Sketchbook for building plugins and scripts for sketch.",
+    "cardImage":"./src/public/images/logos/sketch.png",
+    "cardLocation": "View Project on Github",
+    "cardLink":"https://github.com/jmanhart/react-sketchapp"
+  }
 ]
 export default class Work extends Component{
     renderIntroduction(){
@@ -103,7 +103,7 @@ export default class Work extends Component{
           <div className="block flex-colum spacer-below">
             <span className="label-01">Work</span>
             <span className="label-03 body-color">
-              Collection of case studies, code sketchbooks, and community outreach within Kansas City. Also anything else that makes the cut!
+              Collection of code Sketchbooks and User Groups within Kansas City. Also anything else that makes the cut!
             </span>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default class Work extends Component{
               Case Studies
             </span>
             <span className="label-04 section-count">
-              {data.length}
+              {dataMeetups.length}
             </span>
           </div>
           {data.map((item) => {
@@ -168,9 +168,13 @@ export default class Work extends Component{
             <span className="label-04 body-color">
               User Groups
             </span>
-            <span className="label-04 section-count">
-              {dataMeetups.length}
-            </span>
+
+            <div className="section-pill">
+              <span className="label-04 section-count">
+                {dataMeetups.length}
+              </span>
+            </div>
+
           </div>
           {dataMeetups.map((item) => {
             return (
@@ -192,9 +196,9 @@ export default class Work extends Component{
             <div className="wrapper">
               <BackIcon/>
               {this.renderIntroduction()}
-              {this.renderCasesStudies()}
-              {this.renderMeetups()}
               {this.renderCodeSketchbooks()}
+              {this.renderMeetups()}
+
             </div>
         )
     }
