@@ -180,7 +180,7 @@ export default class MoseyCaseStudy extends Component{
       return(
         <div>
           <div className="wrapper">
-            <BackIcon />
+            <BackIcon linkBack="/work"/>
             {this.renderHeroDefinition()}
             {this.renderExpandedDefintion()}
           </div>

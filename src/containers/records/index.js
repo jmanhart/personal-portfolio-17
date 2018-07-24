@@ -35,13 +35,19 @@ export default class Records extends Component{
         </div>
       )
     }
-  
+
     renderRecords(){
+  
+
+      dataRecords.sort(function(a,b){
+          return a - b
+      })
+
       return(
         <div className="blockIII">
           <div className="section-header">
             <span className="label-04 body-color">
-              Code Sketchbooks
+              Records
             </span>
             <span className="label-04 section-count">
               {dataRecords.length}
@@ -54,7 +60,7 @@ export default class Records extends Component{
                 cardTitle={item.album}
                 cardSubText={item.artist}
                 cardImage={item.albumArt}
-              
+
                 />
             )
           })}

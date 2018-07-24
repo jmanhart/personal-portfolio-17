@@ -46,14 +46,14 @@ const data = [
 const dataMeetups = [
     {
       "cardTitle": "Framer Kansas City",
-      "cardSubText": "Orginazier of the Framer Kansas City sponsored user group.",
+      "cardSubText": "Organizer of the Framer Kansas City sponsored user group.",
       "cardImage":"./src/public/images/logos/framer-KC-group.png",
       "cardLocation": "View on Group on Facebook",
       "cardLink": "https://www.facebook.com/groups/FramerKansasCity/",
     },
     {
       "cardTitle": "Kansas City Sketch Meetup",
-      "cardSubText": "Orginazier of the official Sketch Meetup for Kansas City.",
+      "cardSubText": "Organizer of the official Sketch Meetup for Kansas City.",
       "cardImage":"./src/public/images/logos/sketch-kc.png",
       "cardLocation": "View on Meetup",
       "cardLink": "https://www.meetup.com/Sketch-Design-Kansas-City/",
@@ -196,6 +196,7 @@ export default class Work extends Component{
             <div className="wrapper">
               <BackIcon/>
               {this.renderIntroduction()}
+              {this.renderCasesStudies()}
               {this.renderCodeSketchbooks()}
               {this.renderMeetups()}
 

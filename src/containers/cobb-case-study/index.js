@@ -209,7 +209,7 @@ export default class CobbCaseStudy extends Component{
       return(
         <div>
           <div className="wrapper">
-            <BackIcon />
+            <BackIcon linkBack="/work"/>
             {this.renderHeroDefinition()}
             {this.renderExpandedDefintion()}
           </div>

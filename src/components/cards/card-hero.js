@@ -14,26 +14,45 @@ import '../../main.scss'
 
 
 export default class CardHero extends Component{
-    render(){
-        return(
-          <div className="card-wrapper">
-            <a to={this.props.cardLink}>
-              <div className="card-information" style={{flexDirection:'column'}}>
-                <div className="information-image">
-                  <div className="information-img">
-                    <img src={this.props.cardImage || "Image Missing"} />
-                  </div>
-                </div>
-                <div className="information-container">
-                  <div className="information-copy">
-                    <span className="card-01">{this.props.cardTitle || "String Missing"}</span>
-                    <span className="card-02">{this.props.cardSubText || "String Missing"}</span>
-                    <span className="card-03">{this.props.cardStack || "String Missing"}</span>
-                  </div>
-                </div>
-              </div>
-            </a>
+  render(){
+    return(
+      <div className="card-wrapper">
+        <a href={this.props.cardLink}>
+          <div className="card-information">
+            <div className="information-img">
+              <img src={this.props.cardImage || "Image Missing"} />
+            </div>
+
+            <div className="information-copy">
+              <span className="card-01">{this.props.cardTitle || "String Missing"}</span>
+              <span className="card-02">{this.props.cardSubText || "String Missing"}</span>
+              <span className="card-03">{this.props.cardLocation || null}</span>
+            </div>
+
           </div>
-        )
-      }
+        </a>
+      </div>
+    )
+  }
 }
+
+{/*
+  <div className="card-wrapper">
+    <a to={this.props.cardLink}>
+      <div className="card-information" style={{flexDirection:'column'}}>
+        <div className="information-image">
+          <div className="information-img">
+            <img src={this.props.cardImage || "Image Missing"} />
+          </div>
+        </div>
+        <div className="information-container">
+          <div className="information-copy">
+            <span className="card-01">{this.props.cardTitle || "String Missing"}</span>
+            <span className="card-02">{this.props.cardSubText || "String Missing"}</span>
+            <span className="card-03">{this.props.cardStack || "String Missing"}</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  */}
