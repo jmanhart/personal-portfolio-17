@@ -1,4 +1,6 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 //Import Styles
 import './main.scss'
@@ -8,7 +10,6 @@ const propTypes = {
   children: PropTypes.element.isRequired,
   routes: PropTypes.array.isRequired,
 };
-
 
 export default class App extends Component{
     render(){
@@ -22,3 +23,4 @@ export default class App extends Component{
     }
 }
 App.propTypes = propTypes;
+

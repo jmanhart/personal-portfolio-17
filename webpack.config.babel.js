@@ -1,4 +1,6 @@
 import webpack from 'webpack';
+import PropTypes from 'prop-types';
+
 
 export default {
   entry: `${__dirname}/src/index.js`,
