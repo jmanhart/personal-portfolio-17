@@ -54,11 +54,19 @@ export default class MoseyCaseStudy extends Component{
             </span>
             <span className="label-03 body-color">
               <span className="label-03 body-color">
-                <ul>
-                  <li>Annan, Project Manager – The most glaring broken feature was requiring the user to select their language on every App open. This created a very un-nessecary bottle neck for every User every time.</li>
-                  <li>Drew, Engineering – The App's structure was very rigid and dependent on numerous naviagtion loops, such as back arrows, and entire resets when navigating to a new section of the App.</li>
-                  <li>John, UX Engineer and User Experience – The existing app was dependent on very rigid containers for content. It had to many specific categories that yeiled few if any results.</li>
-                  <li>Tyler Product Designer – Adding the ability for rapid filtering and serving content was essential with the new direction of the App.</li>
+                <ul className="sand">
+                  <li className="sand-list">
+                    <span className="sand-label">John, UX Engineer and User Experience</span> – The existing app was dependent on very rigid containers for content. It had to many specific categories that yeiled few if any results.
+                  </li>
+                  <li className="sand-list">
+                    <span className="sand-label">Annan, Project Manager</span> – The most glaring broken feature was requiring the user to select their language on every App open. This created a very un-nessecary bottle neck for every User every time.
+                    </li>
+                  <li className="sand-list">
+                    <span className="sand-label">Drew, Software Engineer</span> – The App's structure was very rigid and dependent on numerous naviagtion loops, such as back arrows, and entire resets when navigating to a new section of the App.
+                  </li>
+                  <li className="sand-list">
+                    <span className="sand-label">Tyler Product Designer</span> – Adding the ability for rapid filtering and serving content was essential with the new direction of the App.
+                  </li>
                 </ul>
               </span>
             </span>
