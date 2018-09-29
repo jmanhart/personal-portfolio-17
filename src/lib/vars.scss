@@ -5,12 +5,8 @@ $gray01: rgba(222, 226, 227, 1);
 $gray02: rgba(0,0,0,0.3);
 $gray03: rgba(0,0,0,0.9);
 $gray04: rgba(0,0,0,0.6);
-
-
 $dark01: rgba(0,0,0,0.8);
-
 $light01: #aaaaaa;
-
 $orange01: #ff9d18;
 $orange02: #922F07;
 
@@ -21,6 +17,7 @@ $FPO: rgba(0, 0, 0, 0.05);
 $sans-serif: 'Work Sans', sans-serif;
 $serif: 'Eczar', serif;
 
+// Font Sizes
 $font-xlarge: 2.75em;
 $font-large: 1.75em;
 $font-regular: 1.35em;
@@ -28,19 +25,31 @@ $font-medium: 1.00em;
 $font-small: 0.75em;
 $font-tiny: 0.65em;
 
-
+// Spacer Sizes
 $spacer-large: 2em;
 $spacer-medium: 1em;
 $spacer-small: 0.5em;
 
 
 
-.spacer-below{
-  padding-bottom: $spacer-large;
+// Rows
+.basic-row{
+  padding-top: $spacer-medium;
+  padding-bottom: $spacer-medium;
 }
 
-.flex-colum{
+.spacer-below{
+  padding-bottom: $spacer-medium;
+}
+
+.flex-column{
+  display: flex;
   flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
 }
 
 .body-color-light{
@@ -68,87 +77,65 @@ $spacer-small: 0.5em;
 }
 
 
-// This is Hero title and main Headline of page
+
+
+
+/* ---------------------------------------------- */
+//
+// Type Styles START
+//
+/* ---------------------------------------------- */
+
+span {
+  color: rgba(0,0,0,0.6);
+  font-family: $sans-serif;
+  font-size: $font-medium;
+}
+
+code{
+  font-size: $font-small;
+}
+
 .label-01{
   color: $black;
   font-family: $sans-serif;
   font-size: $font-xlarge;
   font-weight: 500;
 }
-
-// This is lead in and setup copy
 .label-02{
   color: $black;
   font-family: $sans-serif;
   font-size: $font-large;
-  line-height: $font-large;
-  padding-bottom: $spacer-small;
   font-weight: 300;
+  line-height: $font-large;
+  // padding-bottom: $spacer-small;
 }
-
-// This is button, sub copy
 .label-03{
-  font-size: $font-medium;
-  padding-bottom: $spacer-small;
+  color: $black;
   font-family: $sans-serif;
+  font-size: $font-medium;
   font-weight: 300;
   line-height: 1.65em;
+  // padding-bottom: $spacer-small;
 }
 .label-04{
-  font-size: $font-regular;
-  padding-bottom: $spacer-small;
+  color: $black;
   font-family: $sans-serif;
+  font-size: $font-regular;
   font-weight: 500;
   line-height: 1.65em;
-}
-
-.body-01{
-  font-size: $font-medium;
   padding-bottom: $spacer-small;
-  font-family: $sans-serif;
-  font-weight: 300;
-  line-height: 1.65em;
-  color: rgba(0, 0, 0, 0.9);
 }
-
-.body-02{
-  font-size: $font-medium;
-  font-family: $sans-serif;
-}
-
-
-
-
-
-
-
-//////////////////////
-
-
-
-// .label-04{
-//   color:rgba(0,0,0,0.6);
-//   font-size: 0.75em;
-//   font-family: $sans-serif;
-//   padding-right: 2em;
-//   transition: all 0.5s ease-in;
-//
-// }
-
 .label-05{
   color:rgba(0,0,0,0.6);
-  font-size: 0.75em;
   font-family: $sans-serif;
+  font-size: 0.75em;
   padding-right: 2em;
   transition: all 0.5s ease-in;
-  // padding-bottom: 0.02em;
-  // // box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);
   &:hover{
-    // text-decoration: underline;
     transition: all 0.5s ease-in;
   }
 }
-
 .label-06{
   color:rgba(0,0,0,0.6);
   font-size: 1em;
@@ -160,7 +147,6 @@ $spacer-small: 0.5em;
     transition: all 0.5s ease-in;
   }
 }
-
 .label-07{
   color:rgba(0,0,0,0.6);
   font-size: 1.25em;
@@ -168,7 +154,6 @@ $spacer-small: 0.5em;
   padding-right: 0.75em;
   transition: all 0.5s ease-in;
 }
-
 .label-08{
   color:rgba(0,0,0,0.9);
   font-size: 1.25em;
@@ -212,7 +197,6 @@ $spacer-small: 0.5em;
     transition: all 0.5s ease-in;
 
   }
-
   .label-05{
     color:rgba(0,0,0,0.6);
     font-size: 0.75em;
@@ -224,14 +208,39 @@ $spacer-small: 0.5em;
       transition: all 0.5s ease-in;
     }
   }
-
-
 }
+
+.body-01{
+  font-size: $font-medium;
+  padding-bottom: $spacer-small;
+  font-family: $sans-serif;
+  font-weight: 300;
+  line-height: 1.65em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.body-02{
+  font-size: $font-medium;
+  font-family: $sans-serif;
+}
+
+
+
 
 ul{
   list-style-type: disc;
-
 }
+
+
+
+
+/* ---------------------------------------------- */
+//
+// Type Styles END
+//
+/* ---------------------------------------------- */
+
+
 
 
 
@@ -313,3 +322,7 @@ $tablet: new-breakpoint( min-width 640px max-width 767px);
 $below-tablet: new-breakpoint( max-width 767px);
 $mobile: new-breakpoint( max-width 639px);
 $below-mobile: new-breakpoint( max-width 639px);
+
+
+// padding-bottom: 0.02em;
+// // box-shadow: inset 0 -1px 0 rgba(0,0,0,0.2);

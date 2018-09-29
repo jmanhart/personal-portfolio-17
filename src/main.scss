@@ -1,6 +1,33 @@
-
 //Import Global Colors
 @import '/lib/vars.scss';
+
+
+// If content is fixed: Like home page
+.wrapper{
+  min-height: 100vh;
+  width: 100%;
+  padding: 5em 3em 5em 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+// IF content need to scroll
+.wrapper-scroll{
+  width: 100%;
+  height: 100%;
+  padding: 5em 3em 5em 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+
 
 
 
