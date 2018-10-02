@@ -11,7 +11,7 @@ $orange01: #ff9d18;
 $orange02: #922F07;
 
 //FPO Color
-$FPO: rgba(0, 0, 0, 0.05);
+$FPO: rgba(0, 0, 0, 0.0);
 
 //Fonts
 $sans-serif: 'Work Sans', sans-serif;
@@ -26,6 +26,7 @@ $font-small: 0.75em;
 $font-tiny: 0.65em;
 
 // Spacer Sizes
+$spacer-mega: 3em;
 $spacer-large: 2em;
 $spacer-medium: 1em;
 $spacer-small: 0.5em;
@@ -39,12 +40,34 @@ $border-color: #e5e5e5;
 
 // Rows
 .basic-row{
-  padding-top: $spacer-large;
-  padding-bottom: $spacer-large;
+  margin-bottom: $spacer-large;
   flex-shrink: 1;
   flex-grow: 0;
+  flex-direction: column;
+  display: flex;
+  // background-color: $FPO;
 }
 
+
+.row{
+  flex-direction: row;
+}
+
+.first-column{
+  margin-right: $spacer-large;
+  display: flex;
+  background-color: $FPO;
+  justify-content: flex-end;
+  min-width: 8em;
+}
+
+.column{
+  background-color: $FPO;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  min-width: 33em;
+}
 .basic-column{
 
 }
@@ -101,7 +124,7 @@ $border-color: #e5e5e5;
 
 .color-swatch{
   height: 5em;
-  width: 7em;
+  width: 5em;
   background-color: gray;
   display: flex;
   align-items: center;
