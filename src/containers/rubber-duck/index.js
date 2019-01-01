@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import dynamics from 'dynamics.js';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
-import Video from 'react-html5video';
+// import Video from 'react-html5video';
 import {
   up,
   down,
